@@ -1,0 +1,35 @@
+@use '../helpers/functions' as *;
+@use '../helpers/globals' as *;
+@use '../helpers/mixin' as *;
+@use '../variables' as *;
+
+
+
+.button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-gray-60);
+    font-size: rem(18);
+    border: rem(1) solid var(--color-dark-15);
+    border-radius: rem(10);
+    background-color: var(--color-dark);
+    @include adaptiveValuePX('padding-inline', 24, 20, $containerWidth, 1440);
+    @include adaptiveValuePX('padding-block', 18, 14, $containerWidth, 1440);
+    @include adaptiveTextPX(18, 14, $containerWidth, 1440);
+    &-small {
+        padding: rem(10) rem(16);
+    }
+    @media (any-hover: hover) {
+        &:hover {
+            background-color: var(--color-dark-10);
+            border: rem(1) solid var(--color-accent);
+        }
+    }
+    @media (any-hover: none) {
+        &:active {
+            background-color: var(--color-dark-10);
+            border: rem(1) solid var(--color-accent);
+        }
+    }
+}

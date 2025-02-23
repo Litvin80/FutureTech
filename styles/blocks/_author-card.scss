@@ -1,0 +1,35 @@
+@use '../helpers/functions' as *;
+@use '../helpers/globals' as *;
+@use '../helpers/mixin' as *;
+
+.author-card {
+    display: flex;
+    align-items: center;
+    align-self: start;
+    @include adaptiveValuePX('column-gap', 16, 8, $containerWidth, 767.98);
+    &__img {
+        background-color: var(--color-dark-15);
+        border-radius: 50%;
+        width: rem(80);
+        height: rem(80);
+        @media (max-width: $laptop) {
+            width: rem(60);
+            height: rem(60);
+        }
+    }
+    &__info {
+    }
+    &__name {
+        color: var(--color-light);
+        font-weight: 600;
+        font-size: rem(20);
+        @media (max-width: $laptop) {
+            font-size: rem(18);
+        }
+    }
+    &__department {
+        @media (max-width: $laptop) {
+            font-size: rem(16);
+        }
+    }
+}

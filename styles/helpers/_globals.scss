@@ -1,0 +1,60 @@
+@use 'functions' as *;
+@use '../variables' as *;
+
+//=============НАЛАШТУВАННЯ АДАПТИВНОЇ СІТКИ==============//
+$minWidth: 390;
+$maxWidth: 1920;
+$maxWidthContainer: 1596;
+$containerPadding: 32;
+$containerWidth: $maxWidthContainer + $containerPadding;
+
+$pc: em($containerWidth);
+$laptop: em(1440);
+$tablet: em(991.98);
+$mobile: em(767.98);
+$mobileSmall: em(479.98);
+
+html {
+    &.is-lock {
+       overflow: hidden; 
+    }
+}
+
+body {
+    background-color: var(--color-dark);
+    letter-spacing: -3%;
+}
+
+.wrapper {
+    min-height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    @supports (overflow:clip) {
+        overflow: clip;
+    }
+    > main {
+        flex: 1 1 auto;
+    }
+}
+
+.link {
+    color: var(--color-gray-60);
+    transition: all 0.2s ease 0s;
+    @media (any-hover: hover) {
+        &:hover {
+            color: var(--color-accent);
+        }
+    }
+    @media (any-hover: none) {
+        &:active {
+            color: var(--color-accent);
+        }
+    }
+}
+
+a:focus-visible {
+    outline: rem(2) dashed var(--color-light);
+    outline-offset: rem(4);
+    transition-duration: 0s !important;
+}

@@ -1,0 +1,19 @@
+{
+  "name": "futuretech",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass-watch": "sass --watch .",
+    "postcss": "postcss ./styles/style.css -o ./styles/style.css"
+  },
+  "author": "Lit",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "postcss": "^8.5.1",
+    "postcss-cli": "^11.0.0",
+    "postcss-combine-media-query": "^1.0.1",
+    "sass": "^1.83.4"
+  }
+}

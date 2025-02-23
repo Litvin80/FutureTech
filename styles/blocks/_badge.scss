@@ -1,0 +1,20 @@
+@use '../helpers/functions' as *;
+@use '../helpers/globals' as *;
+@use '../helpers/mixin' as *;
+
+.badge {
+    display: inline-flex;
+    @include adaptiveValuePX('padding-block', 4, 2, $containerWidth, 1440);
+    @include adaptiveValuePX('padding-inline', 12, 10, $containerWidth, 1440);
+    @include adaptiveValuePX('font-size', 16, 14, $containerWidth, 1440);
+    border: rem(1) solid transparent;
+    border-radius: rem(6);
+    color: var(--color-light);
+    cursor: default;
+    background: linear-gradient(var(--color-dark-10), var(--color-dark-10)) padding-box,
+    linear-gradient(
+        45deg,
+        var(--color-dark-15) 64%,
+        var(--color-accent) 136%
+    ) border-box;
+}

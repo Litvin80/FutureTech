@@ -1,0 +1,44 @@
+@use '../helpers/functions' as *;
+@use '../helpers/globals' as *;
+
+.icon {
+    display: inline-flex;
+    align-items: center;
+    column-gap: rem(10);  
+    &:after {
+        transition: all 0.2s ease 0s;
+        width: rem(17);
+        height: rem(17);
+        content: '';
+        flex-shrink: 0;
+        background-position: rem(-3) rem(3);
+        background-size: contain;
+        background-repeat: no-repeat;
+    } 
+    @media (max-width: $laptop) {
+        &:after {
+            width: rem(14);
+            height: rem(14);
+        }
+    }
+}
+
+.icon--yellow-arrow {
+    @media (any-hover: hover) {
+        &:hover {
+            &::after {
+                background-position: center;
+            }
+        }
+    }
+    @media (any-hover: none) {
+        &:active {
+            &::after {
+                background-position: center;
+            }
+        }
+    }
+    &::after {
+        background-image: url('../../icons/arrow-top-right__yellow.svg');
+    }
+}

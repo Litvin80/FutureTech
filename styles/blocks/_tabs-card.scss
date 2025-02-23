@@ -1,0 +1,64 @@
+@use '../helpers/functions' as *;
+@use '../helpers/globals' as *;
+@use '../helpers/mixin' as *;
+
+.tabs-card {
+    @include adaptiveValuePX('padding-block', 80, 40, $containerWidth, 991.98);
+    &:not(:last-child) {
+        border-bottom: rem(1) solid var(--color-dark-15);
+    }
+    &__container {
+        display: grid;
+        align-items: center;
+        @include adaptiveValuePX('column-gap', 50, 20, $containerWidth, 991.98);
+        grid-template-columns: 24% 1fr auto;
+        @media (max-width: $tablet) {
+            grid-template-areas: 
+                'author link'
+                'body body';
+            grid-template-columns: 1fr auto;
+            row-gap: rem(30);
+        }
+    }
+    &__author {
+        @media (max-width: $tablet) {
+            grid-area: author;
+        }
+    }
+    &__body {
+        @media (max-width: $tablet) {
+            grid-area: body;
+        }
+        display: grid;
+        row-gap: rem(30);
+        @include adaptiveValuePX('row-gap', 30, 20, $containerWidth, 991.98);
+    }
+    &__date {
+        font-weight: 600;
+        font-size: rem(20);
+        @include adaptiveTextPX(20, 16, $containerWidth, 767.98);
+        color: var(--color-gray-60);
+    }
+    &__info {
+        display: grid;
+        row-gap: rem(10);
+    }
+    &__title {
+        justify-self: start;
+        font-weight: 600;
+        font-size: rem(26);
+        color: var(--color-light);
+        @include adaptiveTextPX(26, 18, $containerWidth, 767.98);
+    }
+    &__description {
+        @include adaptiveTextPX(18, 14, $containerWidth, 767.98);
+    }
+    &__actions {
+    }
+    &__button {
+        @media (max-width: $tablet) {
+            grid-area: link;
+        }
+        align-self: center;
+    }
+}

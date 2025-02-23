@@ -1,0 +1,50 @@
+@use '../helpers/functions' as *;
+@use '../helpers/globals' as *;
+@use '../helpers/mixin' as *;
+@use '../utils' as *;
+
+.header-section {
+    background-color: var(--color-dark-10);
+    border-top: rem(1) solid var(--color-dark-15);
+    border-bottom: rem(1) solid var(--color-dark-15);
+    &__container {
+        @include adaptiveValuePX('padding-block', 120, 40, $containerWidth, 767.98);
+        display: grid;
+        &:has(.header-section__button) {
+            grid-template-columns: 1fr auto;
+        }
+        align-items: center;
+        column-gap: rem(20);
+        @media (max-width: $mobile) {
+            &:has(.header-section__button) {
+                grid-template-columns: auto;
+                row-gap: rem(30);
+            }
+        }
+    }
+    &__info {
+        display: grid;
+        font-weight: 500;
+        row-gap: rem(16);
+        align-items: start;
+        color: var(--color-light);
+        @media (max-width: $laptop) {
+            row-gap: rem(10); 
+        }
+    }
+    &__subtitle {
+        justify-self: start;
+        padding: rem(6) rem(10);
+        background-color: var(--color-dark-20);
+        border-radius: rem(4);
+        @include adaptiveTextPX(20, 14);
+        @media (max-width: $laptop) {
+            padding: rem(4) rem(8);
+        }
+    }
+    &__title {
+        font-family: 'Kumbh Sans', sans-serif;
+        @include adaptiveTextPX(58, 28);
+        line-height: 1.3;
+    }
+}

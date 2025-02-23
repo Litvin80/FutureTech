@@ -1,0 +1,94 @@
+@use '../helpers/functions' as *;
+@use '../helpers/globals' as *;
+@use '../helpers/mixin' as *;
+@use '../utils' as *;
+
+.card {
+    &:not(:last-child) {
+        border-bottom: rem(1) solid var(--color-dark-15);
+    }
+    &__container {
+        display: grid;
+        grid-template-columns: 38% auto;
+        @media (max-width: $tablet) {
+            grid-template-columns: auto;
+        }
+    }
+    &__preview {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 0;
+        @include adaptiveValuePX('padding-block', 50, 30, $containerWidth, 991.98);
+        @include adaptiveValuePX('padding-right', 80, 30, $containerWidth, 991.98);
+        @media (max-width: $tablet) {
+            padding-block: rem(50);
+            padding-right: 0;
+        }
+        @media (max-width: $tablet) {
+            border-bottom: rem(1) solid var(--color-dark-15);
+        }
+    }
+    &__main {
+        display: flex;
+        flex-direction: column;
+        @include adaptiveValuePX('row-gap', 50, 20);
+    }
+    &__icon {
+    }
+    &__info {
+    }
+    &__title {
+        @include adaptiveTextPX(40, 24);
+        font-weight: 600;
+        font-family: 'Kumbh Sans', sans-serif;
+        color: var(--color-light);
+        &:not(:last-child) {
+            @include adaptiveValuePX('margin-bottom', 16, 6);
+        }
+    }
+    &__description {
+        @include adaptiveTextPX(18, 14);
+    }
+    &__body {
+        @include adaptiveValuePX('padding-block', 80, 40, $containerWidth, 991.98);
+        @include adaptiveValuePX('padding-left', 80, 40, $containerWidth, 991.98);
+        padding-right: 0;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        @include adaptiveValuePX('gap', 30, 10);
+        @media (min-width: $tablet) {
+            border-left: rem(1) solid var(--color-dark-15);
+        }
+        @media (max-width: $tablet) {
+            padding-block: rem(30);
+            padding-inline: rem(16);
+        }
+        @media (max-width: $mobile) {
+            grid-template-columns: auto;
+        }
+    }
+}
+.card-item {
+    &__title {
+        color: var(--color-light);
+        font-weight: 500;
+        @include adaptiveTextPX(24, 18);
+        &:not(:last-child) {
+            @include adaptiveValuePX('margin-bottom', 20, 4);
+        }
+    }
+    &__description {
+        @include adaptiveTextPX(18, 14);
+    }
+
+    &.tile {
+        @include adaptiveValuePX('padding', 40, 24);
+        background-color: var(--color-dark-10);
+        border-radius: rem(12);
+        border: rem(1) solid var(--color-dark-15);
+        @media (max-width: $laptop) {
+            border-radius: rem(10);
+        }
+    }
+}

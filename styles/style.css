@@ -1320,7 +1320,7 @@ a:hover {
 }
 @media (max-width: 47.99875em) {
   .hero-advantages__list {
-    grid-template-columns: auto;
+    grid-template-columns: 1fr;
   }
 }
 .hero-advantages__item {

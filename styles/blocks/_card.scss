@@ -34,10 +34,6 @@
         flex-direction: column;
         @include adaptiveValuePX('row-gap', 50, 20);
     }
-    &__icon {
-    }
-    &__info {
-    }
     &__title {
         @include adaptiveTextPX(40, 24);
         font-weight: 600;
@@ -50,13 +46,18 @@
     &__description {
         @include adaptiveTextPX(18, 14);
     }
+    &__button {
+        @media (max-width: $tablet) {
+            max-width: rem(500);
+        }
+    }
     &__body {
         @include adaptiveValuePX('padding-block', 80, 40, $containerWidth, 991.98);
         @include adaptiveValuePX('padding-left', 80, 40, $containerWidth, 991.98);
         padding-right: 0;
+        @include adaptiveValuePX('row-gap', 30, 10);
+        @include adaptiveValuePX('column-gap', 20, 10);
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        @include adaptiveValuePX('gap', 30, 10);
         @media (min-width: $tablet) {
             border-left: rem(1) solid var(--color-dark-15);
         }
@@ -64,31 +65,77 @@
             padding-block: rem(30);
             padding-inline: rem(16);
         }
-        @media (max-width: $mobile) {
-            grid-template-columns: auto;
+        &--2-cols-alt {
+            grid-template-columns: auto 1fr;
+            gap: rem(30) rem(20);
+            .card-item {
+                row-gap: rem(4);
+            }
+            .tile {
+                @include adaptiveValuePX('padding', 30, 20);
+            }
+            @media (max-width: $laptop) {
+                gap: rem(24) rem(16);
+            }
+            @media (max-width: $mobile) {
+                grid-template-columns: auto;
+            }
+        }
+        &--2-cols {
+            grid-template-columns: repeat(2, 1fr);
+            @include adaptiveValuePX('column-gap', 30, 10);
+            @media (max-width: $mobile) {
+                grid-template-columns: auto;
+            }
         }
     }
 }
 .card-item {
+    display: flex;
+    flex-direction: column;
+    @include adaptiveValuePX('row-gap', 20, 4);
+    &:has(> *:only-child) {
+        justify-content: center;
+    }
+    &:has(.card-item__link) {
+        display: grid;
+        align-items: center;
+        grid-template-columns: 1fr auto;
+        grid-template-areas: 'other link''other link';
+        column-gap: rem(20);
+    }
+    &--wide {
+        @media (min-width: $mobile) {
+            grid-column: span 2;
+        }
+    }
     &__title {
         color: var(--color-light);
         font-weight: 500;
         @include adaptiveTextPX(24, 18);
-        &:not(:last-child) {
-            @include adaptiveValuePX('margin-bottom', 20, 4);
-        }
     }
     &__description {
         @include adaptiveTextPX(18, 14);
     }
-
-    &.tile {
-        @include adaptiveValuePX('padding', 40, 24);
-        background-color: var(--color-dark-10);
-        border-radius: rem(12);
-        border: rem(1) solid var(--color-dark-15);
-        @media (max-width: $laptop) {
-            border-radius: rem(10);
+    &__image {
+        img {
+            border-radius: rem(12);
+            max-width: 100%;
+            @include adaptiveValuePX('height', 332, 169);
+            object-fit: cover;
         }
+    }
+    &__link {
+        grid-area: link;
+    }
+}
+
+.tile {
+    @include adaptiveValuePX('padding', 40, 24);
+    background-color: var(--color-dark-10);
+    border-radius: rem(12);
+    border: rem(1) solid var(--color-dark-15);
+    @media (max-width: $laptop) {
+        border-radius: rem(10);
     }
 }

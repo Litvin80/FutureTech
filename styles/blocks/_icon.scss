@@ -11,7 +11,7 @@
         height: rem(17);
         content: '';
         flex-shrink: 0;
-        background-position: rem(-3) rem(3);
+        background-position: center;
         background-size: contain;
         background-repeat: no-repeat;
     } 
@@ -39,6 +39,14 @@
         }
     }
     &::after {
+        background-position: rem(-3) rem(3);
         background-image: url('../../icons/arrow-top-right__yellow.svg');
+    }
+}
+.icon--yellow-eye {
+    &::after {
+        width: rem(20);
+        height: rem(20);
+        background-image: url('../../icons/eye__yellow.svg');
     }
 }

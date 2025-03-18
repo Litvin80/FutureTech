@@ -53,7 +53,8 @@ body {
     }
 }
 
-a:focus-visible {
+a:focus-visible,
+button:focus-visible {
     outline: rem(2) dashed var(--color-light);
     outline-offset: rem(4);
     transition-duration: 0s !important;

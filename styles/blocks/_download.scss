@@ -1,0 +1,31 @@
+@use '../helpers/functions' as *;
+@use '../helpers/globals' as *;
+@use '../helpers/mixin' as *;
+
+.download {
+    &__body {
+        display: inline-flex;
+        align-items: center;
+        column-gap: rem(50);
+        padding: rem(30);
+    }
+    &__title {
+        &:not(:last-child) {
+            margin-bottom: rem(4);
+        }
+    }
+    &__subtitle {
+        font-size: rem(24);
+        font-weight: 600;
+        color: var(--color-light);
+    }
+    &__team {
+        --personImageSize: #{rem(50)};
+        border-radius: rem(12);
+        border: 0px;
+        background-color: var(--color-dark);
+        @media (max-width: $laptop) {
+            --personImageSize: #{rem(40)};
+        }
+    }
+}

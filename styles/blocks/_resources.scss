@@ -1,0 +1,63 @@
+@use '../helpers/functions' as *;
+@use '../helpers/globals' as *;
+@use '../helpers/mixin' as *;
+
+.resources {
+    &__body {
+    }
+    &__list {
+    }
+    &__card {
+    }
+}
+.card {
+
+    &__container {
+    }
+
+    &__preview {
+    }
+
+    &__main {
+    }
+
+    &__icon {
+    }
+
+    &__info {
+    }
+
+    &__title {
+    }
+
+    &__description {
+    }
+
+    &__button {
+    }
+
+    &__download {
+    }
+
+    &__body {
+    }
+
+    &__item {
+    }
+}
+.card-item {
+
+    &__title {
+    }
+
+    &__description {
+    }
+
+    
+
+    &__link {
+    }
+    &--wide {
+
+    }
+}

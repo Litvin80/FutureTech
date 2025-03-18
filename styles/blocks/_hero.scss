@@ -262,29 +262,6 @@
         }
     }
 }
-.resources-team {
-    --personImageSize: #{rem(60)};
-    
-    display: inline-flex;
-    background-color: var(--color-dark-10);
-    border-radius: rem(100);
-    border: rem(1) solid var(--color-dark-15);
-    padding: rem(10);
-    @media (max-width: $laptop) {
-        --personImageSize: #{rem(50)};
-        padding: rem(8);
-    }
-    &__person {
-        width: var(--personImageSize);
-        border: rem(2) solid var(--color-dark-40);
-        border-radius: 100%;
-        object-fit: cover;
-        background-color: var(--color-dark-15);
-        &:not(:first-child) {
-            margin-left: calc(var(--personImageSize) / 4.5 * -1);
-        }
-    }
-}
 .hero-advantages {
     border-top: rem(1) solid var(--color-dark-15);
     &__list {

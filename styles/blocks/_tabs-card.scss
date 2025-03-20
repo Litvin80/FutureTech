@@ -7,7 +7,7 @@
     &:not(:last-child) {
         border-bottom: rem(1) solid var(--color-dark-15);
     }
-    &__container {
+    &__wrapper {
         display: grid;
         align-items: center;
         @include adaptiveValuePX('column-gap', 50, 20, $containerWidth, 991.98);

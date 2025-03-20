@@ -1,0 +1,29 @@
+@use '../helpers/functions' as *;
+@use '../helpers/globals' as *;
+@use '../helpers/mixin' as *;
+
+.rating {
+    display: inline-flex;
+    padding: rem(10) rem(16);
+    background-color: var(--color-dark);
+    border: rem(1) solid var(--color-dark-15);
+    border-radius: rem(100);
+    column-gap: rem(7);
+    @media (max-width: $laptop) {
+        padding: rem(8) rem(12);
+        column-gap: rem(4);
+    }
+    &__star {
+        max-width: 100%;
+        width: rem(24);
+        height: rem(24);
+        background: url('../../icons/star__gray.svg') center/contain no-repeat;
+        &.is-active {
+            background-image: url('../../icons/star__yellow.svg');
+        }
+        @media (max-width: $laptop) {
+            width: rem(20);
+            height: rem(20);
+        }
+    }
+}

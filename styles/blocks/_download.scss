@@ -8,14 +8,23 @@
         align-items: center;
         column-gap: rem(50);
         padding: rem(30);
+        @media (max-width: $laptop) {
+            column-gap: rem(30);
+        }
     }
     &__title {
         &:not(:last-child) {
             margin-bottom: rem(4);
         }
+        @media (max-width: $laptop) {
+            &:not(:last-child) {
+                margin-bottom: rem(2);
+            }
+            font-size: rem(14);
+        }
     }
     &__subtitle {
-        font-size: rem(24);
+        @include adaptiveTextPX(24, 18, $containerWidth, 779.98);
         font-weight: 600;
         color: var(--color-light);
     }

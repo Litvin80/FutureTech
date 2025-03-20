@@ -7,7 +7,7 @@
     &:not(:last-child) {
         border-bottom: rem(1) solid var(--color-dark-15);
     }
-    &__container {
+    &__wrapper {
         display: grid;
         grid-template-columns: 38% auto;
         @media (max-width: $tablet) {
@@ -64,6 +64,9 @@
         @media (max-width: $tablet) {
             padding-block: rem(30);
             padding-inline: rem(16);
+        }
+        @media (max-width: $mobile) {
+            padding-inline: 0;
         }
         &--2-cols-alt {
             grid-template-columns: auto 1fr;

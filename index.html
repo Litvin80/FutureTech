@@ -212,9 +212,9 @@
                         </div>
                     </header>
                     <div class="features__body">
-                        <ul class="features__list list">
-                            <li class="features__card list__item card">
-                                <div class="card__container">
+                        <ul class="features__list">
+                            <li class="features__card card">
+                                <div class="features__container card__wrapper">
                                     <div class="card__preview">
                                         <div class="card__main">
                                             <img
@@ -261,8 +261,8 @@
                                     </div>
                                 </div>
                             </li>
-                            <li class="features__card list__item card">
-                                <div class="card__container">
+                            <li class="features__card card">
+                                <div class="features__container card__wrapper">
                                     <div class="card__preview">
                                         <div class="card__main">
                                             <img
@@ -327,628 +327,628 @@
                         </div>
                     </header>
                     <div class="blog__tabs tabs" data-js-tabs>
-                        <h3 class="visually-hidden" id="blog-category-title">
-                            Blog category
-                        </h3>
-                        <header class="tabs__header">
-                            <div class="tabs__container">
+                            <h3 class="visually-hidden" id="blog-category-title">
+                                Blog category
+                            </h3>
+                            <header class="tabs__header">
+                                <div class="tabs__container">
+                                    <div
+                                    class="tabs__buttons"
+                                    role="tablist"
+                                    aria-labelledby="blog-category-title"
+                                    >
+                                        <button 
+                                        type="button"
+                                        id="tab-1"
+                                        class="tabs__button is-active"
+                                        role="tab"
+                                        aria-controls="tabpanel-1"
+                                        data-js-tabs-button
+                                        aria-selected="true"
+                                        >
+                                            All
+                                        </button>
+                                        <button 
+                                        type="button"
+                                        id="tab-2"
+                                        class="tabs__button"
+                                        role="tab"
+                                        aria-controls="tabpanel-2"
+                                        data-js-tabs-button
+                                        aria-selected="false"
+                                        tabindex="-1"
+                                        >
+                                            Quantum Computing
+                                        </button>
+                                        <button 
+                                        type="button"
+                                        id="tab-3"
+                                        class="tabs__button"
+                                        role="tab"
+                                        aria-controls="tabpanel-3"
+                                        data-js-tabs-button
+                                        aria-selected="false"
+                                        tabindex="-1"
+                                        >
+                                            AI Ethics
+                                        </button>
+                                        <button 
+                                        type="button"
+                                        id="tab-4"
+                                        class="tabs__button"
+                                        role="tab"
+                                        aria-controls="tabpanel-4"
+                                        data-js-tabs-button
+                                        aria-selected="false"
+                                        tabindex="-1"
+                                        >
+                                            Space Exploration
+                                        </button>
+                                        <button 
+                                        type="button"
+                                        id="tab-5"
+                                        class="tabs__button"
+                                        role="tab"
+                                        aria-controls="tabpanel-5"
+                                        data-js-tabs-button
+                                        aria-selected="false"
+                                        tabindex="-1"
+                                        >
+                                            Biotechnology
+                                        </button>
+                                        <button 
+                                        type="button"
+                                        id="tab-6"
+                                        class="tabs__button"
+                                        role="tab"
+                                        aria-controls="tabpanel-6"
+                                        data-js-tabs-button
+                                        aria-selected="false"
+                                        tabindex="-1"
+                                        >
+                                            Renewable Energy
+                                        </button>
+                                    </div>
+                                </div>
+                            </header>
+                            <div class="tabs__body">
                                 <div
-                                  class="tabs__buttons"
-                                  role="tablist"
-                                  aria-labelledby="blog-category-title"
+                                class="tabs__content is-active"
+                                id="tabpanel-1"
+                                aria-labelledby="tab-1"
+                                tabindex="0"
+                                data-js-tabs-content
                                 >
-                                    <button 
-                                      type="button"
-                                      id="tab-1"
-                                      class="tabs__button is-active"
-                                      role="tab"
-                                      aria-controls="tabpanel-1"
-                                      data-js-tabs-button
-                                      aria-selected="true"
-                                    >
-                                        All
-                                    </button>
-                                    <button 
-                                      type="button"
-                                      id="tab-2"
-                                      class="tabs__button"
-                                      role="tab"
-                                      aria-controls="tabpanel-2"
-                                      data-js-tabs-button
-                                      aria-selected="false"
-                                      tabindex="-1"
-                                    >
-                                        Quantum Computing
-                                    </button>
-                                    <button 
-                                      type="button"
-                                      id="tab-3"
-                                      class="tabs__button"
-                                      role="tab"
-                                      aria-controls="tabpanel-3"
-                                      data-js-tabs-button
-                                      aria-selected="false"
-                                      tabindex="-1"
-                                    >
-                                        AI Ethics
-                                    </button>
-                                    <button 
-                                      type="button"
-                                      id="tab-4"
-                                      class="tabs__button"
-                                      role="tab"
-                                      aria-controls="tabpanel-4"
-                                      data-js-tabs-button
-                                      aria-selected="false"
-                                      tabindex="-1"
-                                    >
-                                        Space Exploration
-                                    </button>
-                                    <button 
-                                      type="button"
-                                      id="tab-5"
-                                      class="tabs__button"
-                                      role="tab"
-                                      aria-controls="tabpanel-5"
-                                      data-js-tabs-button
-                                      aria-selected="false"
-                                      tabindex="-1"
-                                    >
-                                        Biotechnology
-                                    </button>
-                                    <button 
-                                      type="button"
-                                      id="tab-6"
-                                      class="tabs__button"
-                                      role="tab"
-                                      aria-controls="tabpanel-6"
-                                      data-js-tabs-button
-                                      aria-selected="false"
-                                      tabindex="-1"
-                                    >
-                                        Renewable Energy
-                                    </button>
+                                    <ul class="tabs__list">
+                                        <li class="tabs__card tabs-card">
+                                            <article class="tabs__container tabs-card__wrapper">
+                                                <div class="tabs-card__author author-card">
+                                                    <img 
+                                                        class="author-card__img"
+                                                        src="./images/blog/1.png" 
+                                                        alt=""
+                                                        width="80" height="80" loading="lazy" 
+                                                    />
+                                                    <div class="author-card__info">
+                                                        <h5 class="author-card__name">John Techson</h5>
+                                                        <p class="author-card__department">Quantum Computing</p>
+                                                    </div>
+                                                </div>
+                                                <div class="tabs-card__body">
+                                                    <time datetime="2023-10-15" class="tabs-card__date">October 15, 2023</time>
+                                                    <div class="tabs-card__info">
+                                                        <a href="#" class="tabs-card__title link">
+                                                            <h4>The Quantum Leap in Computing</h4>
+                                                        </a>
+                                                        <p class="tabs-card__description">
+                                                            Explore the revolution in quantum computing, its applications, and its potential impact on various industries.
+                                                        </p>
+                                                    </div>
+                                                    <div class="tabs-card__actions blog-actions">
+                                                        <ul class="blog-actions__list">
+                                                            <li class="blog-actions__item">
+                                                                <button 
+                                                                    class="blog-actions__button is-active"
+                                                                    type="button"
+                                                                    aria-label="Dislike"
+                                                                    title="Dislike"
+                                                                >
+                                                                    <span class="blog-actions__icon">
+                                                                        <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                            <path d="M11.645 21.4107L11.6384 21.4071L11.6158 21.3949C11.5965 21.3844 11.5689 21.3693 11.5336 21.3496C11.4629 21.3101 11.3612 21.2524 11.233 21.1769C10.9765 21.0261 10.6132 20.8039 10.1785 20.515C9.31074 19.9381 8.15122 19.0901 6.9886 18.0063C4.68781 15.8615 2.25 12.6751 2.25 8.75C2.25 5.82194 4.7136 3.5 7.6875 3.5C9.43638 3.5 11.0023 4.29909 12 5.5516C12.9977 4.29909 14.5636 3.5 16.3125 3.5C19.2864 3.5 21.75 5.82194 21.75 8.75C21.75 12.6751 19.3122 15.8615 17.0114 18.0063C15.8488 19.0901 14.6893 19.9381 13.8215 20.515C13.3868 20.8039 13.0235 21.0261 12.767 21.1769C12.6388 21.2524 12.5371 21.3101 12.4664 21.3496C12.4311 21.3693 12.4035 21.3844 12.3842 21.3949L12.3616 21.4071L12.355 21.4107L12.3523 21.4121C12.1323 21.5289 11.8677 21.5289 11.6477 21.4121L11.645 21.4107Z" stroke="#666666" stroke-width="1.5" stroke-linejoin="round"/>
+                                                                        </svg>
+                                                                    </span>
+                                                                    <span>24.5k</span>
+                                                                </button>
+                                                            </li>
+                                                            <li class="blog-actions__item">
+                                                                <button 
+                                                                    class="blog-actions__button"
+                                                                    type="button"
+                                                                    aria-label="Discuss"
+                                                                    title="Discuss"
+                                                                >
+                                                                    <span class="blog-actions__icon">
+                                                                        <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                            <path d="M8.48581 19.6888C9.54657 20.2083 10.7392 20.5 12 20.5C16.4183 20.5 20 16.9183 20 12.5C20 8.08172 16.4183 4.5 12 4.5C7.58172 4.5 4 8.08172 4 12.5C4 14.1401 4.49356 15.665 5.34026 16.9341M8.48581 19.6888L4 20.5L5.34026 16.9341M8.48581 19.6888L8.49231 19.6877M5.34026 16.9341L5.34154 16.9308" stroke="#666666" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                        </svg>
+                                                                    </span>
+                                                                    <span>50</span>
+                                                                </button>
+                                                            </li>
+                                                            <li class="blog-actions__item">
+                                                                <button 
+                                                                    class="blog-actions__button"
+                                                                    type="button"
+                                                                    aria-label="Share"
+                                                                    title="Share"
+                                                                >
+                                                                    <span class="blog-actions__icon">
+                                                                        <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                            <path d="M10.0384 14.4616L4.1719 11.7951C3.36454 11.4281 3.39898 10.2697 4.22673 9.95134L18.8999 4.30781C19.7087 3.99675 20.5033 4.79139 20.1922 5.60013L14.5487 20.2733C14.2303 21.1011 13.072 21.1355 12.705 20.3281L10.0384 14.4616ZM10.0384 14.4616L14.4231 10.077" stroke="#666666" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                        </svg>
+                                                                    </span>
+                                                                    <span>20</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <a href="#" class="tabs-card__button button">
+                                                    <span class="icon icon--yellow-arrow">View Blog</span>
+                                                </a>
+                                            </article>
+                                        </li>
+                                        <li class="tabs__card tabs-card">
+                                            <article class="tabs__container tabs-card__wrapper">
+                                                <div class="tabs-card__author author-card">
+                                                    <img 
+                                                        class="author-card__img"
+                                                        src="./images/blog/2.png" 
+                                                        alt=""
+                                                        width="80" height="80" loading="lazy" 
+                                                    />
+                                                    <div class="author-card__info">
+                                                        <h5 class="author-card__name">Sarah Ethicist</h5>
+                                                        <p class="author-card__department">AI Ethics</p>
+                                                    </div>
+                                                </div>
+                                                <div class="tabs-card__body">
+                                                    <time datetime="2023-11-05" class="tabs-card__date">November 5, 2023</time>
+                                                    <div class="tabs-card__info">
+                                                        <a href="#" class="tabs-card__title link">
+                                                            <h4>The Ethical Dilemmas of AI</h4>
+                                                        </a>
+                                                        <p class="tabs-card__description">
+                                                            A deep dive into ethical challenges posed by AI, including bias, privacy, and transparency.
+                                                        </p>
+                                                    </div>
+                                                    <div class="tabs-card__actions blog-actions">
+                                                        <ul class="blog-actions__list">
+                                                            <li class="blog-actions__item">
+                                                                <button 
+                                                                    class="blog-actions__button"
+                                                                    type="button"
+                                                                    aria-label="Dislike"
+                                                                    title="Dislike"
+                                                                >
+                                                                    <span class="blog-actions__icon">
+                                                                        <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                            <path d="M11.645 21.4107L11.6384 21.4071L11.6158 21.3949C11.5965 21.3844 11.5689 21.3693 11.5336 21.3496C11.4629 21.3101 11.3612 21.2524 11.233 21.1769C10.9765 21.0261 10.6132 20.8039 10.1785 20.515C9.31074 19.9381 8.15122 19.0901 6.9886 18.0063C4.68781 15.8615 2.25 12.6751 2.25 8.75C2.25 5.82194 4.7136 3.5 7.6875 3.5C9.43638 3.5 11.0023 4.29909 12 5.5516C12.9977 4.29909 14.5636 3.5 16.3125 3.5C19.2864 3.5 21.75 5.82194 21.75 8.75C21.75 12.6751 19.3122 15.8615 17.0114 18.0063C15.8488 19.0901 14.6893 19.9381 13.8215 20.515C13.3868 20.8039 13.0235 21.0261 12.767 21.1769C12.6388 21.2524 12.5371 21.3101 12.4664 21.3496C12.4311 21.3693 12.4035 21.3844 12.3842 21.3949L12.3616 21.4071L12.355 21.4107L12.3523 21.4121C12.1323 21.5289 11.8677 21.5289 11.6477 21.4121L11.645 21.4107Z" stroke="#666666" stroke-width="1.5" stroke-linejoin="round"/>
+                                                                        </svg>
+                                                                    </span>
+                                                                    <span>32k</span>
+                                                                </button>
+                                                            </li>
+                                                            <li class="blog-actions__item">
+                                                                <button 
+                                                                    class="blog-actions__button"
+                                                                    type="button"
+                                                                    aria-label="Discuss"
+                                                                    title="Discuss"
+                                                                >
+                                                                    <span class="blog-actions__icon">
+                                                                        <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                            <path d="M8.48581 19.6888C9.54657 20.2083 10.7392 20.5 12 20.5C16.4183 20.5 20 16.9183 20 12.5C20 8.08172 16.4183 4.5 12 4.5C7.58172 4.5 4 8.08172 4 12.5C4 14.1401 4.49356 15.665 5.34026 16.9341M8.48581 19.6888L4 20.5L5.34026 16.9341M8.48581 19.6888L8.49231 19.6877M5.34026 16.9341L5.34154 16.9308" stroke="#666666" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                        </svg>
+                                                                    </span>
+                                                                    <span>72</span>
+                                                                </button>
+                                                            </li>
+                                                            <li class="blog-actions__item">
+                                                                <button 
+                                                                    class="blog-actions__button"
+                                                                    type="button"
+                                                                    aria-label="Share"
+                                                                    title="Share"
+                                                                >
+                                                                    <span class="blog-actions__icon">
+                                                                        <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                            <path d="M10.0384 14.4616L4.1719 11.7951C3.36454 11.4281 3.39898 10.2697 4.22673 9.95134L18.8999 4.30781C19.7087 3.99675 20.5033 4.79139 20.1922 5.60013L14.5487 20.2733C14.2303 21.1011 13.072 21.1355 12.705 20.3281L10.0384 14.4616ZM10.0384 14.4616L14.4231 10.077" stroke="#666666" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                        </svg>
+                                                                    </span>
+                                                                    <span>18</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <a href="#" class="tabs-card__button button">
+                                                    <span class="icon icon--yellow-arrow">View Blog</span>
+                                                </a>
+                                            </article>
+                                        </li>
+                                        <li class="tabs__card tabs-card">
+                                            <article class="tabs__container tabs-card__wrapper">
+                                                <div class="tabs-card__author author-card">
+                                                    <img 
+                                                        class="author-card__img"
+                                                        src="./images/blog/3.png" 
+                                                        alt=""
+                                                        width="80" height="80" loading="lazy" 
+                                                    />
+                                                    <div class="author-card__info">
+                                                        <h5 class="author-card__name">Astronomer X</h5>
+                                                        <p class="author-card__department">Space Exploration</p>
+                                                    </div>
+                                                </div>
+                                                <div class="tabs-card__body">
+                                                    <time datetime="2023-12-10" class="tabs-card__date">December 10, 2023</time>
+                                                    <div class="tabs-card__info">
+                                                        <a href="#" class="tabs-card__title link">
+                                                            <h4>The Mars Colonization Challenge</h4>
+                                                        </a>
+                                                        <p class="tabs-card__description">
+                                                            Exploring the technical and logistical challenges of human colonization on Mars.
+                                                        </p>
+                                                    </div>
+                                                    <div class="tabs-card__actions blog-actions">
+                                                        <ul class="blog-actions__list">
+                                                            <li class="blog-actions__item">
+                                                                <button 
+                                                                    class="blog-actions__button"
+                                                                    type="button"
+                                                                    aria-label="Dislike"
+                                                                    title="Dislike"
+                                                                >
+                                                                    <span class="blog-actions__icon">
+                                                                        <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                            <path d="M11.645 21.4107L11.6384 21.4071L11.6158 21.3949C11.5965 21.3844 11.5689 21.3693 11.5336 21.3496C11.4629 21.3101 11.3612 21.2524 11.233 21.1769C10.9765 21.0261 10.6132 20.8039 10.1785 20.515C9.31074 19.9381 8.15122 19.0901 6.9886 18.0063C4.68781 15.8615 2.25 12.6751 2.25 8.75C2.25 5.82194 4.7136 3.5 7.6875 3.5C9.43638 3.5 11.0023 4.29909 12 5.5516C12.9977 4.29909 14.5636 3.5 16.3125 3.5C19.2864 3.5 21.75 5.82194 21.75 8.75C21.75 12.6751 19.3122 15.8615 17.0114 18.0063C15.8488 19.0901 14.6893 19.9381 13.8215 20.515C13.3868 20.8039 13.0235 21.0261 12.767 21.1769C12.6388 21.2524 12.5371 21.3101 12.4664 21.3496C12.4311 21.3693 12.4035 21.3844 12.3842 21.3949L12.3616 21.4071L12.355 21.4107L12.3523 21.4121C12.1323 21.5289 11.8677 21.5289 11.6477 21.4121L11.645 21.4107Z" stroke="#666666" stroke-width="1.5" stroke-linejoin="round"/>
+                                                                        </svg>
+                                                                    </span>
+                                                                    <span>20k</span>
+                                                                </button>
+                                                            </li>
+                                                            <li class="blog-actions__item">
+                                                                <button 
+                                                                    class="blog-actions__button"
+                                                                    type="button"
+                                                                    aria-label="Discuss"
+                                                                    title="Discuss"
+                                                                >
+                                                                    <span class="blog-actions__icon">
+                                                                        <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                            <path d="M8.48581 19.6888C9.54657 20.2083 10.7392 20.5 12 20.5C16.4183 20.5 20 16.9183 20 12.5C20 8.08172 16.4183 4.5 12 4.5C7.58172 4.5 4 8.08172 4 12.5C4 14.1401 4.49356 15.665 5.34026 16.9341M8.48581 19.6888L4 20.5L5.34026 16.9341M8.48581 19.6888L8.49231 19.6877M5.34026 16.9341L5.34154 16.9308" stroke="#666666" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                        </svg>
+                                                                    </span>
+                                                                    <span>31</span>
+                                                                </button>
+                                                            </li>
+                                                            <li class="blog-actions__item">
+                                                                <button 
+                                                                    class="blog-actions__button"
+                                                                    type="button"
+                                                                    aria-label="Share"
+                                                                    title="Share"
+                                                                >
+                                                                    <span class="blog-actions__icon">
+                                                                        <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                            <path d="M10.0384 14.4616L4.1719 11.7951C3.36454 11.4281 3.39898 10.2697 4.22673 9.95134L18.8999 4.30781C19.7087 3.99675 20.5033 4.79139 20.1922 5.60013L14.5487 20.2733C14.2303 21.1011 13.072 21.1355 12.705 20.3281L10.0384 14.4616ZM10.0384 14.4616L14.4231 10.077" stroke="#666666" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                        </svg>
+                                                                    </span>
+                                                                    <span>12</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <a href="#" class="tabs-card__button button">
+                                                    <span class="icon icon--yellow-arrow">View Blog</span>
+                                                </a>
+                                            </article>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div
+                                class="tabs__content"
+                                id="tabpanel-2"
+                                aria-labelledby="tab-2"
+                                tabindex="0"
+                                data-js-tabs-content
+                                >
+                                    <ul class="tabs__list">
+                                        <li class="tabs__card tabs-card">
+                                            <article class="tabs__container tabs-card__wrapper">
+                                                <div class="tabs-card__author author-card">
+                                                    <img 
+                                                        class="author-card__img"
+                                                        src="./images/blog/1.png" 
+                                                        alt=""
+                                                        width="80" height="80" loading="lazy" 
+                                                    />
+                                                    <div class="author-card__info">
+                                                        <h5 class="author-card__name">John Techson</h5>
+                                                        <p class="author-card__department">Quantum Computing</p>
+                                                    </div>
+                                                </div>
+                                                <div class="tabs-card__body">
+                                                    <time datetime="2023-10-15" class="tabs-card__date">October 15, 2023</time>
+                                                    <div class="tabs-card__info">
+                                                        <a href="#" class="tabs-card__title link">
+                                                            <h4>The Quantum Leap in Computing</h4>
+                                                        </a>
+                                                        <p class="tabs-card__description">
+                                                            Explore the revolution in quantum computing, its applications, and its potential impact on various industries.
+                                                        </p>
+                                                    </div>
+                                                    <div class="tabs-card__actions blog-actions">
+                                                        <ul class="blog-actions__list">
+                                                            <li class="blog-actions__item">
+                                                                <button 
+                                                                    class="blog-actions__button is-active"
+                                                                    type="button"
+                                                                    aria-label="Dislike"
+                                                                    title="Dislike"
+                                                                >
+                                                                    <span class="blog-actions__icon">
+                                                                        <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                            <path d="M11.645 21.4107L11.6384 21.4071L11.6158 21.3949C11.5965 21.3844 11.5689 21.3693 11.5336 21.3496C11.4629 21.3101 11.3612 21.2524 11.233 21.1769C10.9765 21.0261 10.6132 20.8039 10.1785 20.515C9.31074 19.9381 8.15122 19.0901 6.9886 18.0063C4.68781 15.8615 2.25 12.6751 2.25 8.75C2.25 5.82194 4.7136 3.5 7.6875 3.5C9.43638 3.5 11.0023 4.29909 12 5.5516C12.9977 4.29909 14.5636 3.5 16.3125 3.5C19.2864 3.5 21.75 5.82194 21.75 8.75C21.75 12.6751 19.3122 15.8615 17.0114 18.0063C15.8488 19.0901 14.6893 19.9381 13.8215 20.515C13.3868 20.8039 13.0235 21.0261 12.767 21.1769C12.6388 21.2524 12.5371 21.3101 12.4664 21.3496C12.4311 21.3693 12.4035 21.3844 12.3842 21.3949L12.3616 21.4071L12.355 21.4107L12.3523 21.4121C12.1323 21.5289 11.8677 21.5289 11.6477 21.4121L11.645 21.4107Z" stroke="#666666" stroke-width="1.5" stroke-linejoin="round"/>
+                                                                        </svg>
+                                                                    </span>
+                                                                    <span>24.5k</span>
+                                                                </button>
+                                                            </li>
+                                                            <li class="blog-actions__item">
+                                                                <button 
+                                                                    class="blog-actions__button"
+                                                                    type="button"
+                                                                    aria-label="Discuss"
+                                                                    title="Discuss"
+                                                                >
+                                                                    <span class="blog-actions__icon">
+                                                                        <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                            <path d="M8.48581 19.6888C9.54657 20.2083 10.7392 20.5 12 20.5C16.4183 20.5 20 16.9183 20 12.5C20 8.08172 16.4183 4.5 12 4.5C7.58172 4.5 4 8.08172 4 12.5C4 14.1401 4.49356 15.665 5.34026 16.9341M8.48581 19.6888L4 20.5L5.34026 16.9341M8.48581 19.6888L8.49231 19.6877M5.34026 16.9341L5.34154 16.9308" stroke="#666666" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                        </svg>
+                                                                    </span>
+                                                                    <span>50</span>
+                                                                </button>
+                                                            </li>
+                                                            <li class="blog-actions__item">
+                                                                <button 
+                                                                    class="blog-actions__button"
+                                                                    type="button"
+                                                                    aria-label="Share"
+                                                                    title="Share"
+                                                                >
+                                                                    <span class="blog-actions__icon">
+                                                                        <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                            <path d="M10.0384 14.4616L4.1719 11.7951C3.36454 11.4281 3.39898 10.2697 4.22673 9.95134L18.8999 4.30781C19.7087 3.99675 20.5033 4.79139 20.1922 5.60013L14.5487 20.2733C14.2303 21.1011 13.072 21.1355 12.705 20.3281L10.0384 14.4616ZM10.0384 14.4616L14.4231 10.077" stroke="#666666" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                        </svg>
+                                                                    </span>
+                                                                    <span>20</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <a href="#" class="tabs-card__button button">
+                                                    <span class="icon icon--yellow-arrow">View Blog</span>
+                                                </a>
+                                            </article>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div
+                                class="tabs__content"
+                                id="tabpanel-3"
+                                aria-labelledby="tab-3"
+                                tabindex="0"
+                                data-js-tabs-content
+                                >
+                                    <ul class="tabs__list">
+                                        <li class="tabs__card tabs-card">
+                                            <article class="tabs__container tabs-card__wrapper">
+                                                <div class="tabs-card__author author-card">
+                                                    <img 
+                                                        class="author-card__img"
+                                                        src="./images/blog/2.png" 
+                                                        alt=""
+                                                        width="80" height="80" loading="lazy" 
+                                                    />
+                                                    <div class="author-card__info">
+                                                        <h5 class="author-card__name">Sarah Ethicist</h5>
+                                                        <p class="author-card__department">AI Ethics</p>
+                                                    </div>
+                                                </div>
+                                                <div class="tabs-card__body">
+                                                    <time datetime="2023-11-05" class="tabs-card__date">November 5, 2023</time>
+                                                    <div class="tabs-card__info">
+                                                        <a href="#" class="tabs-card__title link">
+                                                            <h4>The Ethical Dilemmas of AI</h4>
+                                                        </a>
+                                                        <p class="tabs-card__description">
+                                                            A deep dive into ethical challenges posed by AI, including bias, privacy, and transparency.
+                                                        </p>
+                                                    </div>
+                                                    <div class="tabs-card__actions blog-actions">
+                                                        <ul class="blog-actions__list">
+                                                            <li class="blog-actions__item">
+                                                                <button 
+                                                                    class="blog-actions__button"
+                                                                    type="button"
+                                                                    aria-label="Dislike"
+                                                                    title="Dislike"
+                                                                >
+                                                                    <span class="blog-actions__icon">
+                                                                        <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                            <path d="M11.645 21.4107L11.6384 21.4071L11.6158 21.3949C11.5965 21.3844 11.5689 21.3693 11.5336 21.3496C11.4629 21.3101 11.3612 21.2524 11.233 21.1769C10.9765 21.0261 10.6132 20.8039 10.1785 20.515C9.31074 19.9381 8.15122 19.0901 6.9886 18.0063C4.68781 15.8615 2.25 12.6751 2.25 8.75C2.25 5.82194 4.7136 3.5 7.6875 3.5C9.43638 3.5 11.0023 4.29909 12 5.5516C12.9977 4.29909 14.5636 3.5 16.3125 3.5C19.2864 3.5 21.75 5.82194 21.75 8.75C21.75 12.6751 19.3122 15.8615 17.0114 18.0063C15.8488 19.0901 14.6893 19.9381 13.8215 20.515C13.3868 20.8039 13.0235 21.0261 12.767 21.1769C12.6388 21.2524 12.5371 21.3101 12.4664 21.3496C12.4311 21.3693 12.4035 21.3844 12.3842 21.3949L12.3616 21.4071L12.355 21.4107L12.3523 21.4121C12.1323 21.5289 11.8677 21.5289 11.6477 21.4121L11.645 21.4107Z" stroke="#666666" stroke-width="1.5" stroke-linejoin="round"/>
+                                                                        </svg>
+                                                                    </span>
+                                                                    <span>32k</span>
+                                                                </button>
+                                                            </li>
+                                                            <li class="blog-actions__item">
+                                                                <button 
+                                                                    class="blog-actions__button"
+                                                                    type="button"
+                                                                    aria-label="Discuss"
+                                                                    title="Discuss"
+                                                                >
+                                                                    <span class="blog-actions__icon">
+                                                                        <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                            <path d="M8.48581 19.6888C9.54657 20.2083 10.7392 20.5 12 20.5C16.4183 20.5 20 16.9183 20 12.5C20 8.08172 16.4183 4.5 12 4.5C7.58172 4.5 4 8.08172 4 12.5C4 14.1401 4.49356 15.665 5.34026 16.9341M8.48581 19.6888L4 20.5L5.34026 16.9341M8.48581 19.6888L8.49231 19.6877M5.34026 16.9341L5.34154 16.9308" stroke="#666666" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                        </svg>
+                                                                    </span>
+                                                                    <span>72</span>
+                                                                </button>
+                                                            </li>
+                                                            <li class="blog-actions__item">
+                                                                <button 
+                                                                    class="blog-actions__button"
+                                                                    type="button"
+                                                                    aria-label="Share"
+                                                                    title="Share"
+                                                                >
+                                                                    <span class="blog-actions__icon">
+                                                                        <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                            <path d="M10.0384 14.4616L4.1719 11.7951C3.36454 11.4281 3.39898 10.2697 4.22673 9.95134L18.8999 4.30781C19.7087 3.99675 20.5033 4.79139 20.1922 5.60013L14.5487 20.2733C14.2303 21.1011 13.072 21.1355 12.705 20.3281L10.0384 14.4616ZM10.0384 14.4616L14.4231 10.077" stroke="#666666" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                        </svg>
+                                                                    </span>
+                                                                    <span>18</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <a href="#" class="tabs-card__button button">
+                                                    <span class="icon icon--yellow-arrow">View Blog</span>
+                                                </a>
+                                            </article>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div
+                                class="tabs__content"
+                                id="tabpanel-4"
+                                aria-labelledby="tab-4"
+                                tabindex="0"
+                                data-js-tabs-content
+                                >
+                                    <ul class="tabs__list">
+                                        <li class="tabs__card tabs-card">
+                                            <article class="tabs__container tabs-card__wrapper">
+                                                <div class="tabs-card__author author-card">
+                                                    <img 
+                                                        class="author-card__img"
+                                                        src="./images/blog/3.png" 
+                                                        alt=""
+                                                        width="80" height="80" loading="lazy" 
+                                                    />
+                                                    <div class="author-card__info">
+                                                        <h5 class="author-card__name">Astronomer X</h5>
+                                                        <p class="author-card__department">Space Exploration</p>
+                                                    </div>
+                                                </div>
+                                                <div class="tabs-card__body">
+                                                    <time datetime="2023-12-10" class="tabs-card__date">December 10, 2023</time>
+                                                    <div class="tabs-card__info">
+                                                        <a href="#" class="tabs-card__title link">
+                                                            <h4>The Mars Colonization Challenge</h4>
+                                                        </a>
+                                                        <p class="tabs-card__description">
+                                                            Exploring the technical and logistical challenges of human colonization on Mars.
+                                                        </p>
+                                                    </div>
+                                                    <div class="tabs-card__actions blog-actions">
+                                                        <ul class="blog-actions__list">
+                                                            <li class="blog-actions__item">
+                                                                <button 
+                                                                    class="blog-actions__button"
+                                                                    type="button"
+                                                                    aria-label="Dislike"
+                                                                    title="Dislike"
+                                                                >
+                                                                    <span class="blog-actions__icon">
+                                                                        <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                            <path d="M11.645 21.4107L11.6384 21.4071L11.6158 21.3949C11.5965 21.3844 11.5689 21.3693 11.5336 21.3496C11.4629 21.3101 11.3612 21.2524 11.233 21.1769C10.9765 21.0261 10.6132 20.8039 10.1785 20.515C9.31074 19.9381 8.15122 19.0901 6.9886 18.0063C4.68781 15.8615 2.25 12.6751 2.25 8.75C2.25 5.82194 4.7136 3.5 7.6875 3.5C9.43638 3.5 11.0023 4.29909 12 5.5516C12.9977 4.29909 14.5636 3.5 16.3125 3.5C19.2864 3.5 21.75 5.82194 21.75 8.75C21.75 12.6751 19.3122 15.8615 17.0114 18.0063C15.8488 19.0901 14.6893 19.9381 13.8215 20.515C13.3868 20.8039 13.0235 21.0261 12.767 21.1769C12.6388 21.2524 12.5371 21.3101 12.4664 21.3496C12.4311 21.3693 12.4035 21.3844 12.3842 21.3949L12.3616 21.4071L12.355 21.4107L12.3523 21.4121C12.1323 21.5289 11.8677 21.5289 11.6477 21.4121L11.645 21.4107Z" stroke="#666666" stroke-width="1.5" stroke-linejoin="round"/>
+                                                                        </svg>
+                                                                    </span>
+                                                                    <span>20k</span>
+                                                                </button>
+                                                            </li>
+                                                            <li class="blog-actions__item">
+                                                                <button 
+                                                                    class="blog-actions__button"
+                                                                    type="button"
+                                                                    aria-label="Discuss"
+                                                                    title="Discuss"
+                                                                >
+                                                                    <span class="blog-actions__icon">
+                                                                        <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                            <path d="M8.48581 19.6888C9.54657 20.2083 10.7392 20.5 12 20.5C16.4183 20.5 20 16.9183 20 12.5C20 8.08172 16.4183 4.5 12 4.5C7.58172 4.5 4 8.08172 4 12.5C4 14.1401 4.49356 15.665 5.34026 16.9341M8.48581 19.6888L4 20.5L5.34026 16.9341M8.48581 19.6888L8.49231 19.6877M5.34026 16.9341L5.34154 16.9308" stroke="#666666" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                        </svg>
+                                                                    </span>
+                                                                    <span>31</span>
+                                                                </button>
+                                                            </li>
+                                                            <li class="blog-actions__item">
+                                                                <button 
+                                                                    class="blog-actions__button"
+                                                                    type="button"
+                                                                    aria-label="Share"
+                                                                    title="Share"
+                                                                >
+                                                                    <span class="blog-actions__icon">
+                                                                        <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                            <path d="M10.0384 14.4616L4.1719 11.7951C3.36454 11.4281 3.39898 10.2697 4.22673 9.95134L18.8999 4.30781C19.7087 3.99675 20.5033 4.79139 20.1922 5.60013L14.5487 20.2733C14.2303 21.1011 13.072 21.1355 12.705 20.3281L10.0384 14.4616ZM10.0384 14.4616L14.4231 10.077" stroke="#666666" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                        </svg>
+                                                                    </span>
+                                                                    <span>12</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <a href="#" class="tabs-card__button button">
+                                                    <span class="icon icon--yellow-arrow">View Blog</span>
+                                                </a>
+                                            </article>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div
+                                class="tabs__content"
+                                id="tabpanel-5"
+                                aria-labelledby="tab-5"
+                                tabindex="0"
+                                data-js-tabs-content
+                                >
+                                    <ul class="tabs__list">
+                                            
+                                    </ul>
+                                </div>
+                                <div
+                                class="tabs__content"
+                                id="tabpanel-6"
+                                aria-labelledby="tab-6"
+                                tabindex="0"
+                                data-js-tabs-content
+                                >
+                                    <ul class="tabs__list">
+                                            
+                                    </ul>
                                 </div>
                             </div>
-                        </header>
-                        <div class="tabs__body">
-                            <div
-                              class="tabs__content is-active"
-                              id="tabpanel-1"
-                              aria-labelledby="tab-1"
-                              tabindex="0"
-                              data-js-tabs-content
-                            >
-                                <ul class="tabs__list list">
-                                    <li class="tabs__card list__item tabs-card">
-                                        <article class="tabs-card__container">
-                                            <div class="tabs-card__author author-card">
-                                                <img 
-                                                    class="author-card__img"
-                                                    src="./images/blog/1.png" 
-                                                    alt=""
-                                                    width="80" height="80" loading="lazy" 
-                                                />
-                                                <div class="author-card__info">
-                                                    <h5 class="author-card__name">John Techson</h5>
-                                                    <p class="author-card__department">Quantum Computing</p>
-                                                </div>
-                                            </div>
-                                            <div class="tabs-card__body">
-                                                <time datetime="2023-10-15" class="tabs-card__date">October 15, 2023</time>
-                                                <div class="tabs-card__info">
-                                                    <a href="#" class="tabs-card__title link">
-                                                        <h4>The Quantum Leap in Computing</h4>
-                                                    </a>
-                                                    <p class="tabs-card__description">
-                                                        Explore the revolution in quantum computing, its applications, and its potential impact on various industries.
-                                                    </p>
-                                                </div>
-                                                <div class="tabs-card__actions blog-actions">
-                                                    <ul class="blog-actions__list">
-                                                        <li class="blog-actions__item">
-                                                            <button 
-                                                                class="blog-actions__button is-active"
-                                                                type="button"
-                                                                aria-label="Dislike"
-                                                                title="Dislike"
-                                                            >
-                                                                <span class="blog-actions__icon">
-                                                                    <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                        <path d="M11.645 21.4107L11.6384 21.4071L11.6158 21.3949C11.5965 21.3844 11.5689 21.3693 11.5336 21.3496C11.4629 21.3101 11.3612 21.2524 11.233 21.1769C10.9765 21.0261 10.6132 20.8039 10.1785 20.515C9.31074 19.9381 8.15122 19.0901 6.9886 18.0063C4.68781 15.8615 2.25 12.6751 2.25 8.75C2.25 5.82194 4.7136 3.5 7.6875 3.5C9.43638 3.5 11.0023 4.29909 12 5.5516C12.9977 4.29909 14.5636 3.5 16.3125 3.5C19.2864 3.5 21.75 5.82194 21.75 8.75C21.75 12.6751 19.3122 15.8615 17.0114 18.0063C15.8488 19.0901 14.6893 19.9381 13.8215 20.515C13.3868 20.8039 13.0235 21.0261 12.767 21.1769C12.6388 21.2524 12.5371 21.3101 12.4664 21.3496C12.4311 21.3693 12.4035 21.3844 12.3842 21.3949L12.3616 21.4071L12.355 21.4107L12.3523 21.4121C12.1323 21.5289 11.8677 21.5289 11.6477 21.4121L11.645 21.4107Z" stroke="#666666" stroke-width="1.5" stroke-linejoin="round"/>
-                                                                    </svg>
-                                                                </span>
-                                                                <span>24.5k</span>
-                                                            </button>
-                                                        </li>
-                                                        <li class="blog-actions__item">
-                                                            <button 
-                                                                class="blog-actions__button"
-                                                                type="button"
-                                                                aria-label="Discuss"
-                                                                title="Discuss"
-                                                            >
-                                                                <span class="blog-actions__icon">
-                                                                    <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                        <path d="M8.48581 19.6888C9.54657 20.2083 10.7392 20.5 12 20.5C16.4183 20.5 20 16.9183 20 12.5C20 8.08172 16.4183 4.5 12 4.5C7.58172 4.5 4 8.08172 4 12.5C4 14.1401 4.49356 15.665 5.34026 16.9341M8.48581 19.6888L4 20.5L5.34026 16.9341M8.48581 19.6888L8.49231 19.6877M5.34026 16.9341L5.34154 16.9308" stroke="#666666" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                                                    </svg>
-                                                                </span>
-                                                                <span>50</span>
-                                                            </button>
-                                                        </li>
-                                                        <li class="blog-actions__item">
-                                                            <button 
-                                                                class="blog-actions__button"
-                                                                type="button"
-                                                                aria-label="Share"
-                                                                title="Share"
-                                                            >
-                                                                <span class="blog-actions__icon">
-                                                                    <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                        <path d="M10.0384 14.4616L4.1719 11.7951C3.36454 11.4281 3.39898 10.2697 4.22673 9.95134L18.8999 4.30781C19.7087 3.99675 20.5033 4.79139 20.1922 5.60013L14.5487 20.2733C14.2303 21.1011 13.072 21.1355 12.705 20.3281L10.0384 14.4616ZM10.0384 14.4616L14.4231 10.077" stroke="#666666" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                                                    </svg>
-                                                                </span>
-                                                                <span>20</span>
-                                                            </button>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            <a href="#" class="tabs-card__button button">
-                                                <span class="icon icon--yellow-arrow">View Blog</span>
-                                            </a>
-                                        </article>
-                                    </li>
-                                    <li class="tabs__card list__item tabs-card">
-                                        <article class="tabs-card__container">
-                                            <div class="tabs-card__author author-card">
-                                                <img 
-                                                    class="author-card__img"
-                                                    src="./images/blog/2.png" 
-                                                    alt=""
-                                                    width="80" height="80" loading="lazy" 
-                                                />
-                                                <div class="author-card__info">
-                                                    <h5 class="author-card__name">Sarah Ethicist</h5>
-                                                    <p class="author-card__department">AI Ethics</p>
-                                                </div>
-                                            </div>
-                                            <div class="tabs-card__body">
-                                                <time datetime="2023-11-05" class="tabs-card__date">November 5, 2023</time>
-                                                <div class="tabs-card__info">
-                                                    <a href="#" class="tabs-card__title link">
-                                                        <h4>The Ethical Dilemmas of AI</h4>
-                                                    </a>
-                                                    <p class="tabs-card__description">
-                                                        A deep dive into ethical challenges posed by AI, including bias, privacy, and transparency.
-                                                    </p>
-                                                </div>
-                                                <div class="tabs-card__actions blog-actions">
-                                                    <ul class="blog-actions__list">
-                                                        <li class="blog-actions__item">
-                                                            <button 
-                                                                class="blog-actions__button"
-                                                                type="button"
-                                                                aria-label="Dislike"
-                                                                title="Dislike"
-                                                            >
-                                                                <span class="blog-actions__icon">
-                                                                    <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                        <path d="M11.645 21.4107L11.6384 21.4071L11.6158 21.3949C11.5965 21.3844 11.5689 21.3693 11.5336 21.3496C11.4629 21.3101 11.3612 21.2524 11.233 21.1769C10.9765 21.0261 10.6132 20.8039 10.1785 20.515C9.31074 19.9381 8.15122 19.0901 6.9886 18.0063C4.68781 15.8615 2.25 12.6751 2.25 8.75C2.25 5.82194 4.7136 3.5 7.6875 3.5C9.43638 3.5 11.0023 4.29909 12 5.5516C12.9977 4.29909 14.5636 3.5 16.3125 3.5C19.2864 3.5 21.75 5.82194 21.75 8.75C21.75 12.6751 19.3122 15.8615 17.0114 18.0063C15.8488 19.0901 14.6893 19.9381 13.8215 20.515C13.3868 20.8039 13.0235 21.0261 12.767 21.1769C12.6388 21.2524 12.5371 21.3101 12.4664 21.3496C12.4311 21.3693 12.4035 21.3844 12.3842 21.3949L12.3616 21.4071L12.355 21.4107L12.3523 21.4121C12.1323 21.5289 11.8677 21.5289 11.6477 21.4121L11.645 21.4107Z" stroke="#666666" stroke-width="1.5" stroke-linejoin="round"/>
-                                                                    </svg>
-                                                                </span>
-                                                                <span>32k</span>
-                                                            </button>
-                                                        </li>
-                                                        <li class="blog-actions__item">
-                                                            <button 
-                                                                class="blog-actions__button"
-                                                                type="button"
-                                                                aria-label="Discuss"
-                                                                title="Discuss"
-                                                            >
-                                                                <span class="blog-actions__icon">
-                                                                    <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                        <path d="M8.48581 19.6888C9.54657 20.2083 10.7392 20.5 12 20.5C16.4183 20.5 20 16.9183 20 12.5C20 8.08172 16.4183 4.5 12 4.5C7.58172 4.5 4 8.08172 4 12.5C4 14.1401 4.49356 15.665 5.34026 16.9341M8.48581 19.6888L4 20.5L5.34026 16.9341M8.48581 19.6888L8.49231 19.6877M5.34026 16.9341L5.34154 16.9308" stroke="#666666" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                                                    </svg>
-                                                                </span>
-                                                                <span>72</span>
-                                                            </button>
-                                                        </li>
-                                                        <li class="blog-actions__item">
-                                                            <button 
-                                                                class="blog-actions__button"
-                                                                type="button"
-                                                                aria-label="Share"
-                                                                title="Share"
-                                                            >
-                                                                <span class="blog-actions__icon">
-                                                                    <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                        <path d="M10.0384 14.4616L4.1719 11.7951C3.36454 11.4281 3.39898 10.2697 4.22673 9.95134L18.8999 4.30781C19.7087 3.99675 20.5033 4.79139 20.1922 5.60013L14.5487 20.2733C14.2303 21.1011 13.072 21.1355 12.705 20.3281L10.0384 14.4616ZM10.0384 14.4616L14.4231 10.077" stroke="#666666" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                                                    </svg>
-                                                                </span>
-                                                                <span>18</span>
-                                                            </button>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            <a href="#" class="tabs-card__button button">
-                                                <span class="icon icon--yellow-arrow">View Blog</span>
-                                            </a>
-                                        </article>
-                                    </li>
-                                    <li class="tabs__card list__item tabs-card">
-                                        <article class="tabs-card__container">
-                                            <div class="tabs-card__author author-card">
-                                                <img 
-                                                    class="author-card__img"
-                                                    src="./images/blog/3.png" 
-                                                    alt=""
-                                                    width="80" height="80" loading="lazy" 
-                                                />
-                                                <div class="author-card__info">
-                                                    <h5 class="author-card__name">Astronomer X</h5>
-                                                    <p class="author-card__department">Space Exploration</p>
-                                                </div>
-                                            </div>
-                                            <div class="tabs-card__body">
-                                                <time datetime="2023-12-10" class="tabs-card__date">December 10, 2023</time>
-                                                <div class="tabs-card__info">
-                                                    <a href="#" class="tabs-card__title link">
-                                                        <h4>The Mars Colonization Challenge</h4>
-                                                    </a>
-                                                    <p class="tabs-card__description">
-                                                        Exploring the technical and logistical challenges of human colonization on Mars.
-                                                    </p>
-                                                </div>
-                                                <div class="tabs-card__actions blog-actions">
-                                                    <ul class="blog-actions__list">
-                                                        <li class="blog-actions__item">
-                                                            <button 
-                                                                class="blog-actions__button"
-                                                                type="button"
-                                                                aria-label="Dislike"
-                                                                title="Dislike"
-                                                            >
-                                                                <span class="blog-actions__icon">
-                                                                    <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                        <path d="M11.645 21.4107L11.6384 21.4071L11.6158 21.3949C11.5965 21.3844 11.5689 21.3693 11.5336 21.3496C11.4629 21.3101 11.3612 21.2524 11.233 21.1769C10.9765 21.0261 10.6132 20.8039 10.1785 20.515C9.31074 19.9381 8.15122 19.0901 6.9886 18.0063C4.68781 15.8615 2.25 12.6751 2.25 8.75C2.25 5.82194 4.7136 3.5 7.6875 3.5C9.43638 3.5 11.0023 4.29909 12 5.5516C12.9977 4.29909 14.5636 3.5 16.3125 3.5C19.2864 3.5 21.75 5.82194 21.75 8.75C21.75 12.6751 19.3122 15.8615 17.0114 18.0063C15.8488 19.0901 14.6893 19.9381 13.8215 20.515C13.3868 20.8039 13.0235 21.0261 12.767 21.1769C12.6388 21.2524 12.5371 21.3101 12.4664 21.3496C12.4311 21.3693 12.4035 21.3844 12.3842 21.3949L12.3616 21.4071L12.355 21.4107L12.3523 21.4121C12.1323 21.5289 11.8677 21.5289 11.6477 21.4121L11.645 21.4107Z" stroke="#666666" stroke-width="1.5" stroke-linejoin="round"/>
-                                                                    </svg>
-                                                                </span>
-                                                                <span>20k</span>
-                                                            </button>
-                                                        </li>
-                                                        <li class="blog-actions__item">
-                                                            <button 
-                                                                class="blog-actions__button"
-                                                                type="button"
-                                                                aria-label="Discuss"
-                                                                title="Discuss"
-                                                            >
-                                                                <span class="blog-actions__icon">
-                                                                    <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                        <path d="M8.48581 19.6888C9.54657 20.2083 10.7392 20.5 12 20.5C16.4183 20.5 20 16.9183 20 12.5C20 8.08172 16.4183 4.5 12 4.5C7.58172 4.5 4 8.08172 4 12.5C4 14.1401 4.49356 15.665 5.34026 16.9341M8.48581 19.6888L4 20.5L5.34026 16.9341M8.48581 19.6888L8.49231 19.6877M5.34026 16.9341L5.34154 16.9308" stroke="#666666" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                                                    </svg>
-                                                                </span>
-                                                                <span>31</span>
-                                                            </button>
-                                                        </li>
-                                                        <li class="blog-actions__item">
-                                                            <button 
-                                                                class="blog-actions__button"
-                                                                type="button"
-                                                                aria-label="Share"
-                                                                title="Share"
-                                                            >
-                                                                <span class="blog-actions__icon">
-                                                                    <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                        <path d="M10.0384 14.4616L4.1719 11.7951C3.36454 11.4281 3.39898 10.2697 4.22673 9.95134L18.8999 4.30781C19.7087 3.99675 20.5033 4.79139 20.1922 5.60013L14.5487 20.2733C14.2303 21.1011 13.072 21.1355 12.705 20.3281L10.0384 14.4616ZM10.0384 14.4616L14.4231 10.077" stroke="#666666" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                                                    </svg>
-                                                                </span>
-                                                                <span>12</span>
-                                                            </button>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            <a href="#" class="tabs-card__button button">
-                                                <span class="icon icon--yellow-arrow">View Blog</span>
-                                            </a>
-                                        </article>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div
-                              class="tabs__content"
-                              id="tabpanel-2"
-                              aria-labelledby="tab-2"
-                              tabindex="0"
-                              data-js-tabs-content
-                            >
-                                <ul class="tabs__list list">
-                                    <li class="tabs__card list__item tabs-card">
-                                        <article class="tabs-card__container">
-                                            <div class="tabs-card__author author-card">
-                                                <img 
-                                                    class="author-card__img"
-                                                    src="./images/blog/1.png" 
-                                                    alt=""
-                                                    width="80" height="80" loading="lazy" 
-                                                />
-                                                <div class="author-card__info">
-                                                    <h5 class="author-card__name">John Techson</h5>
-                                                    <p class="author-card__department">Quantum Computing</p>
-                                                </div>
-                                            </div>
-                                            <div class="tabs-card__body">
-                                                <time datetime="2023-10-15" class="tabs-card__date">October 15, 2023</time>
-                                                <div class="tabs-card__info">
-                                                    <a href="#" class="tabs-card__title link">
-                                                        <h4>The Quantum Leap in Computing</h4>
-                                                    </a>
-                                                    <p class="tabs-card__description">
-                                                        Explore the revolution in quantum computing, its applications, and its potential impact on various industries.
-                                                    </p>
-                                                </div>
-                                                <div class="tabs-card__actions blog-actions">
-                                                    <ul class="blog-actions__list">
-                                                        <li class="blog-actions__item">
-                                                            <button 
-                                                                class="blog-actions__button is-active"
-                                                                type="button"
-                                                                aria-label="Dislike"
-                                                                title="Dislike"
-                                                            >
-                                                                <span class="blog-actions__icon">
-                                                                    <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                        <path d="M11.645 21.4107L11.6384 21.4071L11.6158 21.3949C11.5965 21.3844 11.5689 21.3693 11.5336 21.3496C11.4629 21.3101 11.3612 21.2524 11.233 21.1769C10.9765 21.0261 10.6132 20.8039 10.1785 20.515C9.31074 19.9381 8.15122 19.0901 6.9886 18.0063C4.68781 15.8615 2.25 12.6751 2.25 8.75C2.25 5.82194 4.7136 3.5 7.6875 3.5C9.43638 3.5 11.0023 4.29909 12 5.5516C12.9977 4.29909 14.5636 3.5 16.3125 3.5C19.2864 3.5 21.75 5.82194 21.75 8.75C21.75 12.6751 19.3122 15.8615 17.0114 18.0063C15.8488 19.0901 14.6893 19.9381 13.8215 20.515C13.3868 20.8039 13.0235 21.0261 12.767 21.1769C12.6388 21.2524 12.5371 21.3101 12.4664 21.3496C12.4311 21.3693 12.4035 21.3844 12.3842 21.3949L12.3616 21.4071L12.355 21.4107L12.3523 21.4121C12.1323 21.5289 11.8677 21.5289 11.6477 21.4121L11.645 21.4107Z" stroke="#666666" stroke-width="1.5" stroke-linejoin="round"/>
-                                                                    </svg>
-                                                                </span>
-                                                                <span>24.5k</span>
-                                                            </button>
-                                                        </li>
-                                                        <li class="blog-actions__item">
-                                                            <button 
-                                                                class="blog-actions__button"
-                                                                type="button"
-                                                                aria-label="Discuss"
-                                                                title="Discuss"
-                                                            >
-                                                                <span class="blog-actions__icon">
-                                                                    <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                        <path d="M8.48581 19.6888C9.54657 20.2083 10.7392 20.5 12 20.5C16.4183 20.5 20 16.9183 20 12.5C20 8.08172 16.4183 4.5 12 4.5C7.58172 4.5 4 8.08172 4 12.5C4 14.1401 4.49356 15.665 5.34026 16.9341M8.48581 19.6888L4 20.5L5.34026 16.9341M8.48581 19.6888L8.49231 19.6877M5.34026 16.9341L5.34154 16.9308" stroke="#666666" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                                                    </svg>
-                                                                </span>
-                                                                <span>50</span>
-                                                            </button>
-                                                        </li>
-                                                        <li class="blog-actions__item">
-                                                            <button 
-                                                                class="blog-actions__button"
-                                                                type="button"
-                                                                aria-label="Share"
-                                                                title="Share"
-                                                            >
-                                                                <span class="blog-actions__icon">
-                                                                    <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                        <path d="M10.0384 14.4616L4.1719 11.7951C3.36454 11.4281 3.39898 10.2697 4.22673 9.95134L18.8999 4.30781C19.7087 3.99675 20.5033 4.79139 20.1922 5.60013L14.5487 20.2733C14.2303 21.1011 13.072 21.1355 12.705 20.3281L10.0384 14.4616ZM10.0384 14.4616L14.4231 10.077" stroke="#666666" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                                                    </svg>
-                                                                </span>
-                                                                <span>20</span>
-                                                            </button>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            <a href="#" class="tabs-card__button button">
-                                                <span class="icon icon--yellow-arrow">View Blog</span>
-                                            </a>
-                                        </article>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div
-                              class="tabs__content"
-                              id="tabpanel-3"
-                              aria-labelledby="tab-3"
-                              tabindex="0"
-                              data-js-tabs-content
-                            >
-                                <ul class="tabs__list list">
-                                    <li class="tabs__card list__item tabs-card">
-                                        <article class="tabs-card__container">
-                                            <div class="tabs-card__author author-card">
-                                                <img 
-                                                    class="author-card__img"
-                                                    src="./images/blog/2.png" 
-                                                    alt=""
-                                                    width="80" height="80" loading="lazy" 
-                                                />
-                                                <div class="author-card__info">
-                                                    <h5 class="author-card__name">Sarah Ethicist</h5>
-                                                    <p class="author-card__department">AI Ethics</p>
-                                                </div>
-                                            </div>
-                                            <div class="tabs-card__body">
-                                                <time datetime="2023-11-05" class="tabs-card__date">November 5, 2023</time>
-                                                <div class="tabs-card__info">
-                                                    <a href="#" class="tabs-card__title link">
-                                                        <h4>The Ethical Dilemmas of AI</h4>
-                                                    </a>
-                                                    <p class="tabs-card__description">
-                                                        A deep dive into ethical challenges posed by AI, including bias, privacy, and transparency.
-                                                    </p>
-                                                </div>
-                                                <div class="tabs-card__actions blog-actions">
-                                                    <ul class="blog-actions__list">
-                                                        <li class="blog-actions__item">
-                                                            <button 
-                                                                class="blog-actions__button"
-                                                                type="button"
-                                                                aria-label="Dislike"
-                                                                title="Dislike"
-                                                            >
-                                                                <span class="blog-actions__icon">
-                                                                    <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                        <path d="M11.645 21.4107L11.6384 21.4071L11.6158 21.3949C11.5965 21.3844 11.5689 21.3693 11.5336 21.3496C11.4629 21.3101 11.3612 21.2524 11.233 21.1769C10.9765 21.0261 10.6132 20.8039 10.1785 20.515C9.31074 19.9381 8.15122 19.0901 6.9886 18.0063C4.68781 15.8615 2.25 12.6751 2.25 8.75C2.25 5.82194 4.7136 3.5 7.6875 3.5C9.43638 3.5 11.0023 4.29909 12 5.5516C12.9977 4.29909 14.5636 3.5 16.3125 3.5C19.2864 3.5 21.75 5.82194 21.75 8.75C21.75 12.6751 19.3122 15.8615 17.0114 18.0063C15.8488 19.0901 14.6893 19.9381 13.8215 20.515C13.3868 20.8039 13.0235 21.0261 12.767 21.1769C12.6388 21.2524 12.5371 21.3101 12.4664 21.3496C12.4311 21.3693 12.4035 21.3844 12.3842 21.3949L12.3616 21.4071L12.355 21.4107L12.3523 21.4121C12.1323 21.5289 11.8677 21.5289 11.6477 21.4121L11.645 21.4107Z" stroke="#666666" stroke-width="1.5" stroke-linejoin="round"/>
-                                                                    </svg>
-                                                                </span>
-                                                                <span>32k</span>
-                                                            </button>
-                                                        </li>
-                                                        <li class="blog-actions__item">
-                                                            <button 
-                                                                class="blog-actions__button"
-                                                                type="button"
-                                                                aria-label="Discuss"
-                                                                title="Discuss"
-                                                            >
-                                                                <span class="blog-actions__icon">
-                                                                    <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                        <path d="M8.48581 19.6888C9.54657 20.2083 10.7392 20.5 12 20.5C16.4183 20.5 20 16.9183 20 12.5C20 8.08172 16.4183 4.5 12 4.5C7.58172 4.5 4 8.08172 4 12.5C4 14.1401 4.49356 15.665 5.34026 16.9341M8.48581 19.6888L4 20.5L5.34026 16.9341M8.48581 19.6888L8.49231 19.6877M5.34026 16.9341L5.34154 16.9308" stroke="#666666" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                                                    </svg>
-                                                                </span>
-                                                                <span>72</span>
-                                                            </button>
-                                                        </li>
-                                                        <li class="blog-actions__item">
-                                                            <button 
-                                                                class="blog-actions__button"
-                                                                type="button"
-                                                                aria-label="Share"
-                                                                title="Share"
-                                                            >
-                                                                <span class="blog-actions__icon">
-                                                                    <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                        <path d="M10.0384 14.4616L4.1719 11.7951C3.36454 11.4281 3.39898 10.2697 4.22673 9.95134L18.8999 4.30781C19.7087 3.99675 20.5033 4.79139 20.1922 5.60013L14.5487 20.2733C14.2303 21.1011 13.072 21.1355 12.705 20.3281L10.0384 14.4616ZM10.0384 14.4616L14.4231 10.077" stroke="#666666" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                                                    </svg>
-                                                                </span>
-                                                                <span>18</span>
-                                                            </button>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            <a href="#" class="tabs-card__button button">
-                                                <span class="icon icon--yellow-arrow">View Blog</span>
-                                            </a>
-                                        </article>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div
-                              class="tabs__content"
-                              id="tabpanel-4"
-                              aria-labelledby="tab-4"
-                              tabindex="0"
-                              data-js-tabs-content
-                            >
-                                <ul class="tabs__list list">
-                                    <li class="tabs__card list__item tabs-card">
-                                        <article class="tabs-card__container">
-                                            <div class="tabs-card__author author-card">
-                                                <img 
-                                                    class="author-card__img"
-                                                    src="./images/blog/3.png" 
-                                                    alt=""
-                                                    width="80" height="80" loading="lazy" 
-                                                />
-                                                <div class="author-card__info">
-                                                    <h5 class="author-card__name">Astronomer X</h5>
-                                                    <p class="author-card__department">Space Exploration</p>
-                                                </div>
-                                            </div>
-                                            <div class="tabs-card__body">
-                                                <time datetime="2023-12-10" class="tabs-card__date">December 10, 2023</time>
-                                                <div class="tabs-card__info">
-                                                    <a href="#" class="tabs-card__title link">
-                                                        <h4>The Mars Colonization Challenge</h4>
-                                                    </a>
-                                                    <p class="tabs-card__description">
-                                                        Exploring the technical and logistical challenges of human colonization on Mars.
-                                                    </p>
-                                                </div>
-                                                <div class="tabs-card__actions blog-actions">
-                                                    <ul class="blog-actions__list">
-                                                        <li class="blog-actions__item">
-                                                            <button 
-                                                                class="blog-actions__button"
-                                                                type="button"
-                                                                aria-label="Dislike"
-                                                                title="Dislike"
-                                                            >
-                                                                <span class="blog-actions__icon">
-                                                                    <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                        <path d="M11.645 21.4107L11.6384 21.4071L11.6158 21.3949C11.5965 21.3844 11.5689 21.3693 11.5336 21.3496C11.4629 21.3101 11.3612 21.2524 11.233 21.1769C10.9765 21.0261 10.6132 20.8039 10.1785 20.515C9.31074 19.9381 8.15122 19.0901 6.9886 18.0063C4.68781 15.8615 2.25 12.6751 2.25 8.75C2.25 5.82194 4.7136 3.5 7.6875 3.5C9.43638 3.5 11.0023 4.29909 12 5.5516C12.9977 4.29909 14.5636 3.5 16.3125 3.5C19.2864 3.5 21.75 5.82194 21.75 8.75C21.75 12.6751 19.3122 15.8615 17.0114 18.0063C15.8488 19.0901 14.6893 19.9381 13.8215 20.515C13.3868 20.8039 13.0235 21.0261 12.767 21.1769C12.6388 21.2524 12.5371 21.3101 12.4664 21.3496C12.4311 21.3693 12.4035 21.3844 12.3842 21.3949L12.3616 21.4071L12.355 21.4107L12.3523 21.4121C12.1323 21.5289 11.8677 21.5289 11.6477 21.4121L11.645 21.4107Z" stroke="#666666" stroke-width="1.5" stroke-linejoin="round"/>
-                                                                    </svg>
-                                                                </span>
-                                                                <span>20k</span>
-                                                            </button>
-                                                        </li>
-                                                        <li class="blog-actions__item">
-                                                            <button 
-                                                                class="blog-actions__button"
-                                                                type="button"
-                                                                aria-label="Discuss"
-                                                                title="Discuss"
-                                                            >
-                                                                <span class="blog-actions__icon">
-                                                                    <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                        <path d="M8.48581 19.6888C9.54657 20.2083 10.7392 20.5 12 20.5C16.4183 20.5 20 16.9183 20 12.5C20 8.08172 16.4183 4.5 12 4.5C7.58172 4.5 4 8.08172 4 12.5C4 14.1401 4.49356 15.665 5.34026 16.9341M8.48581 19.6888L4 20.5L5.34026 16.9341M8.48581 19.6888L8.49231 19.6877M5.34026 16.9341L5.34154 16.9308" stroke="#666666" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                                                    </svg>
-                                                                </span>
-                                                                <span>31</span>
-                                                            </button>
-                                                        </li>
-                                                        <li class="blog-actions__item">
-                                                            <button 
-                                                                class="blog-actions__button"
-                                                                type="button"
-                                                                aria-label="Share"
-                                                                title="Share"
-                                                            >
-                                                                <span class="blog-actions__icon">
-                                                                    <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                        <path d="M10.0384 14.4616L4.1719 11.7951C3.36454 11.4281 3.39898 10.2697 4.22673 9.95134L18.8999 4.30781C19.7087 3.99675 20.5033 4.79139 20.1922 5.60013L14.5487 20.2733C14.2303 21.1011 13.072 21.1355 12.705 20.3281L10.0384 14.4616ZM10.0384 14.4616L14.4231 10.077" stroke="#666666" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                                                    </svg>
-                                                                </span>
-                                                                <span>12</span>
-                                                            </button>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            <a href="#" class="tabs-card__button button">
-                                                <span class="icon icon--yellow-arrow">View Blog</span>
-                                            </a>
-                                        </article>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div
-                              class="tabs__content"
-                              id="tabpanel-5"
-                              aria-labelledby="tab-5"
-                              tabindex="0"
-                              data-js-tabs-content
-                            >
-                                <ul class="tabs__list list">
-                                        
-                                </ul>
-                            </div>
-                            <div
-                              class="tabs__content"
-                              id="tabpanel-6"
-                              aria-labelledby="tab-6"
-                              tabindex="0"
-                              data-js-tabs-content
-                            >
-                                <ul class="tabs__list list">
-                                        
-                                </ul>
-                            </div>
-                        </div>
                     </div>
                 </section>
                 <section class="resources" aria-activedescendant="resources-title">
@@ -966,9 +966,9 @@
                         </div>
                     </header>
                     <div class="resources__body">
-                        <ul class="resources__list list">
-                            <li class="resources__card list__item card">
-                                <div class="card__container">
+                        <ul class="resources__list">
+                            <li class="resources__card card">
+                                <div class="resources__container card__wrapper">
                                     <div class="card__preview">
                                         <div class="card__main">
                                             <img
@@ -1038,10 +1038,10 @@
                                         <div class="card__item card-item card-item--wide">
                                             <div class="card-item__image">
                                                 <img 
-                                                  src="images/resources/2.jpg" 
-                                                  alt=""
-                                                  width="917"
-                                                  height="332"
+                                                src="images/resources/2.jpg" 
+                                                alt=""
+                                                width="917"
+                                                height="332"
                                                 />
                                             </div>
                                         </div>
@@ -1069,8 +1069,8 @@
                                     </div>
                                 </div>
                             </li>
-                            <li class="resources__card list__item card">
-                                <div class="card__container">
+                            <li class="resources__card card">
+                                <div class="resources__container card__wrapper">
                                     <div class="card__preview">
                                         <div class="card__main">
                                             <img
@@ -1139,10 +1139,10 @@
                                         <div class="card__item card-item card-item--wide">
                                             <div class="card-item__image">
                                                 <img 
-                                                  src="images/resources/1.jpg" 
-                                                  alt=""
-                                                  width="917"
-                                                  height="332"
+                                                src="images/resources/1.jpg" 
+                                                alt=""
+                                                width="917"
+                                                height="332"
                                                 />
                                             </div>
                                         </div>
@@ -1173,6 +1173,219 @@
                         </ul>
                     </div>
                 </section>
+                <section class="reviews" aria-activedescendant="reviews-title">
+                    <header class="section__header header-section">
+                        <div class="header-section__container">
+                            <div class="header-section__info">
+                                <h4 class="header-section__subtitle">What Our Readers Say</h4>
+                                <h2 class="header-section__title" id="reviews-title">
+                                    Real Words from Real Readers
+                                </h2>
+                            </div>
+                            <a href="#" class="header-section__button button">
+                                <span class="icon icon--yellow-arrow">View All reviews</span>
+                            </a>
+                        </div>
+                    </header>
+                    <div class="reviews__body">
+                        <div class="reviews__container">
+                            <ul class="reviews__list">
+                                <li class="reviews__card card-reviews">
+                                    <div class="card-reviews__item">
+                                        <div class="card-reviews__author reviews-author">
+                                            <img 
+                                            src="images/reviews/1.png" 
+                                            alt="" 
+                                            class="reviews-author__image"
+                                            width="60" height="60" loading="lazy"
+                                            />
+                                            <div class="reviews-author__body">
+                                                <p class="reviews-author__name">Sarah Thompson</p>
+                                                <p class="reviews-author__department">San Francisco, USA</p>
+                                            </div>
+                                        </div>
+                                        <div class="card-reviews__body tile">
+                                            <div 
+                                            class="card-reviews__rating rating" 
+                                            aria-label="Rating 5 star"
+                                            title="Rating 5 star"
+                                            >
+                                                <div class="rating__star is-active"></div>
+                                                <div class="rating__star is-active"></div>
+                                                <div class="rating__star is-active"></div>
+                                                <div class="rating__star is-active"></div>
+                                                <div class="rating__star is-active"></div>
+                                            </div>
+                                            <blockquote class="card-reviews__description">
+                                                The ebooks on AI in education have been a game-changer for my research. They provide in-depth insights and case studies that are invaluable for staying updated.
+                                            </blockquote>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="reviews__card card-reviews">
+                                    <div class="card-reviews__item">
+                                        <div class="card-reviews__author reviews-author">
+                                            <img 
+                                            src="images/reviews/2.png" 
+                                            alt="" 
+                                            class="reviews-author__image"
+                                            width="60" height="60" loading="lazy"
+                                            />
+                                            <div class="reviews-author__body">
+                                                <p class="reviews-author__name">Raj Patel</p>
+                                                <p class="reviews-author__department">Mumbai, India</p>
+                                            </div>
+                                        </div>
+                                        <div class="card-reviews__body tile">
+                                            <div 
+                                            class="card-reviews__rating rating" 
+                                            aria-label="Rating 5 star"
+                                            title="Rating 5 star"
+                                            >
+                                                <div class="rating__star is-active"></div>
+                                                <div class="rating__star is-active"></div>
+                                                <div class="rating__star is-active"></div>
+                                                <div class="rating__star is-active"></div>
+                                                <div class="rating__star is-active"></div>
+                                            </div>
+                                            <blockquote class="card-reviews__description">
+                                                The whitepapers on renewable energy strategies have greatly influenced my work. They offer detailed data and analysis, helping me make informed decisions.
+                                            </blockquote>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="reviews__card card-reviews">
+                                    <div class="card-reviews__item">
+                                        <div class="card-reviews__author reviews-author">
+                                            <img 
+                                            src="images/reviews/3.png" 
+                                            alt="" 
+                                            class="reviews-author__image"
+                                            width="60" height="60" loading="lazy"
+                                            />
+                                            <div class="reviews-author__body">
+                                                <p class="reviews-author__name">Emily Adams</p>
+                                                <p class="reviews-author__department">London, UK</p>
+                                            </div>
+                                        </div>
+                                        <div class="card-reviews__body tile">
+                                            <div 
+                                            class="card-reviews__rating rating" 
+                                            aria-label="Rating 5 star"
+                                            title="Rating 5 star"
+                                            >
+                                                <div class="rating__star is-active"></div>
+                                                <div class="rating__star is-active"></div>
+                                                <div class="rating__star is-active"></div>
+                                                <div class="rating__star is-active"></div>
+                                                <div class="rating__star is-active"></div>
+                                            </div>
+                                            <blockquote class="card-reviews__description">
+                                                The AI in healthcare reports have been an essential resource for our hospital. They highlight the latest innovations and best practices, improving patient care.
+                                            </blockquote>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="reviews__card card-reviews">
+                                    <div class="card-reviews__item">
+                                        <div class="card-reviews__author reviews-author">
+                                            <img 
+                                            src="images/reviews/4.png" 
+                                            alt="" 
+                                            class="reviews-author__image"
+                                            width="60" height="60" loading="lazy"
+                                            />
+                                            <div class="reviews-author__body">
+                                                <p class="reviews-author__name">Alan Jackson</p>
+                                                <p class="reviews-author__department">Houston, USA</p>
+                                            </div>
+                                        </div>
+                                        <div class="card-reviews__body tile">
+                                            <div 
+                                            class="card-reviews__rating rating" 
+                                            aria-label="Rating 5 star"
+                                            title="Rating 5 star"
+                                            >
+                                                <div class="rating__star is-active"></div>
+                                                <div class="rating__star is-active"></div>
+                                                <div class="rating__star is-active"></div>
+                                                <div class="rating__star is-active"></div>
+                                                <div class="rating__star is-active"></div>
+                                            </div>
+                                            <blockquote class="card-reviews__description">
+                                                The reports on space mining prospects have fueled my passion for space exploration. They provide a comprehensive view of what lies beyond Earth.
+                                            </blockquote>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="reviews__card card-reviews">
+                                    <div class="card-reviews__item">
+                                        <div class="card-reviews__author reviews-author">
+                                            <img 
+                                            src="images/reviews/5.png" 
+                                            alt="" 
+                                            class="reviews-author__image"
+                                            width="60" height="60" loading="lazy"
+                                            />
+                                            <div class="reviews-author__body">
+                                                <p class="reviews-author__name">Jessica Miller</p>
+                                                <p class="reviews-author__department">Boston, USA</p>
+                                            </div>
+                                        </div>
+                                        <div class="card-reviews__body tile">
+                                            <div 
+                                            class="card-reviews__rating rating" 
+                                            aria-label="Rating 5 star"
+                                            title="Rating 5 star"
+                                            >
+                                                <div class="rating__star is-active"></div>
+                                                <div class="rating__star is-active"></div>
+                                                <div class="rating__star is-active"></div>
+                                                <div class="rating__star is-active"></div>
+                                                <div class="rating__star is-active"></div>
+                                            </div>
+                                            <blockquote class="card-reviews__description">
+                                                The research papers on genomic breakthroughs have been a goldmine of information. They've shaped the direction of my research in genomics.
+                                            </blockquote>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="reviews__card card-reviews">
+                                    <div class="card-reviews__item">
+                                        <div class="card-reviews__author reviews-author">
+                                            <img 
+                                            src="images/reviews/6.png" 
+                                            alt="" 
+                                            class="reviews-author__image"
+                                            width="60" height="60" loading="lazy"
+                                            />
+                                            <div class="reviews-author__body">
+                                                <p class="reviews-author__name">Diego Lopez</p>
+                                                <p class="reviews-author__department">Barcelona, Spain</p>
+                                            </div>
+                                        </div>
+                                        <div class="card-reviews__body tile">
+                                            <div 
+                                            class="card-reviews__rating rating" 
+                                            aria-label="Rating 5 star"
+                                            title="Rating 5 star"
+                                            >
+                                                <div class="rating__star is-active"></div>
+                                                <div class="rating__star is-active"></div>
+                                                <div class="rating__star is-active"></div>
+                                                <div class="rating__star is-active"></div>
+                                                <div class="rating__star is-active"></div>
+                                            </div>
+                                            <blockquote class="card-reviews__description">
+                                                The ebooks on renewable energy strategies have given me the insights I needed to pivot our startup toward sustainability.
+                                            </blockquote>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
             </main>
             <footer class="footer">
                 <div class="footer__container">
@@ -1192,7 +1405,7 @@
                                         <span class="badge">New</span>
                                     </li>
                                     <li class="footer__menu-item">
-                                        <a href="#" class="footer__menu-link link">Testimonials</a>
+                                        <a href="#" class="footer__menu-link link">reviews</a>
                                     </li>
                                     <li class="footer__menu-item">
                                         <a href="#" class="footer__menu-link link">Contact Us</a>

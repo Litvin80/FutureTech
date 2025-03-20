@@ -1,0 +1,159 @@
+@use '../helpers/functions' as *;
+@use '../helpers/globals' as *;
+@use '../helpers/mixin' as *;
+
+.reviews {
+    &__body {
+    }
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        margin-inline: rem(-50);
+        @media (max-width: $laptop) {
+            margin-inline: rem(-40); 
+        }
+        @media (max-width: $tablet) {
+            grid-template-columns: repeat(2, 1fr);
+            margin-inline: rem(-30);  
+        }
+        @media (max-width: $mobile) {
+            grid-template-columns: 1fr; 
+        }
+    }
+}
+.card-reviews {
+    @include adaptiveValuePX('padding-block', 80, 40, $containerWidth, 779.98);
+    padding-inline: rem(50);
+    @media (max-width: $laptop) {
+        padding-inline: rem(40);
+    }
+    @media (min-width: $tablet) {
+        &:nth-child(3n - 2),
+        &:nth-child(3n - 1) {
+            border-right: rem(1) solid var(--color-dark-15);
+        }
+        &:nth-child(3n - 1) {
+            position: relative;
+            &::after {
+                position: absolute;
+                bottom: 0;
+                left: 50%;
+                transform: translate(-50%, 0);
+                content: '';
+                background-color: var(--color-dark-15);
+                height: rem(1);
+                width: 100vw;
+            }
+        }
+    }
+    @media (max-width: $tablet) {
+        padding-inline: rem(30);
+        &:nth-child(2n - 1) {
+            border-right: rem(1) solid var(--color-dark-15);
+            position: relative;
+            &::after {
+                position: absolute;
+                bottom: rem(0);
+                left: rem(16);
+                transform: translate(0, 0);
+                content: '';
+                background-color: var(--color-dark-15);
+                height: rem(1);
+                width: 100vw;
+            }
+        }
+    }
+    @media (max-width: $mobile) {
+        &:nth-child(2n - 1) {
+            border-right: 0;
+            position: relative;
+            &::after {
+                position: absolute;
+                bottom: rem(0);
+                left: rem(16);
+                transform: translate(0, 0);
+                content: '';
+                background-color: var(--color-dark-15);
+                height: 0;
+                width: 0;
+            }
+        }
+        &:not(:last-child) {
+            position: relative;
+            &::after {
+                position: absolute;
+                bottom: rem(0);
+                left: rem(16);
+                transform: translate(0, 0);
+                content: '';
+                background-color: var(--color-dark-15);
+                height: rem(1);
+                width: 100vw;
+            } 
+        }
+    }
+    &__item {
+        display: flex;
+        flex-direction: column;
+        row-gap: rem(60);
+        align-items: center;
+        height: 100%;
+        @media (max-width: $laptop) {
+            row-gap: rem(50);
+        }
+        @media (max-width: $mobile) {
+            padding-inline: 0;
+        }
+    }
+    &__body {
+        position: relative;
+        height: 100%;
+        @include adaptiveValuePX('padding', 30, 20, $containerWidth, 779.98);
+        @include adaptiveValuePX('padding-top', 50, 30, $containerWidth, 779.98);
+    }
+    &__author {
+    }
+    &__rating {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    &__description {
+        color: var(--color-light);
+        @include adaptiveTextPX(18, 14, $containerWidth, 479.98);
+        text-align: center;
+    }
+}
+.reviews-author {
+    display: flex;
+    align-items: center;
+    column-gap: rem(12);
+    @media (max-width: $laptop) {
+        column-gap: rem(10);
+    }
+    &__image {
+        max-width: 100%;
+        width: rem(60);
+        height: rem(60);
+        border-radius: 50%;
+        background-color: var(--color-light);
+        @media (max-width: $laptop) {
+            width: rem(50);
+            height: rem(50);
+        }
+    }
+    &__name {
+        font-size: rem(20);
+        font-weight: 500;
+        color: var(--color-light);
+        @media (max-width: $laptop) {
+            font-size: rem(18);
+        }
+    }
+    &__department {
+        @media (max-width: $laptop) {
+            font-size: rem(16);
+        }
+    }
+}

@@ -11,6 +11,9 @@
         @media (max-width: $laptop) {
             column-gap: rem(30);
         }
+        @media (max-width: em(767.98)) {
+            column-gap: rem(10);
+        }
     }
     &__title {
         &:not(:last-child) {

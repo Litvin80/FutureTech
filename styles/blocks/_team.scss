@@ -23,5 +23,8 @@
         &:not(:first-child) {
             margin-left: calc(var(--personImageSize) / 4.5 * -1);
         }
+        @media (max-width: em(360)) {
+            --personImageSize: #{rem(35)};
+        }
     }
 }

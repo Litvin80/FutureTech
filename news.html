@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <script type="module" src="./js/main.js" defer></script>
+        <link rel="stylesheet" href="./styles/style.css">
+        <title>Future Tech</title>
+    </head>
+    <body>
+        <div class="wrapper">
+            <header class="header" data-js-header>
+                <div class="header__promo">
+                    <div class="header-promo__container" data-js-header-promo>
+                        <a href="#" class="header-promo__link link">
+                            <span class="icon icon--yellow-arrow long-text">Subscribe to our Newsletter For New & latest Blogs and Resources</span>
+                            <span class="icon icon--yellow-arrow short-text">Subscribe to our Newsletter For Blogs and Resources класи research</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="header__body">
+                    <div class="header__container">
+                        <a
+                            href="index.html" 
+                            class="header__logo"
+                            aria-label="Home"
+                            title="Home"
+                        >
+                            <img
+                                src="images/header/logo.svg" 
+                                alt=""
+                                weight="179" height="50"
+                            />
+                        </a>
+                        <div class="header__overlay" data-js-header-overlay>
+                            <div class="header__menu menu">
+                                <nav class="menu__body">
+                                    <ul class="menu__list">
+                                        <li class="menu__item">
+                                            <a href="index.html" class="menu__link">Home</a>
+                                        </li>
+                                        <li class="menu__item">
+                                            <a href="news.html" class="menu__link is-active">News</a>
+                                        </li>
+                                        <li class="menu__item">
+                                            <a href="#" class="menu__link">Podcasts</a>
+                                        </li>
+                                        <li class="menu__item">
+                                            <a href="#" class="menu__link">Resources</a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                            <div class="header__feedback">
+                                <a href="#" class="header-feedback__link">Contact Us</a>
+                            </div>
+                        </div>
+                        <button
+                          type="button" 
+                          class="header__burger-icon icon-menu"
+                          aria-label="Open menu"
+                          title="Open menu"
+                          data-js-header-burger-button
+                        >
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </button>
+                    </div>
+                </div>
+            </header>
+            <main>
+                <section class="news-hero" aria-activedescendant="news-hero-title">
+                    <header class="section__header header-section-alt">
+                        <div class="header-section-alt__container">
+                            <h1 class="header-section-alt__title">
+                                Today's Headlines: Stay
+                            </h1>
+                            <h2 class="header-section-alt__title">
+                                Informed
+                            </h2>
+                            <div class="header-section-alt__description">
+                                Explore the latest news from around the world. We bring you up-to-the-minute updates on the most significant events, trends, and stories. Discover the world through our news coverage.
+                            </div>
+                        </div>
+                    </header>
+                    <div class="news-hero__body">
+                        <div class="news-card__main news-card-main">
+                            <article class="news-card-main__container news-card-main__wrapper">
+                                <div class="news-card-main__preview">
+                                    <img
+                                        class="news-card-main__image"
+                                        src="/images/news/cards/1.jpg"
+                                        alt=""
+                                        width="515" height="427" loading="lazy"
+                                    >
+                                </div>
+                                <div class="news-card-main__body">
+                                    <div class="news-card-main__content">
+                                        <h3 class="news-card-main__title">
+                                            Global Climate Summit Addresses Urgent Climate Action
+                                        </h3>
+                                        <p class="news-card-main__description">
+                                            World leaders gathered at the Global Climate Summit to discuss urgent climate action, emissions reductions, and renewable energy targets.
+                                        </p>
+                                    </div>
+                                    <div class="news-card-main__summary summary">
+                                        <dl class="summary__list">
+                                            <div class="summary__item">
+                                                <dt class="summary__key">Category</dt>
+                                                <dd class="summary__value">Environment</dd>
+                                            </div>
+                                            <div class="summary__item">
+                                                <dt class="summary__key">Publication Date</dt>
+                                                <dd class="summary__value">October 10, 2024</dd>
+                                            </div>
+                                            <div class="summary__item">
+                                                <dt class="summary__key">Author</dt>
+                                                <dd class="summary__value">Jane Smith</dd>
+                                            </div>
+                                        </dl>
+                                    </div>
+                                    <div class="news-card-main__controls">
+                                        <div class="news-card__actions blog-actions">
+                                            <ul class="blog-actions__list">
+                                                <li class="blog-actions__item">
+                                                    <button 
+                                                        class="blog-actions__button"
+                                                        type="button"
+                                                        aria-label="Dislike"
+                                                        title="Dislike"
+                                                    >
+                                                        <span class="blog-actions__icon">
+                                                            <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M11.645 21.4107L11.6384 21.4071L11.6158 21.3949C11.5965 21.3844 11.5689 21.3693 11.5336 21.3496C11.4629 21.3101 11.3612 21.2524 11.233 21.1769C10.9765 21.0261 10.6132 20.8039 10.1785 20.515C9.31074 19.9381 8.15122 19.0901 6.9886 18.0063C4.68781 15.8615 2.25 12.6751 2.25 8.75C2.25 5.82194 4.7136 3.5 7.6875 3.5C9.43638 3.5 11.0023 4.29909 12 5.5516C12.9977 4.29909 14.5636 3.5 16.3125 3.5C19.2864 3.5 21.75 5.82194 21.75 8.75C21.75 12.6751 19.3122 15.8615 17.0114 18.0063C15.8488 19.0901 14.6893 19.9381 13.8215 20.515C13.3868 20.8039 13.0235 21.0261 12.767 21.1769C12.6388 21.2524 12.5371 21.3101 12.4664 21.3496C12.4311 21.3693 12.4035 21.3844 12.3842 21.3949L12.3616 21.4071L12.355 21.4107L12.3523 21.4121C12.1323 21.5289 11.8677 21.5289 11.6477 21.4121L11.645 21.4107Z" stroke="#666666" stroke-width="1.5" stroke-linejoin="round"/>
+                                                            </svg>
+                                                        </span>
+                                                        <span>14k</span>
+                                                    </button>
+                                                </li>
+                                                <li class="blog-actions__item">
+                                                    <button 
+                                                        class="blog-actions__button"
+                                                        type="button"
+                                                        aria-label="Share"
+                                                        title="Share"
+                                                    >
+                                                        <span class="blog-actions__icon">
+                                                            <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M10.0384 14.4616L4.1719 11.7951C3.36454 11.4281 3.39898 10.2697 4.22673 9.95134L18.8999 4.30781C19.7087 3.99675 20.5033 4.79139 20.1922 5.60013L14.5487 20.2733C14.2303 21.1011 13.072 21.1355 12.705 20.3281L10.0384 14.4616ZM10.0384 14.4616L14.4231 10.077" stroke="#666666" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            </svg>
+                                                        </span>
+                                                        <span>204</span>
+                                                    </button>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <a href="#" class="news-card-main__link button link">Read More</a>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="news-hero__container">
+                            <ul class="news-hero__list">
+                                <li class="news-hero__card">
+                                    <article class="news-card__wrapper">
+                                        <div class="news-card__preview">
+                                            <img
+                                                class="news-card__image"
+                                                src="/images/news/cards/2.png"
+                                                alt=""
+                                                width="512" height="222" loading="lazy"
+                                            >
+                                        </div>
+                                        <div class="news-card__body">
+                                            <div class="news-card__content">
+                                                <h3 class="news-card__title">
+                                                    A Decisive Victory for Progressive Policies
+                                                </h3>
+                                                <p class="news-card__category">
+                                                    Politics
+                                                </p>
+                                            </div>
+                                            <div class="news-card__controls">
+                                                <div class="news-card__actions blog-actions">
+                                                    <ul class="blog-actions__list">
+                                                        <li class="blog-actions__item">
+                                                            <button 
+                                                                class="blog-actions__button"
+                                                                type="button"
+                                                                aria-label="Dislike"
+                                                                title="Dislike"
+                                                            >
+                                                                <span class="blog-actions__icon">
+                                                                    <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                        <path d="M11.645 21.4107L11.6384 21.4071L11.6158 21.3949C11.5965 21.3844 11.5689 21.3693 11.5336 21.3496C11.4629 21.3101 11.3612 21.2524 11.233 21.1769C10.9765 21.0261 10.6132 20.8039 10.1785 20.515C9.31074 19.9381 8.15122 19.0901 6.9886 18.0063C4.68781 15.8615 2.25 12.6751 2.25 8.75C2.25 5.82194 4.7136 3.5 7.6875 3.5C9.43638 3.5 11.0023 4.29909 12 5.5516C12.9977 4.29909 14.5636 3.5 16.3125 3.5C19.2864 3.5 21.75 5.82194 21.75 8.75C21.75 12.6751 19.3122 15.8615 17.0114 18.0063C15.8488 19.0901 14.6893 19.9381 13.8215 20.515C13.3868 20.8039 13.0235 21.0261 12.767 21.1769C12.6388 21.2524 12.5371 21.3101 12.4664 21.3496C12.4311 21.3693 12.4035 21.3844 12.3842 21.3949L12.3616 21.4071L12.355 21.4107L12.3523 21.4121C12.1323 21.5289 11.8677 21.5289 11.6477 21.4121L11.645 21.4107Z" stroke="#666666" stroke-width="1.5" stroke-linejoin="round"/>
+                                                                    </svg>
+                                                                </span>
+                                                                <span>14k</span>
+                                                            </button>
+                                                        </li>
+                                                        <li class="blog-actions__item">
+                                                            <button 
+                                                                class="blog-actions__button"
+                                                                type="button"
+                                                                aria-label="Share"
+                                                                title="Share"
+                                                            >
+                                                                <span class="blog-actions__icon">
+                                                                    <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                        <path d="M10.0384 14.4616L4.1719 11.7951C3.36454 11.4281 3.39898 10.2697 4.22673 9.95134L18.8999 4.30781C19.7087 3.99675 20.5033 4.79139 20.1922 5.60013L14.5487 20.2733C14.2303 21.1011 13.072 21.1355 12.705 20.3281L10.0384 14.4616ZM10.0384 14.4616L14.4231 10.077" stroke="#666666" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                    </svg>
+                                                                </span>
+                                                                <span>204</span>
+                                                            </button>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <a href="#" class="news-card__link button link">
+                                                    <span class="icon icon--yellow-arrow">Read More</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </li>
+                                <li class="news-hero__card">
+                                    <article class="news-card__wrapper">
+                                        <div class="news-card__preview">
+                                            <img
+                                                class="news-card__image"
+                                                src="/images/news/cards/2.png"
+                                                alt=""
+                                                width="512" height="222" loading="lazy"
+                                            >
+                                        </div>
+                                        <div class="news-card__body">
+                                            <div class="news-card__content">
+                                                <h3 class="news-card__title">
+                                                    A Decisive Victory for Progressive Policies
+                                                </h3>
+                                                <p class="news-card__category">
+                                                    Politics
+                                                </p>
+                                            </div>
+                                            <div class="news-card__controls">
+                                                <div class="news-card__actions blog-actions">
+                                                    <ul class="blog-actions__list">
+                                                        <li class="blog-actions__item">
+                                                            <button 
+                                                                class="blog-actions__button"
+                                                                type="button"
+                                                                aria-label="Dislike"
+                                                                title="Dislike"
+                                                            >
+                                                                <span class="blog-actions__icon">
+                                                                    <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                        <path d="M11.645 21.4107L11.6384 21.4071L11.6158 21.3949C11.5965 21.3844 11.5689 21.3693 11.5336 21.3496C11.4629 21.3101 11.3612 21.2524 11.233 21.1769C10.9765 21.0261 10.6132 20.8039 10.1785 20.515C9.31074 19.9381 8.15122 19.0901 6.9886 18.0063C4.68781 15.8615 2.25 12.6751 2.25 8.75C2.25 5.82194 4.7136 3.5 7.6875 3.5C9.43638 3.5 11.0023 4.29909 12 5.5516C12.9977 4.29909 14.5636 3.5 16.3125 3.5C19.2864 3.5 21.75 5.82194 21.75 8.75C21.75 12.6751 19.3122 15.8615 17.0114 18.0063C15.8488 19.0901 14.6893 19.9381 13.8215 20.515C13.3868 20.8039 13.0235 21.0261 12.767 21.1769C12.6388 21.2524 12.5371 21.3101 12.4664 21.3496C12.4311 21.3693 12.4035 21.3844 12.3842 21.3949L12.3616 21.4071L12.355 21.4107L12.3523 21.4121C12.1323 21.5289 11.8677 21.5289 11.6477 21.4121L11.645 21.4107Z" stroke="#666666" stroke-width="1.5" stroke-linejoin="round"/>
+                                                                    </svg>
+                                                                </span>
+                                                                <span>14k</span>
+                                                            </button>
+                                                        </li>
+                                                        <li class="blog-actions__item">
+                                                            <button 
+                                                                class="blog-actions__button"
+                                                                type="button"
+                                                                aria-label="Share"
+                                                                title="Share"
+                                                            >
+                                                                <span class="blog-actions__icon">
+                                                                    <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                        <path d="M10.0384 14.4616L4.1719 11.7951C3.36454 11.4281 3.39898 10.2697 4.22673 9.95134L18.8999 4.30781C19.7087 3.99675 20.5033 4.79139 20.1922 5.60013L14.5487 20.2733C14.2303 21.1011 13.072 21.1355 12.705 20.3281L10.0384 14.4616ZM10.0384 14.4616L14.4231 10.077" stroke="#666666" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                    </svg>
+                                                                </span>
+                                                                <span>204</span>
+                                                            </button>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <a href="#" class="news-card__link button link">
+                                                    <span class="icon icon--yellow-arrow">Read More</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </li>
+                                <li class="news-hero__card">
+                                    <article class="news-card__wrapper">
+                                        <div class="news-card__preview">
+                                            <img
+                                                class="news-card__image"
+                                                src="/images/news/cards/2.png"
+                                                alt=""
+                                                width="512" height="222" loading="lazy"
+                                            >
+                                        </div>
+                                        <div class="news-card__body">
+                                            <div class="news-card__content">
+                                                <h3 class="news-card__title">
+                                                    A Decisive Victory for Progressive Policies
+                                                </h3>
+                                                <p class="news-card__category">
+                                                    Politics
+                                                </p>
+                                            </div>
+                                            <div class="news-card__controls">
+                                                <div class="news-card__actions blog-actions">
+                                                    <ul class="blog-actions__list">
+                                                        <li class="blog-actions__item">
+                                                            <button 
+                                                                class="blog-actions__button"
+                                                                type="button"
+                                                                aria-label="Dislike"
+                                                                title="Dislike"
+                                                            >
+                                                                <span class="blog-actions__icon">
+                                                                    <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                        <path d="M11.645 21.4107L11.6384 21.4071L11.6158 21.3949C11.5965 21.3844 11.5689 21.3693 11.5336 21.3496C11.4629 21.3101 11.3612 21.2524 11.233 21.1769C10.9765 21.0261 10.6132 20.8039 10.1785 20.515C9.31074 19.9381 8.15122 19.0901 6.9886 18.0063C4.68781 15.8615 2.25 12.6751 2.25 8.75C2.25 5.82194 4.7136 3.5 7.6875 3.5C9.43638 3.5 11.0023 4.29909 12 5.5516C12.9977 4.29909 14.5636 3.5 16.3125 3.5C19.2864 3.5 21.75 5.82194 21.75 8.75C21.75 12.6751 19.3122 15.8615 17.0114 18.0063C15.8488 19.0901 14.6893 19.9381 13.8215 20.515C13.3868 20.8039 13.0235 21.0261 12.767 21.1769C12.6388 21.2524 12.5371 21.3101 12.4664 21.3496C12.4311 21.3693 12.4035 21.3844 12.3842 21.3949L12.3616 21.4071L12.355 21.4107L12.3523 21.4121C12.1323 21.5289 11.8677 21.5289 11.6477 21.4121L11.645 21.4107Z" stroke="#666666" stroke-width="1.5" stroke-linejoin="round"/>
+                                                                    </svg>
+                                                                </span>
+                                                                <span>14k</span>
+                                                            </button>
+                                                        </li>
+                                                        <li class="blog-actions__item">
+                                                            <button 
+                                                                class="blog-actions__button"
+                                                                type="button"
+                                                                aria-label="Share"
+                                                                title="Share"
+                                                            >
+                                                                <span class="blog-actions__icon">
+                                                                    <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                        <path d="M10.0384 14.4616L4.1719 11.7951C3.36454 11.4281 3.39898 10.2697 4.22673 9.95134L18.8999 4.30781C19.7087 3.99675 20.5033 4.79139 20.1922 5.60013L14.5487 20.2733C14.2303 21.1011 13.072 21.1355 12.705 20.3281L10.0384 14.4616ZM10.0384 14.4616L14.4231 10.077" stroke="#666666" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                    </svg>
+                                                                </span>
+                                                                <span>204</span>
+                                                            </button>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <a href="#" class="news-card__link button link">
+                                                    <span class="icon icon--yellow-arrow">Read More</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+            </main>
+            <footer class="footer">
+                <div class="footer__container">
+                    <div class="footer__body">
+                        <nav class="footer__menu">
+                            <div class="footer__menu-column">
+                                <a href="#" class="footer__menu-main-link">Home</a>
+                                <ul class="footer__menu-list">
+                                    <li class="footer__menu-item">
+                                        <a href="#" class="footer__menu-link link">Features</a>
+                                    </li>
+                                    <li class="footer__menu-item">
+                                        <a href="#" class="footer__menu-link link">Blogs</a>
+                                    </li>
+                                    <li class="footer__menu-item">
+                                        <a href="#" class="footer__menu-link link">Resources</a>
+                                        <span class="badge">New</span>
+                                    </li>
+                                    <li class="footer__menu-item">
+                                        <a href="#" class="footer__menu-link link">Reviews</a>
+                                    </li>
+                                    <li class="footer__menu-item">
+                                        <a href="#" class="footer__menu-link link">Contact Us</a>
+                                    </li>
+                                    <li class="footer__menu-item">
+                                        <a href="#" class="footer__menu-link link">Newsletter</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="footer__menu-column">
+                                <a href="#" class="footer__menu-main-link">News</a>
+                                <ul class="footer__menu-list">
+                                    <li class="footer__menu-item">
+                                        <a href="#" class="footer__menu-link link">Trending Stories</a>
+                                    </li>
+                                    <li class="footer__menu-item">
+                                        <a href="#" class="footer__menu-link link">Featured Videos</a>
+                                    </li>
+                                    <li class="footer__menu-item">
+                                        <a href="#" class="footer__menu-link link">Technology</a>
+                                    </li>
+                                    <li class="footer__menu-item">
+                                        <a href="#" class="footer__menu-link link">Health</a>
+                                    </li>
+                                    <li class="footer__menu-item">
+                                        <a href="#" class="footer__menu-link link">Politics</a>
+                                    </li>
+                                    <li class="footer__menu-item">
+                                        <a href="#" class="footer__menu-link link">Environment</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="footer__menu-column">
+                                <a href="#" class="footer__menu-main-link">Blogs</a>
+                                <ul class="footer__menu-list">
+                                    <li class="footer__menu-item">
+                                        <a href="#" class="footer__menu-link link">Quantum Computing</a>
+                                    </li>
+                                    <li class="footer__menu-item">
+                                        <a href="#" class="footer__menu-link link">AI Ethics</a>
+                                    </li>
+                                    <li class="footer__menu-item">
+                                        <a href="#" class="footer__menu-link link">Space Exploration</a>
+                                    </li>
+                                    <li class="footer__menu-item">
+                                        <a href="#" class="footer__menu-link link">Biotechnology</a>
+                                        <span class="badge">New</span>
+                                    </li>
+                                    <li class="footer__menu-item">
+                                        <a href="#" class="footer__menu-link link">Renewable Energy</a>
+                                    </li>
+                                    <li class="footer__menu-item">
+                                        <a href="#" class="footer__menu-link link">Biohacking</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="footer__menu-column">
+                                <a href="#" class="footer__menu-main-link">Podcasts</a>
+                                <ul class="footer__menu-list">
+                                    <li class="footer__menu-item">
+                                        <a href="#" class="footer__menu-link link">AI Revolution</a>
+                                        <span class="badge">New</span>
+                                    </li>
+                                    <li class="footer__menu-item">
+                                        <a href="#" class="footer__menu-link link">TechTalk AI</a>
+                                    </li>
+                                    <li class="footer__menu-item">
+                                        <a href="#" class="footer__menu-link link">AI Conversations</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="footer__menu-column">
+                                <a href="#" class="footer__menu-main-link">Resources</a>
+                                <ul class="footer__menu-list">
+                                    <li class="footer__menu-item">
+                                        <a href="#" class="footer__menu-link link button button-small">
+                                            <span class="icon icon--yellow-arrow">Whitepapers</span>
+                                        </a>
+                                    </li>
+                                    <li class="footer__menu-item">
+                                        <a href="#" class="footer__menu-link link button button-small">
+                                            <span class="icon icon--yellow-arrow">Ebooks</span>
+                                        </a>
+                                    </li>
+                                    <li class="footer__menu-item">
+                                        <a href="#" class="footer__menu-link link button button-small">
+                                            <span class="icon icon--yellow-arrow">Reports</span>
+                                        </a>
+                                    </li>
+                                    <li class="footer__menu-item">
+                                        <a href="#" class="footer__menu-link link button button-small">
+                                            <span class="icon icon--yellow-arrow">Research Papers</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="footer__extra footer-extra">
+                        <div class="footer-extra__container ">
+                            <div class="footer-extra__privacy">
+                                <a href="#" class="link">Terms & Conditions</a>
+                                <span></span>
+                                <a href="#" class="link">Privacy Policy</a>
+                            </div>
+                            <div class="footer-extra__soc1als footer-soc1als">
+                                <a 
+                                  href="#" 
+                                  class="footer-soc1als__link" 
+                                  target="_blank"
+                                  aria-label="Twitter"
+                                  title="Twitter"
+                                >
+                                    <img src="/images/footer/twitter.svg" alt="">
+                                </a>
+                                <a 
+                                  href="#" 
+                                  class="footer-soc1als__link" 
+                                  target="_blank"
+                                  aria-label="Medium"
+                                  title="Medium"
+                                >
+                                    <img src="./images/footer/medium.svg" alt="">
+                                </a>
+                                <a 
+                                  href="#" 
+                                  class="footer-soc1als__link" 
+                                  target="_blank"
+                                  aria-label="LinkedIn"
+                                  title="LinkedIn"
+                                >
+                                    <img src="./images/footer/linkedIn.svg" alt="">
+                                </a>
+                            </div>
+                            <p class="footer-extra__copyright">
+                                © <time datetime="2024">2024</time> FutureTech. All rights reserved.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>

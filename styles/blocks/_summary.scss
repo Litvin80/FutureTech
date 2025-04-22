@@ -1,0 +1,31 @@
+@use '../helpers/functions' as *;
+@use '../helpers/globals' as *;
+@use '../helpers/mixin' as *;
+
+.summary {
+    &__list {
+        display: flex;
+        column-gap: rem(50);
+        @media (max-width: $laptop) {
+            column-gap: rem(30);
+        }
+        @media (max-width: $mobile) {
+            column-gap: rem(20);
+        }
+    }
+    &__key {
+        @include adaptiveTextPX(18, 14, $containerWidth, 767.98);
+        &:not(:last-child) {
+            margin-bottom: rem(4);
+        }
+        @media (max-width: $laptop) {
+            &:not(:last-child) {
+                margin-bottom: rem(2);
+            }
+        }
+    }
+    &__value {
+        @include adaptiveTextPX(18, 14, $containerWidth, 767.98);
+        color: var(--color-light);
+    }
+}

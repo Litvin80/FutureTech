@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <script type="module" src="./js/main.js" defer></script>
+        <link rel="stylesheet" href="./styles/style.css">
+        <title>Future Tech</title>
+    </head>
+    <body>
+        <div class="wrapper">
+            <header class="header" data-js-header>
+                <div class="header__promo">
+                    <div class="header-promo__container" data-js-header-promo>
+                        <a href="#" class="header-promo__link link">
+                            <span class="icon icon--yellow-arrow long-text">Subscribe to our Newsletter For New & latest Blogs and Resources</span>
+                            <span class="icon icon--yellow-arrow short-text">Subscribe to our Newsletter For Blogs and Resources класи research</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="header__body">
+                    <div class="header__container">
+                        <a
+                            href="index.html" 
+                            class="header__logo"
+                            aria-label="Home"
+                            title="Home"
+                        >
+                            <img
+                                src="images/header/logo.svg" 
+                                alt=""
+                                weight="179" height="50"
+                            />
+                        </a>
+                        <div class="header__overlay" data-js-header-overlay>
+                            <div class="header__menu menu">
+                                <nav class="menu__body">
+                                    <ul class="menu__list">
+                                        <li class="menu__item">
+                                            <a href="index.html" class="menu__link">Home</a>
+                                        </li>
+                                        <li class="menu__item">
+                                            <a href="news.html" class="menu__link">News</a>
+                                        </li>
+                                        <li class="menu__item">
+                                            <a href="podcasts.html" class="menu__link">Podcasts</a>
+                                        </li>
+                                        <li class="menu__item">
+                                            <a href="resources.html" class="menu__link is-active">Resources</a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                            <div class="header__feedback">
+                                <a href="#" class="header-feedback__link">Contact Us</a>
+                            </div>
+                        </div>
+                        <button
+                          type="button" 
+                          class="header__burger-icon icon-menu"
+                          aria-label="Open menu"
+                          title="Open menu"
+                          data-js-header-burger-button
+                        >
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </button>
+                    </div>
+                </div>
+            </header>
+            <main>
+                <section class="resources-hero" aria-labelledby="resources-hero-title">
+                    <header class="section__header header-section-alt">
+                        <div class="header-section-alt__container">
+                            <h1 class="header-section-alt__title" id="resources-hero-title">
+                                Unlock a World of <span class="header-section-alt__title-hidden-part">Knowledge</span>
+                            </h1>
+                            <h2 class="header-section-alt__title">
+                                Knowledge
+                            </h2>
+                            <div class="header-section-alt__description">
+                                Dive deep into the AI universe with our collection of insightful podcasts. Explore the latest trends, breakthroughs, and discussions on artificial intelligence. Whether you're an enthusiast or a professional, our AI podcasts offer a gateway to knowledge and innovation.
+                            </div>
+                        </div>
+                    </header>
+                    <div class="resources-hero__container">
+                        <div class="resources-hero__metrics intro-metrics full-vw-line full-vw-line--top full-vw-line--left">
+                            <dl class="intro-metrics__list">
+                                <div class="intro-metrics__item">
+                                    <dt class="intro-metrics__key">Resources available</dt>
+                                    <dd class="intro-metrics__value">300<span>+</span></dd>
+                                </div>
+                                <div class="intro-metrics__item">
+                                    <dt class="intro-metrics__key">Total Downloads</dt>
+                                    <dd class="intro-metrics__value">12k<span>+</span></dd>
+                                </div>
+                                <div class="intro-metrics__item">
+                                    <dt class="intro-metrics__key">Active Users</dt>
+                                    <dd class="intro-metrics__value">10k<span>+</span></dd>
+                                </div>
+                                <div class="intro-metrics__item">
+                                    <dt class="intro-metrics__key">Countries Accesses Our Content</dt>
+                                    <dd class="intro-metrics__value">100<span>+</span></dd>
+                                </div>
+                            </dl>
+                        </div>
+                    </div>
+                </section>
+                <section class="resources-section tabs" aria-activedescendant="resources-section-title" data-js-tabs>
+                    <header class="resources-section__header header-section">
+                        <div class="header-section__container">
+                            <div class="header-section__info">
+                                <h4 class="header-section__subtitle">Dive into the Details</h4>
+                                <h2 class="header-section__title" id="resources-section-title">In-Depth Reports and Analysis</h2>
+                            </div>
+                            <div class="header-section__actions">
+                                <header class="tabs__header">
+                                    <div
+                                        class="tabs__buttons tabs__buttons--compact"
+                                        role="tablist"
+                                        aria-labelledby="resources-section-title"
+                                    >
+                                        <button 
+                                            type="button"
+                                            id="tab-1"
+                                            class="tabs__button is-active"
+                                            role="tab"
+                                            aria-controls="tabpanel-1"
+                                            data-js-tabs-button
+                                            aria-selected="true"
+                                        >
+                                            Whitepapers
+                                        </button>
+                                        <button 
+                                            type="button"
+                                            id="tab-2"
+                                            class="tabs__button"
+                                            role="tab"
+                                            aria-controls="tabpanel-2"
+                                            data-js-tabs-button
+                                            aria-selected="false"
+                                            tabindex="-1"
+                                        >
+                                            Ebooks
+                                        </button>
+                                        <button 
+                                            type="button"
+                                            id="tab-3"
+                                            class="tabs__button"
+                                            role="tab"
+                                            aria-controls="tabpanel-3"
+                                            data-js-tabs-button
+                                            aria-selected="false"
+                                            tabindex="-1"
+                                        >
+                                            Reports
+                                        </button>
+                                    </div>
+                                </header>
+                            </div>
+                        </div>
+                    </header>
+                    <div class="resources-section__body">
+                        <div class="tabs__body">
+                            <div
+                                class="tabs__content is-active"
+                                id="tabpanel-1"
+                                aria-labelledby="tab-1"
+                                tabindex="0"
+                                data-js-tabs-content
+                            >
+                                <ul class="tabs__list">
+                                    <li class="tabs__item resources-section__card card">
+                                        <div class="resources-section__container card__wrapper">
+                                            <div class="card__preview">
+                                                <div class="card__main">
+                                                    <img
+                                                        class="card__icon"
+                                                        src="/images/resources-page/2.svg"
+                                                        alt=""
+                                                        width="80" height="80" loading="lazy"
+                                                    >
+                                                    <div class="card__info">
+                                                        <h3 class="card__title">
+                                                            Space Exploration Whitepaper
+                                                        </h3>
+                                                        <p class="card__description">
+                                                            Explores Mars colonization, asteroid resource potential, and space tourism.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="card__body card__body--3-cols">
+                                                <div class="card__item card-item card-item--wide">
+                                                    <div class="card-item__image">
+                                                        <img 
+                                                        src="images/resources-page/2.jpg" 
+                                                        alt=""
+                                                        width="917"
+                                                        height="332"
+                                                        />
+                                                    </div>
+                                                </div>
+                                                <div class="card__item card-item card-item--wide">
+                                                    <div class="card-item__body">
+                                                        <h4 class="card-item__title card-item__title-big">
+                                                            Space Exploration Whitepaper
+                                                        </h4>
+                                                        <p class="card-item__description">
+                                                            An in-depth whitepaper covering the latest advancements in space exploration, including Mars missions and asteroid mining.
+                                                        </p>
+                                                    </div>
+                                                    <a href="#" class="card-item__link button">
+                                                        <span class="icon icon--yellow-arrow">Download PDF Now</span>
+                                                    </a>
+                                                </div>
+                                                <div class="card__item card-item tile">
+                                                    <p class="card-item__description">Publication Date</p>
+                                                    <h4 class="card-item__title card-item__title-small">September 2023</h4>
+                                                </div>
+                                                <div class="card__item card-item tile">
+                                                    <p class="card-item__description">Category</p>
+                                                    <h4 class="card-item__title card-item__title-small">Space Exploration</h4>
+                                                </div>
+                                                <div class="card__item card-item tile">
+                                                    <p class="card-item__description">Author</p>
+                                                    <h4 class="card-item__title card-item__title-small">FutureTech Space Division</h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="tabs__item resources-section__card card">
+                                        <div class="resources-section__container card__wrapper">
+                                            <div class="card__preview">
+                                                <div class="card__main">
+                                                    <img
+                                                        class="card__icon"
+                                                        src="/images/resources-page/1.svg"
+                                                        alt=""
+                                                        width="80" height="80" loading="lazy"
+                                                    >
+                                                    <div class="card__info">
+                                                        <h3 class="card__title">
+                                                            Quantum Computing Whitepaper
+                                                        </h3>
+                                                        <p class="card__description">
+                                                            Provides technical specifications and requirements for implementing quantum computing systems.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="card__body card__body--3-cols">
+                                                <div class="card__item card-item card-item--wide">
+                                                    <div class="card-item__image">
+                                                        <img 
+                                                        src="images/resources-page/1.jpg" 
+                                                        alt=""
+                                                        width="917"
+                                                        height="332"
+                                                        />
+                                                    </div>
+                                                </div>
+                                                <div class="card__item card-item card-item--wide">
+                                                    <div class="card-item__body">
+                                                        <h4 class="card-item__title card-item__title-big">
+                                                            Quantum Computing Whitepaper
+                                                        </h4>
+                                                        <p class="card-item__description">
+                                                            An in-depth whitepaper exploring the principles, applications, and potential impact of quantum computing.
+                                                        </p>
+                                                    </div>
+                                                    <a href="#" class="card-item__link button">
+                                                        <span class="icon icon--yellow-arrow">Download PDF Now</span>
+                                                    </a>
+                                                </div>
+                                                <div class="card__item card-item tile">
+                                                    <p class="card-item__description">Publication Date</p>
+                                                    <h4 class="card-item__title card-item__title-small">July 2023</h4>
+                                                </div>
+                                                <div class="card__item card-item tile">
+                                                    <p class="card-item__description">Category</p>
+                                                    <h4 class="card-item__title card-item__title-small">Quantum Computing</h4>
+                                                </div>
+                                                <div class="card__item card-item tile">
+                                                    <p class="card-item__description">Author</p>
+                                                    <h4 class="card-item__title card-item__title-small">Dr. Quantum</h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </section>
+                <section class="resources-hero-about about" aria-activedescendant="about-title">
+                    <header class="section__header header-section">
+                        <div class="header-section__container">
+                            <div class="header-section__icon">
+                                <img 
+                                  src="images/about/logo-icon.svg" 
+                                  alt=""
+                                  loading="lazy" width="150" height="150"
+                                />
+                            </div>
+                            <h4 class="header-section__subtitle">Learn, Connect, and Innovate</h4>
+                            <div class="header-section__info">
+                                <h2 class="header-section__title" id="about-title">
+                                    Be Part of the Future Tech Revolution
+                                </h2>
+                                <div class="header-section__description">
+                                    <p>Immerse yourself in the world of future technology. Explore our comprehensive resources, connect with fellow tech enthusiasts, and drive innovation in the industry. Join a dynamic community of forward-thinkers.</p>
+                                    <span>Immerse yourself in the world of future technology. Explore our comprehensive resources.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </header>
+                    <div class="about__body">
+                        <div class="abour__container">
+                            <ul class="about__list">
+                                <li class="about__item">
+                                    <a href="#" class="about__card tile">
+                                        <h4 class="about__title">Resource Access</h4>
+                                        <div class="about__description">
+                                            <p>Visitors can access a wide range of resources, including ebooks, whitepapers, reports.</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="about__item">
+                                    <a href="#" class="about__card tile">
+                                        <h4 class="about__title">Community Forum</h4>
+                                        <div class="about__description">
+                                            <p>Join our active community forum to discuss industry trends and collaborate with peers.</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="about__item">
+                                    <a href="#" class="about__card tile">
+                                        <h4 class="about__title">Tech Events</h4>
+                                        <div class="about__description">
+                                            <p>Stay updated on upcoming tech events, webinars and conferences to enhance your knowledge.</p>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+            </main>
+            <footer class="footer">
+                <div class="footer__container">
+                    <div class="footer__body">
+                        <nav class="footer__menu">
+                            <div class="footer__menu-column">
+                                <a href="#" class="footer__menu-main-link">Home</a>
+                                <ul class="footer__menu-list">
+                                    <li class="footer__menu-item">
+                                        <a href="#" class="footer__menu-link link">Features</a>
+                                    </li>
+                                    <li class="footer__menu-item">
+                                        <a href="#" class="footer__menu-link link">Blogs</a>
+                                    </li>
+                                    <li class="footer__menu-item">
+                                        <a href="#" class="footer__menu-link link">Resources</a>
+                                        <span class="badge">New</span>
+                                    </li>
+                                    <li class="footer__menu-item">
+                                        <a href="#" class="footer__menu-link link">Reviews</a>
+                                    </li>
+                                    <li class="footer__menu-item">
+                                        <a href="#" class="footer__menu-link link">Contact Us</a>
+                                    </li>
+                                    <li class="footer__menu-item">
+                                        <a href="#" class="footer__menu-link link">Newsletter</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="footer__menu-column">
+                                <a href="#" class="footer__menu-main-link">News</a>
+                                <ul class="footer__menu-list">
+                                    <li class="footer__menu-item">
+                                        <a href="#" class="footer__menu-link link">Trending Stories</a>
+                                    </li>
+                                    <li class="footer__menu-item">
+                                        <a href="#" class="footer__menu-link link">Featured Videos</a>
+                                    </li>
+                                    <li class="footer__menu-item">
+                                        <a href="#" class="footer__menu-link link">Technology</a>
+                                    </li>
+                                    <li class="footer__menu-item">
+                                        <a href="#" class="footer__menu-link link">Health</a>
+                                    </li>
+                                    <li class="footer__menu-item">
+                                        <a href="#" class="footer__menu-link link">Politics</a>
+                                    </li>
+                                    <li class="footer__menu-item">
+                                        <a href="#" class="footer__menu-link link">Environment</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="footer__menu-column">
+                                <a href="#" class="footer__menu-main-link">Blogs</a>
+                                <ul class="footer__menu-list">
+                                    <li class="footer__menu-item">
+                                        <a href="#" class="footer__menu-link link">Quantum Computing</a>
+                                    </li>
+                                    <li class="footer__menu-item">
+                                        <a href="#" class="footer__menu-link link">AI Ethics</a>
+                                    </li>
+                                    <li class="footer__menu-item">
+                                        <a href="#" class="footer__menu-link link">Space Exploration</a>
+                                    </li>
+                                    <li class="footer__menu-item">
+                                        <a href="#" class="footer__menu-link link">Biotechnology</a>
+                                        <span class="badge">New</span>
+                                    </li>
+                                    <li class="footer__menu-item">
+                                        <a href="#" class="footer__menu-link link">Renewable Energy</a>
+                                    </li>
+                                    <li class="footer__menu-item">
+                                        <a href="#" class="footer__menu-link link">Biohacking</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="footer__menu-column">
+                                <a href="#" class="footer__menu-main-link">Podcasts</a>
+                                <ul class="footer__menu-list">
+                                    <li class="footer__menu-item">
+                                        <a href="#" class="footer__menu-link link">AI Revolution</a>
+                                        <span class="badge">New</span>
+                                    </li>
+                                    <li class="footer__menu-item">
+                                        <a href="#" class="footer__menu-link link">TechTalk AI</a>
+                                    </li>
+                                    <li class="footer__menu-item">
+                                        <a href="#" class="footer__menu-link link">AI Conversations</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="footer__menu-column">
+                                <a href="#" class="footer__menu-main-link">Resources</a>
+                                <ul class="footer__menu-list">
+                                    <li class="footer__menu-item">
+                                        <a href="#" class="footer__menu-link link button button-small">
+                                            <span class="icon icon--yellow-arrow">Whitepapers</span>
+                                        </a>
+                                    </li>
+                                    <li class="footer__menu-item">
+                                        <a href="#" class="footer__menu-link link button button-small">
+                                            <span class="icon icon--yellow-arrow">Ebooks</span>
+                                        </a>
+                                    </li>
+                                    <li class="footer__menu-item">
+                                        <a href="#" class="footer__menu-link link button button-small">
+                                            <span class="icon icon--yellow-arrow">Reports</span>
+                                        </a>
+                                    </li>
+                                    <li class="footer__menu-item">
+                                        <a href="#" class="footer__menu-link link button button-small">
+                                            <span class="icon icon--yellow-arrow">Research Papers</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="footer__extra footer-extra">
+                        <div class="footer-extra__container ">
+                            <div class="footer-extra__privacy">
+                                <a href="#" class="link">Terms & Conditions</a>
+                                <span></span>
+                                <a href="#" class="link">Privacy Policy</a>
+                            </div>
+                            <div class="footer-extra__soc1als footer-soc1als">
+                                <a 
+                                  href="#" 
+                                  class="footer-soc1als__link" 
+                                  target="_blank"
+                                  aria-label="Twitter"
+                                  title="Twitter"
+                                >
+                                    <img src="/images/footer/twitter.svg" alt="">
+                                </a>
+                                <a 
+                                  href="#" 
+                                  class="footer-soc1als__link" 
+                                  target="_blank"
+                                  aria-label="Medium"
+                                  title="Medium"
+                                >
+                                    <img src="./images/footer/medium.svg" alt="">
+                                </a>
+                                <a 
+                                  href="#" 
+                                  class="footer-soc1als__link" 
+                                  target="_blank"
+                                  aria-label="LinkedIn"
+                                  title="LinkedIn"
+                                >
+                                    <img src="./images/footer/linkedIn.svg" alt="">
+                                </a>
+                            </div>
+                            <p class="footer-extra__copyright">
+                                © <time datetime="2024">2024</time> FutureTech. All rights reserved.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>

@@ -50,3 +50,23 @@
         background-image: url('../../icons/eye__yellow.svg');
     }
 }
+
+.icon--gray-arrow-down {
+    @media (any-hover: hover) {
+        &:hover {
+            &::after {
+                background-position: center;
+            }
+        }
+    }
+    @media (any-hover: none) {
+        &:active {
+            &::after {
+                background-position: center;
+            }
+        }
+    }
+    &::after {
+        background-image: url('../../icons/arrow-down__gray.svg');
+    }
+}

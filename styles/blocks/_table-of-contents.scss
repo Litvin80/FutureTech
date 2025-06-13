@@ -1,0 +1,25 @@
+@use '../helpers/functions' as *;
+@use '../helpers/globals' as *;
+@use '../helpers/mixin' as *;
+
+.table-of-contents {
+	padding: rem(20);
+	background-color: var(--color-dark-10);
+	border-radius: rem(12);
+	@media (max-width: $laptop) {
+		padding: rem(18);
+		border-radius: rem(10);
+	}
+	&__list {
+		list-style: disc;
+		margin-left: 1em;
+	}
+	&__item {
+		&:not(:last-child) {
+			margin-bottom: rem(20);
+		}
+		@media (max-width: $laptop) {
+			margin-bottom: rem(16);
+		}
+	}
+}

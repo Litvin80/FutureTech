@@ -1,0 +1,19 @@
+@use '../helpers/functions' as *;
+@use '../helpers/globals' as *;
+@use '../helpers/mixin' as *;
+
+.news-videos {
+    &__body {
+    }
+    &__container {
+    }
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        @media (max-width: $tablet) {
+            grid-template-columns: 1fr;
+        }
+    }
+    &__card {
+    }
+}

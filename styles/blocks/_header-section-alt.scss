@@ -44,12 +44,24 @@
         @media (max-width: $mobile) {
             font-size: rem(28);
         }
+        &-hidden-part {
+            @media (min-width: $mobile) {
+                display: none;
+            }
+        }
+        .podcasts & {
+            @include adaptiveTextPX(80, 32, $containerWidth, 767.98);
+        }
     }
     h1.header-section-alt__title {
         grid-area: title;
     }
     h2.header-section-alt__title {
         grid-area: subtitle;
+        align-self: start;
+        @media (max-width: $mobile) {
+            display: none;
+        }
     }
     &__description {
         grid-area: description;

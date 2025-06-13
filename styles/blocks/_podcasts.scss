@@ -1,0 +1,21 @@
+@use '../helpers/functions' as *;
+@use '../helpers/globals' as *;
+@use '../helpers/mixin' as *;
+
+.podcasts-videos {
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0 rem(-23);
+    @media (max-width: $laptop) {
+      margin: 0 rem(-15);
+    }
+    @media (max-width: $tablet) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @media (max-width: $mobile) {
+      grid-template-columns: auto;
+    }
+  }
+}
+

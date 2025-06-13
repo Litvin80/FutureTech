@@ -17,6 +17,7 @@
 @use 'blocks/card';
 @use 'blocks/tabs';
 @use 'blocks/tabs-card';
+@use 'blocks/expandable-content';
 @use 'blocks/author-card';
 @use 'blocks/blog-actions';
 @use 'blocks/resources';
@@ -27,3 +28,9 @@
 @use 'blocks/header-section-alt.scss';
 @use 'blocks/news';
 @use 'blocks/summary';
+@use 'blocks/news-card';
+@use 'blocks/news-video';
+@use 'blocks/video';
+@use 'blocks/blog-details';
+@use 'blocks/table-of-contents';
+@use 'blocks/podcasts';

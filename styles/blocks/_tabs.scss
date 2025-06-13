@@ -6,12 +6,21 @@
 .tabs {
     &__header {
         border-bottom: rem(1) solid var(--color-dark-15);
+        .header-section__actions & {
+            border-bottom: 0;
+        }
     }
     &__buttons {
         @include adaptiveValuePX('padding-block', 50, 18, $containerWidth, 767.98);
         display: grid;
         grid-template-columns: repeat(6, 1fr);
         column-gap: rem(20);
+        .header-section__actions & {
+            padding: rem(10);
+            background-color: var(--color-dark);
+            border-radius: rem(10);
+            border: rem(1) solid var(--color-dark-15);
+        }
         @media (max-width: $laptop) {
             column-gap: rem(14);
         }
@@ -19,6 +28,11 @@
             overflow-x: auto;
             grid-template-columns: repeat(6, minmax(rem(160), 1fr));
             margin-right: rem(-16);
+        }
+        &--compact {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            column-gap: rem(10);
         }
     }
     &__button {
@@ -32,6 +46,16 @@
         @include adaptiveTextPX(18, 14, $containerWidth, 1440);
         @include adaptiveValuePX('padding-block', 30, 18, $containerWidth, 767.98);
         padding-inline: rem(10);
+        .header-section__actions & {
+            padding-block: rem(18);
+            @include adaptiveValuePX('padding-inline', 30, 13, $containerWidth, 767.98);
+            @media (max-width: $laptop) {
+                padding-block: rem(14);
+            }
+            &.is-active {
+                background-color: var(--color-dark-15);
+            }
+        }
         @media (any-hover: hover) {
             &:hover {
                 background-color: var(--color-dark-10);

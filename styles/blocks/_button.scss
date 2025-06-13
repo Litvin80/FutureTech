@@ -41,6 +41,12 @@
                     transform: scale(1.1);
                 }
             }
+            .icon--gray-arrow-down {
+                &::after {
+                    transform: scale(1.1);
+                    background-image: url('../../icons/arrow-down__yellow.svg');
+                }
+            }
         }
     }
     @media (any-hover: none) {
@@ -55,6 +61,12 @@
             .icon--yellow-eye {
                 &::after {
                     transform: scale(1.1);
+                }
+            }
+            .icon--gray-arrow-down {
+                &::after {
+                    transform: scale(1.1);
+                    background-image: url('../../icons/arrow-down__yellow.svg');
                 }
             }
         }

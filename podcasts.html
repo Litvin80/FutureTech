@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <script type="module" src="./js/main.js" defer></script>
+        <link rel="stylesheet" href="./styles/style.css">
+        <title>Future Tech</title>
+    </head>
+    <body>
+        <div class="wrapper">
+            <header class="header" data-js-header>
+                <div class="header__promo">
+                    <div class="header-promo__container" data-js-header-promo>
+                        <a href="#" class="header-promo__link link">
+                            <span class="icon icon--yellow-arrow long-text">Subscribe to our Newsletter For New & latest Blogs and Resources</span>
+                            <span class="icon icon--yellow-arrow short-text">Subscribe to our Newsletter For Blogs and Resources класи research</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="header__body">
+                    <div class="header__container">
+                        <a
+                            href="index.html" 
+                            class="header__logo"
+                            aria-label="Home"
+                            title="Home"
+                        >
+                            <img
+                                src="images/header/logo.svg" 
+                                alt=""
+                                weight="179" height="50"
+                            />
+                        </a>
+                        <div class="header__overlay" data-js-header-overlay>
+                            <div class="header__menu menu">
+                                <nav class="menu__body">
+                                    <ul class="menu__list">
+                                        <li class="menu__item">
+                                            <a href="index.html" class="menu__link">Home</a>
+                                        </li>
+                                        <li class="menu__item">
+                                            <a href="news.html" class="menu__link">News</a>
+                                        </li>
+                                        <li class="menu__item">
+                                            <a href="podcasts.html" class="menu__link is-active">Podcasts</a>
+                                        </li>
+                                        <li class="menu__item">
+                                            <a href="resources.html" class="menu__link">Resources</a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                            <div class="header__feedback">
+                                <a href="#" class="header-feedback__link">Contact Us</a>
+                            </div>
+                        </div>
+                        <button
+                          type="button" 
+                          class="header__burger-icon icon-menu"
+                          aria-label="Open menu"
+                          title="Open menu"
+                          data-js-header-burger-button
+                        >
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </button>
+                    </div>
+                </div>
+            </header>
+            <main>
+                <section class="podcasts" aria-labelledby="podcasts-title">
+                    <header class="section__header header-section-alt">
+                        <div class="header-section-alt__container">
+                            <h1 class="header-section-alt__title" id="podcasts-title">
+                                Unlock the World of Artificial Intelligence <span class="header-section-alt__title-hidden-part">through Podcasts</span>
+                            </h1>
+                            <h2 class="header-section-alt__title">
+                                through Podcasts
+                            </h2>
+                            <div class="header-section-alt__description">
+                                Dive deep into the AI universe with our collection of insightful podcasts. Explore the latest trends, breakthroughs, and discussions on artificial intelligence. Whether you're an enthusiast or a professional, our AI podcasts offer a gateway to knowledge and innovation.
+                            </div>
+                        </div>
+                    </header>
+                    <div class="podcasts__body">
+                        <ul class="podcasts__list">
+                            <li class="podcasts__card card">
+                                <div class="podcasts__container card__wrapper">
+                                    <div class="card__preview">
+                                        <div class="card__main">
+                                            <img
+                                                class="card__icon"
+                                                src="/images/podcasts/1.svg"
+                                                alt=""
+                                                width="80" height="80" loading="lazy"
+                                            >
+                                            <div class="card__info">
+                                                <h2 class="card__title">
+                                                    AI Revolution
+                                                </h2>
+                                                <div 
+                                                    class="card__rating rating" 
+                                                    aria-label="Rating 5 star"
+                                                    title="Rating 5 star"
+                                                >
+                                                    <div class="rating__star is-active"></div>
+                                                    <div class="rating__star is-active"></div>
+                                                    <div class="rating__star is-active"></div>
+                                                    <div class="rating__star is-active"></div>
+                                                    <div class="rating__star is-active"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card__item card-item tile">
+                                            <h4 class="card-item__description">Host</h4>
+                                            <p class="card-item__title card-item__title-small">
+                                                Dr. Sarah Mitchell
+                                            </p>
+                                            <a href="#" class="card-item__link button">
+                                                <span class="icon icon--yellow-arrow">Listen Podcast</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="card__body card__body--3-cols">
+                                        <div class="card__item card-item card-item--wide">
+                                            <div class="podcasts__video-player video-player" data-js-video-player>
+                                            <video
+                                              src="videos/video.mp4" 
+                                              class="video-player__video"
+                                              width="917"
+                                              height="412"
+                                              poster="images/podcasts/poster.jpg"
+                                              loading="lazy"
+                                              data-js-video-player-video
+                                            >
+                                            </video>
+                                            <div class="video-player__panel video-player__panel-center is-active" data-js-video-player-panel>
+                                                <button 
+                                                  class="video-player__button" 
+                                                  type="button"
+                                                  aria-label="Play video"
+                                                  title="Play video"
+                                                  data-js-video-player-play-button
+                                                >
+                                                    <img src="icons/button-play.svg" alt="" width="56" height="57">
+                                                </button>
+                                            </div>
+                                        </div>
+                                        </div>
+                                        <div class="card__item card-item card-item--wide">
+                                            <h4 class="card-item__title card-item__title-big">
+                                                Delves into the transformative impact of AI
+                                            </h4>
+                                            <p class="card-item__description">Join Dr. Sarah Mitchell as she delves into the transformative impact of AI on industries, featuring expert interviews and real-world case studies. Explore the possibilities of AI in healthcare, finance, and more.</p>
+                                        </div>
+                                        <div class="card__item card-item tile">
+                                            <p class="card-item__description">Total Episodes</p>
+                                            <h4 class="card-item__title">50</h4>
+                                        </div>
+                                        <div class="card__item card-item tile">
+                                            <p class="card-item__description">Average Episode Length</p>
+                                            <h4 class="card-item__title">30 min</h4>
+                                        </div>
+                                        <div class="card__item card-item tile">
+                                            <p class="card-item__description">Release Frequency</p>
+                                            <h4 class="card-item__title">Weekly</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="podcasts__card card">
+                                <div class="podcasts__container card__wrapper">
+                                    <div class="card__preview">
+                                        <div class="card__main">
+                                            <img
+                                                class="card__icon"
+                                                src="/images/podcasts/2.svg"
+                                                alt=""
+                                                width="80" height="80" loading="lazy"
+                                            >
+                                            <div class="card__info">
+                                                <h2 class="card__title">
+                                                    AI Conversations
+                                                </h2>
+                                                <div 
+                                                    class="card__rating rating" 
+                                                    aria-label="Rating 5 star"
+                                                    title="Rating 5 star"
+                                                >
+                                                    <div class="rating__star is-active"></div>
+                                                    <div class="rating__star is-active"></div>
+                                                    <div class="rating__star is-active"></div>
+                                                    <div class="rating__star is-active"></div>
+                                                    <div class="rating__star is-active"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card__item card-item tile">
+                                            <h4 class="card-item__description">Host</h4>
+                                            <p class="card-item__title card-item__title-small">
+                                                Mark Anderson
+                                            </p>
+                                            <a href="#" class="card-item__link button">
+                                                <span class="icon icon--yellow-arrow">Listen Podcast</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="card__body card__body--3-cols">
+                                        <div class="card__item card-item card-item--wide">
+                                            <div class="podcasts__video-player video-player" data-js-video-player>
+                                            <video
+                                              src="videos/video.mp4" 
+                                              class="video-player__video"
+                                              width="917"
+                                              height="412"
+                                              poster="images/podcasts/poster2.jpg"
+                                              loading="lazy"
+                                              data-js-video-player-video
+                                            >
+                                            </video>
+                                            <div class="video-player__panel video-player__panel-center is-active" data-js-video-player-panel>
+                                                <button 
+                                                  class="video-player__button" 
+                                                  type="button"
+                                                  aria-label="Play video"
+                                                  title="Play video"
+                                                  data-js-video-player-play-button
+                                                >
+                                                    <img src="icons/button-play.svg" alt="" width="56" height="57">
+                                                </button>
+                                            </div>
+                                        </div>
+                                        </div>
+                                        <div class="card__item card-item card-item--wide">
+                                            <h4 class="card-item__title card-item__title-big">
+                                                Engage in thought-provoking conversations with leading experts.
+                                            </h4>
+                                            <p class="card-item__description">
+                                                Mark discusses the future of AI, the impact on society, and how it's shaping industries worldwide. Engage in thought-provoking conversations with leading experts.
+                                            </p>
+                                        </div>
+                                        <div class="card__item card-item tile">
+                                            <p class="card-item__description">Total Episodes</p>
+                                            <h4 class="card-item__title">40</h4>
+                                        </div>
+                                        <div class="card__item card-item tile">
+                                            <p class="card-item__description">Average Episode Length</p>
+                                            <h4 class="card-item__title">40 min</h4>
+                                        </div>
+                                        <div class="card__item card-item tile">
+                                            <p class="card-item__description">Release Frequency</p>
+                                            <h4 class="card-item__title">Monthly</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+                <section class="podcasts-videos" aria-labelledby="podcasts-videos-title">
+                    <header class="section__header header-section">
+                        <div class="header-section__container">
+                            <div class="header-section__info">
+                                <h4 class="header-section__subtitle">Stay Informed with Fresh Content</h4>
+                                <h2 class="header-section__title" id="podcasts-videos-title">Latest Podcast Episodes</h2>
+                            </div>
+                        </div>
+                    </header>
+                    <div class="podcasts-videos__body">
+                        <div class="podcasts-videos__container">
+                            <ul class="podcasts-videos__list">
+                                <li class="podcasts-videos__card video-card">
+                                    <div class="video-card__wrapper">
+                                        <div class="video-card__video-player video-player" data-js-video-player>
+                                            <video
+                                              src="videos/video.mp4" 
+                                              class="video-player__video"
+                                              width="718"
+                                              height="412"
+                                              poster="images/podcasts/videos/1.jpg"
+                                              loading="lazy"
+                                              data-js-video-player-video
+                                            >
+                                            </video>
+                                            <div class="video-player__panel is-active" data-js-video-player-panel>
+                                                <button 
+                                                  class="video-player__button" 
+                                                  type="button"
+                                                  aria-label="Play video"
+                                                  title="Play video"
+                                                  data-js-video-player-play-button
+                                                >
+                                                    <img src="icons/button-play.svg" alt="" width="56" height="57">
+                                                </button>
+                                                <div class="video-player__duration">2.30 min</div>
+                                            </div>
+                                        </div>
+                                        <div class="video-card__body">
+                                            <h4 class="video-card__title">
+                                                AI in Healthcare
+                                            </h4>
+                                            <p class="video-card__description">
+                                                Dr. Lisa Adams discusses how AI is revolutionizing healthcare, from diagnostic tools to patient care.
+                                            </p>
+                                            <a href="#" class="card-item__link button">
+                                                <span class="icon icon--yellow-arrow">Listen Podcast</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="podcasts-videos__card video-card">
+                                    <div class="video-card__wrapper">
+                                        <div class="video-card__video-player video-player" data-js-video-player>
+                                            <video
+                                              src="videos/video.mp4" 
+                                              class="video-player__video"
+                                              width="718"
+                                              height="412"
+                                              poster="images/podcasts/videos/2.jpg"
+                                              loading="lazy"
+                                              data-js-video-player-video
+                                            >
+                                            </video>
+                                            <div class="video-player__panel is-active" data-js-video-player-panel>
+                                                <button 
+                                                  class="video-player__button" 
+                                                  type="button"
+                                                  aria-label="Play video"
+                                                  title="Play video"
+                                                  data-js-video-player-play-button
+                                                >
+                                                    <img src="icons/button-play.svg" alt="" width="56" height="57">
+                                                </button>
+                                                <div class="video-player__duration">2.30 min</div>
+                                            </div>
+                                        </div>
+                                        <div class="video-card__body">
+                                            <h4 class="video-card__title">
+                                                AI Ethics
+                                            </h4>
+                                            <p class="video-card__description">
+                                                Explore the ethical dilemmas and considerations surrounding AI with guest speaker Dr. Michael Turner.
+                                            </p>
+                                            <a href="#" class="card-item__link button">
+                                                <span class="icon icon--yellow-arrow">Listen Podcast</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="podcasts-videos__card video-card">
+                                    <div class="video-card__wrapper">
+                                        <div class="video-card__video-player video-player" data-js-video-player>
+                                            <video
+                                              src="videos/video.mp4" 
+                                              class="video-player__video"
+                                              width="718"
+                                              height="412"
+                                              poster="images/podcasts/videos/3.jpg"
+                                              loading="lazy"
+                                              data-js-video-player-video
+                                            >
+                                            </video>
+                                            <div class="video-player__panel is-active" data-js-video-player-panel>
+                                                <button 
+                                                  class="video-player__button" 
+                                                  type="button"
+                                                  aria-label="Play video"
+                                                  title="Play video"
+                                                  data-js-video-player-play-button
+                                                >
+                                                    <img src="icons/button-play.svg" alt="" width="56" height="57">
+                                                </button>
+                                                <div class="video-player__duration">2.30 min</div>
+                                            </div>
+                                        </div>
+                                        <div class="video-card__body">
+                                            <h4 class="video-card__title">
+                                                Machine Learning Explained
+                                            </h4>
+                                            <p class="video-card__description">
+                                                Dive into the intricacies of machine learning with AI expert Sarah Davis. In this episode
+                                            </p>
+                                            <a href="#" class="card-item__link button">
+                                                <span class="icon icon--yellow-arrow">Listen Podcast</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="podcasts-videos__card video-card">
+                                    <div class="video-card__wrapper">
+                                        <div class="video-card__video-player video-player" data-js-video-player>
+                                            <video
+                                              src="videos/video.mp4" 
+                                              class="video-player__video"
+                                              width="718"
+                                              height="412"
+                                              poster="images/podcasts/videos/4.jpg"
+                                              loading="lazy"
+                                              data-js-video-player-video
+                                            >
+                                            </video>
+                                            <div class="video-player__panel is-active" data-js-video-player-panel>
+                                                <button 
+                                                  class="video-player__button" 
+                                                  type="button"
+                                                  aria-label="Play video"
+                                                  title="Play video"
+                                                  data-js-video-player-play-button
+                                                >
+                                                    <img src="icons/button-play.svg" alt="" width="56" height="57">
+                                                </button>
+                                                <div class="video-player__duration">2.30 min</div>
+                                            </div>
+                                        </div>
+                                        <div class="video-card__body">
+                                            <h4 class="video-card__title">
+                                                AI and the Future of Work
+                                            </h4>
+                                            <p class="video-card__description">
+                                                Dr. Olivia White joins John Parker to discuss the evolving role of AI in the workplace.
+                                            </p>
+                                            <a href="#" class="card-item__link button">
+                                                <span class="icon icon--yellow-arrow">Listen Podcast</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="podcasts-videos__card video-card">
+                                    <div class="video-card__wrapper">
+                                        <div class="video-card__video-player video-player" data-js-video-player>
+                                            <video
+                                              src="videos/video.mp4" 
+                                              class="video-player__video"
+                                              width="718"
+                                              height="412"
+                                              poster="images/podcasts/videos/5.jpg"
+                                              loading="lazy"
+                                              data-js-video-player-video
+                                            >
+                                            </video>
+                                            <div class="video-player__panel is-active" data-js-video-player-panel>
+                                                <button 
+                                                  class="video-player__button" 
+                                                  type="button"
+                                                  aria-label="Play video"
+                                                  title="Play video"
+                                                  data-js-video-player-play-button
+                                                >
+                                                    <img src="icons/button-play.svg" alt="" width="56" height="57">
+                                                </button>
+                                                <div class="video-player__duration">2.30 min</div>
+                                            </div>
+                                        </div>
+                                        <div class="video-card__body">
+                                            <h4 class="video-card__title">
+                                                AI in Education
+                                            </h4>
+                                            <p class="video-card__description">
+                                                Explore the role of AI in education as Emily Turner discusses how AI is transforming...
+                                            </p>
+                                            <a href="#" class="card-item__link button">
+                                                <span class="icon icon--yellow-arrow">Listen Podcast</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="podcasts-videos__card video-card">
+                                    <div class="video-card__wrapper">
+                                        <div class="video-card__video-player video-player" data-js-video-player>
+                                            <video
+                                              src="videos/video.mp4" 
+                                              class="video-player__video"
+                                              width="718"
+                                              height="412"
+                                              poster="images/podcasts/videos/6.jpg"
+                                              loading="lazy"
+                                              data-js-video-player-video
+                                            >
+                                            </video>
+                                            <div class="video-player__panel is-active" data-js-video-player-panel>
+                                                <button 
+                                                  class="video-player__button" 
+                                                  type="button"
+                                                  aria-label="Play video"
+                                                  title="Play video"
+                                                  data-js-video-player-play-button
+                                                >
+                                                    <img src="icons/button-play.svg" alt="" width="56" height="57">
+                                                </button>
+                                                <div class="video-player__duration">2.30 min</div>
+                                            </div>
+                                        </div>
+                                        <div class="video-card__body">
+                                            <h4 class="video-card__title">
+                                                AI in Entertainment
+                                            </h4>
+                                            <p class="video-card__description">
+                                                David Smith as they explore the influence of AI in the entertainment industry.
+                                            </p>
+                                            <a href="#" class="card-item__link button">
+                                                <span class="icon icon--yellow-arrow">Listen Podcast</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+                <section class="podcasts-about about" aria-activedescendant="about-title">
+                    <header class="section__header header-section">
+                        <div class="header-section__container">
+                            <div class="header-section__icon">
+                                <img 
+                                  src="images/about/logo-icon.svg" 
+                                  alt=""
+                                  loading="lazy" width="150" height="150"
+                                />
+                            </div>
+                            <h4 class="header-section__subtitle">Learn, Connect, and Innovate</h4>
+                            <div class="header-section__info">
+                                <h2 class="header-section__title" id="about-title">
+                                    Be Part of the Future Tech Revolution
+                                </h2>
+                                <div class="header-section__description">
+                                    <p>Immerse yourself in the world of future technology. Explore our comprehensive resources, connect with fellow tech enthusiasts, and drive innovation in the industry. Join a dynamic community of forward-thinkers.</p>
+                                    <span>Immerse yourself in the world of future technology. Explore our comprehensive resources.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </header>
+                    <div class="about__body">
+                        <div class="abour__container">
+                            <ul class="about__list">
+                                <li class="about__item">
+                                    <a href="#" class="about__card tile">
+                                        <h4 class="about__title">Resource Access</h4>
+                                        <div class="about__description">
+                                            <p>Visitors can access a wide range of resources, including ebooks, whitepapers, reports.</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="about__item">
+                                    <a href="#" class="about__card tile">
+                                        <h4 class="about__title">Community Forum</h4>
+                                        <div class="about__description">
+                                            <p>Join our active community forum to discuss industry trends and collaborate with peers.</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="about__item">
+                                    <a href="#" class="about__card tile">
+                                        <h4 class="about__title">Tech Events</h4>
+                                        <div class="about__description">
+                                            <p>Stay updated on upcoming tech events, webinars and conferences to enhance your knowledge.</p>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+            </main>
+            <footer class="footer">
+                <div class="footer__container">
+                    <div class="footer__body">
+                        <nav class="footer__menu">
+                            <div class="footer__menu-column">
+                                <a href="#" class="footer__menu-main-link">Home</a>
+                                <ul class="footer__menu-list">
+                                    <li class="footer__menu-item">
+                                        <a href="#" class="footer__menu-link link">Features</a>
+                                    </li>
+                                    <li class="footer__menu-item">
+                                        <a href="#" class="footer__menu-link link">Blogs</a>
+                                    </li>
+                                    <li class="footer__menu-item">
+                                        <a href="#" class="footer__menu-link link">Resources</a>
+                                        <span class="badge">New</span>
+                                    </li>
+                                    <li class="footer__menu-item">
+                                        <a href="#" class="footer__menu-link link">Reviews</a>
+                                    </li>
+                                    <li class="footer__menu-item">
+                                        <a href="#" class="footer__menu-link link">Contact Us</a>
+                                    </li>
+                                    <li class="footer__menu-item">
+                                        <a href="#" class="footer__menu-link link">Newsletter</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="footer__menu-column">
+                                <a href="#" class="footer__menu-main-link">News</a>
+                                <ul class="footer__menu-list">
+                                    <li class="footer__menu-item">
+                                        <a href="#" class="footer__menu-link link">Trending Stories</a>
+                                    </li>
+                                    <li class="footer__menu-item">
+                                        <a href="#" class="footer__menu-link link">Featured Videos</a>
+                                    </li>
+                                    <li class="footer__menu-item">
+                                        <a href="#" class="footer__menu-link link">Technology</a>
+                                    </li>
+                                    <li class="footer__menu-item">
+                                        <a href="#" class="footer__menu-link link">Health</a>
+                                    </li>
+                                    <li class="footer__menu-item">
+                                        <a href="#" class="footer__menu-link link">Politics</a>
+                                    </li>
+                                    <li class="footer__menu-item">
+                                        <a href="#" class="footer__menu-link link">Environment</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="footer__menu-column">
+                                <a href="#" class="footer__menu-main-link">Blogs</a>
+                                <ul class="footer__menu-list">
+                                    <li class="footer__menu-item">
+                                        <a href="#" class="footer__menu-link link">Quantum Computing</a>
+                                    </li>
+                                    <li class="footer__menu-item">
+                                        <a href="#" class="footer__menu-link link">AI Ethics</a>
+                                    </li>
+                                    <li class="footer__menu-item">
+                                        <a href="#" class="footer__menu-link link">Space Exploration</a>
+                                    </li>
+                                    <li class="footer__menu-item">
+                                        <a href="#" class="footer__menu-link link">Biotechnology</a>
+                                        <span class="badge">New</span>
+                                    </li>
+                                    <li class="footer__menu-item">
+                                        <a href="#" class="footer__menu-link link">Renewable Energy</a>
+                                    </li>
+                                    <li class="footer__menu-item">
+                                        <a href="#" class="footer__menu-link link">Biohacking</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="footer__menu-column">
+                                <a href="#" class="footer__menu-main-link">Podcasts</a>
+                                <ul class="footer__menu-list">
+                                    <li class="footer__menu-item">
+                                        <a href="#" class="footer__menu-link link">AI Revolution</a>
+                                        <span class="badge">New</span>
+                                    </li>
+                                    <li class="footer__menu-item">
+                                        <a href="#" class="footer__menu-link link">TechTalk AI</a>
+                                    </li>
+                                    <li class="footer__menu-item">
+                                        <a href="#" class="footer__menu-link link">AI Conversations</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="footer__menu-column">
+                                <a href="#" class="footer__menu-main-link">Resources</a>
+                                <ul class="footer__menu-list">
+                                    <li class="footer__menu-item">
+                                        <a href="#" class="footer__menu-link link button button-small">
+                                            <span class="icon icon--yellow-arrow">Whitepapers</span>
+                                        </a>
+                                    </li>
+                                    <li class="footer__menu-item">
+                                        <a href="#" class="footer__menu-link link button button-small">
+                                            <span class="icon icon--yellow-arrow">Ebooks</span>
+                                        </a>
+                                    </li>
+                                    <li class="footer__menu-item">
+                                        <a href="#" class="footer__menu-link link button button-small">
+                                            <span class="icon icon--yellow-arrow">Reports</span>
+                                        </a>
+                                    </li>
+                                    <li class="footer__menu-item">
+                                        <a href="#" class="footer__menu-link link button button-small">
+                                            <span class="icon icon--yellow-arrow">Research Papers</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="footer__extra footer-extra">
+                        <div class="footer-extra__container ">
+                            <div class="footer-extra__privacy">
+                                <a href="#" class="link">Terms & Conditions</a>
+                                <span></span>
+                                <a href="#" class="link">Privacy Policy</a>
+                            </div>
+                            <div class="footer-extra__soc1als footer-soc1als">
+                                <a 
+                                  href="#" 
+                                  class="footer-soc1als__link" 
+                                  target="_blank"
+                                  aria-label="Twitter"
+                                  title="Twitter"
+                                >
+                                    <img src="/images/footer/twitter.svg" alt="">
+                                </a>
+                                <a 
+                                  href="#" 
+                                  class="footer-soc1als__link" 
+                                  target="_blank"
+                                  aria-label="Medium"
+                                  title="Medium"
+                                >
+                                    <img src="./images/footer/medium.svg" alt="">
+                                </a>
+                                <a 
+                                  href="#" 
+                                  class="footer-soc1als__link" 
+                                  target="_blank"
+                                  aria-label="LinkedIn"
+                                  title="LinkedIn"
+                                >
+                                    <img src="./images/footer/linkedIn.svg" alt="">
+                                </a>
+                            </div>
+                            <p class="footer-extra__copyright">
+                                © <time datetime="2024">2024</time> FutureTech. All rights reserved.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>

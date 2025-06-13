@@ -62,12 +62,20 @@
             grid-template-columns: 1fr auto;
             column-gap: rem(20);
         }
+        &:has(.header-section__actions) {
+            align-items: center;
+            grid-template-columns: 1fr auto;
+            column-gap: 1rem;
+        }
         @media (max-width: $mobile) {
             &:has(.header-section__button) {
                 grid-template-columns: auto;
                 row-gap: rem(30);
             }
         }
+    }
+    &__actions {
+
     }
     &__info {
         display: grid;

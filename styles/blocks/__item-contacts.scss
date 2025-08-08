@@ -1,0 +1,126 @@
+@use '../helpers/functions' as *;
+@use '../helpers/globals' as *;
+@use '../helpers/mixin' as *;
+
+.item-contacts {
+    &__title {
+        font-weight: 500;
+        color: var(--color-light);
+        line-height: 1.3;
+
+        &:not(:last-child) {
+            @include adaptiveValuePX("margin-bottom", 50, 20, $containerWidth, 767.98);
+        }
+
+        @include adaptiveTextPX(20, 16, $containerWidth, 767.98);
+    }
+
+    &__body {
+        @media (min-width: $laptop) {
+            >:not(:last-child) {
+                margin-bottom: rem(15);
+            }
+        }
+
+        @media (max-width: $laptop) {
+            >:not(:last-child) {
+                margin-bottom: rem(10);
+            }
+        }
+
+        @media (max-width: $mobile) and (min-width: $mobileSmall) {
+            padding-left: rem(50);
+        }
+
+        @media (max-width: $mobileSmall) {
+            padding-left: rem(20);
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+        }
+    }
+
+    &__link {
+        height: 100%;
+        margin-right: rem(5);
+    }
+
+    &__socials {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        align-items: center;
+
+        @media (min-width: $laptop) {
+            column-gap: rem(20);
+        }
+
+        @media (max-width: $laptop) {
+            column-gap: rem(10);
+        }
+
+        @media (max-width: $mobile) {
+            padding-left: rem(20);
+        }
+    }
+
+    &__social-link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: rem(6);
+        border: rem(1) solid var(--color-dark-15);
+        background-color: var(--color-dark-10);
+        transition: background-color 0.3s, border 0.3s;
+
+        svg {
+            object-fit: cover;
+            object-position: center;
+
+            path {
+                transition: fill 0.3s;
+            }
+        }
+
+        @media (any-hover: hover) {
+            &:hover {
+                border: rem(1) solid var(--color-accent);
+
+                svg {
+                    path {
+                        fill: var(--color-accent);
+                    }
+                }
+            }
+        }
+
+        @media (any-hover: none) {
+            &:active {
+                border: rem(1) solid var(--color-accent);
+
+                svg {
+                    path {
+                        fill: var(--color-accent);
+                    }
+                }
+            }
+        }
+
+        @media (min-width: $laptop) {
+            padding: rem(18) rem(30);
+
+            svg {
+                width: rem(24);
+                height: rem(24);
+            }
+        }
+
+        @media (max-width: $laptop) {
+            padding: rem(14) rem(10);
+
+            svg {
+                width: rem(20);
+                height: rem(20);
+            }
+        }
+    }
+}

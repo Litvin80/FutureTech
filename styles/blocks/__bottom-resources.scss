@@ -3,7 +3,7 @@
 @use '../helpers/mixin' as *;
 
 .bottom-resources {
-    border-top: 1px solid var(--color-dark-15);
+    border-top: rem(1) solid var(--color-dark-15);
 }
 
 .bottom-resources__container {
@@ -29,28 +29,28 @@
 }
 .bottom-resources__card {
     @media (min-width: $laptop) {
-        padding: 80px 46px;
+        padding: rem(80) rem(46);
     }
 
     @media (max-width: $laptop) and (min-width: $tablet) {
-        padding: 60px 30px;
+        padding: rem(60) rem(30);
     }
     
     @media (min-width: $tablet) {
         &:not(:last-child) {
-            border-right: 1px solid var(--color-dark-15);
+            border-right: rem(1) solid var(--color-dark-15);
         }
     }
 
     @media (max-width: $tablet) and (min-width: $mobile) {
         &:first-child {
-            border-right: 1px solid var(--color-dark-15);
+            border-right: rem(1) solid var(--color-dark-15);
         }
 
-        padding: 30px 30px;
+        padding: rem(30) rem(30);
 
         &:last-child {
-            border-top: 1px solid var(--color-dark-15);
+            border-top: rem(1) solid var(--color-dark-15);
             grid-column: span 2;
             
             .resources-card__image {
@@ -63,7 +63,7 @@
     }
 
     @media (max-width: $mobile) {
-        padding: 40px 0;
+        padding: rem(40) 0;
 
         .resources-card__image {
             img {
@@ -73,8 +73,8 @@
         }
 
         &:nth-child(2) {
-            border-top: 1px solid var(--color-dark-15);
-            border-bottom: 1px solid var(--color-dark-15);
+            border-top: rem(1) solid var(--color-dark-15);
+            border-bottom: rem(1) solid var(--color-dark-15);
         }
     }
 }

@@ -1,0 +1,72 @@
+@use '../helpers/functions' as *;
+@use '../helpers/globals' as *;
+@use '../helpers/mixin' as *;
+
+.contacts {
+    &__header {
+    }
+
+    &__container {
+    }
+
+    &__list {
+        display: grid;
+        border-bottom: rem(1) solid var(--color-dark-15);
+
+        @media (min-width: $laptop) {
+            margin: 0 rem(-50);
+        }
+
+        @media (max-width: $laptop) and (min-width: $mobile) {
+            margin: 0 rem(-30);
+        }
+
+        @media (min-width: $tablet) {
+            grid-template-columns: repeat(4, 1fr);
+        }
+
+        @media (max-width: $tablet) and (min-width: $mobile) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    &__column {
+        @media (min-width: $laptop) {
+            padding: rem(80) rem(50);
+        }
+
+        @media (max-width: $laptop) and (min-width: $tablet) {
+            padding: rem(60) rem(30);
+        }
+
+        @media (min-width: $tablet) {
+            &:not(:last-child) {
+                border-right: rem(1) solid var(--color-dark-15);
+            }
+        }
+
+        @media (max-width: $tablet) and (min-width: $mobile) {
+            padding: rem(40) rem(30);
+
+            &:nth-child(odd) {
+                border-right: rem(1) solid var(--color-dark-15);
+            }
+
+            &:nth-child(1) {
+                border-bottom: rem(1) solid var(--color-dark-15);
+            }
+
+            &:nth-child(2) {
+                border-bottom: rem(1) solid var(--color-dark-15);
+            }
+        }
+
+        @media (max-width: $mobile) {
+            padding: rem(20) 0;
+
+            &:not(:last-child) {
+                border-bottom: rem(1) solid var(--color-dark-15);
+            }
+        }
+    }
+}

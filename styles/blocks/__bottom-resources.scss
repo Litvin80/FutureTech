@@ -1,0 +1,80 @@
+@use '../helpers/functions' as *;
+@use '../helpers/globals' as *;
+@use '../helpers/mixin' as *;
+
+.bottom-resources {
+    border-top: 1px solid var(--color-dark-15);
+}
+
+.bottom-resources__container {
+}
+
+.bottom-resources__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0 rem(-46);
+
+    @media (max-width: $laptop) and (min-width: $mobile) {
+        margin: 0 rem(-30);
+    } 
+
+    @media (max-width: $tablet) and (min-width: $mobile) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (max-width: $mobile) {
+        grid-template-columns: auto;
+        margin: 0;
+    }
+}
+.bottom-resources__card {
+    @media (min-width: $laptop) {
+        padding: 80px 46px;
+    }
+
+    @media (max-width: $laptop) and (min-width: $tablet) {
+        padding: 60px 30px;
+    }
+    
+    @media (min-width: $tablet) {
+        &:not(:last-child) {
+            border-right: 1px solid var(--color-dark-15);
+        }
+    }
+
+    @media (max-width: $tablet) and (min-width: $mobile) {
+        &:first-child {
+            border-right: 1px solid var(--color-dark-15);
+        }
+
+        padding: 30px 30px;
+
+        &:last-child {
+            border-top: 1px solid var(--color-dark-15);
+            grid-column: span 2;
+            
+            .resources-card__image {
+                img {
+                    width: 100%;
+                    object-position: bottom;
+                }
+            }
+        }
+    }
+
+    @media (max-width: $mobile) {
+        padding: 40px 0;
+
+        .resources-card__image {
+            img {
+                width: 100%;
+                object-position: center;
+            }
+        }
+
+        &:nth-child(2) {
+            border-top: 1px solid var(--color-dark-15);
+            border-bottom: 1px solid var(--color-dark-15);
+        }
+    }
+}

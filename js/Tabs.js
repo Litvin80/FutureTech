@@ -1,3 +1,5 @@
+import BaseComponent from "./BaseComponent";
+
 const rootSelector = '[data-js-tabs]';
 
 class Tabs {
@@ -45,15 +47,57 @@ class Tabs {
         });
     }
 
+    previousTab = () => {
+        
+    }
+
+    nextTab = () => {
+
+    }
+
+    firstTab = () => {
+
+    }
+    
+    endTab = () => {
+
+    }
+
     onButtonClick(buttonIndex) {
         this.state.activeTabIndex = buttonIndex;
         this.updateUI();
+    }
+
+    onKeyDown = (event) => {
+        const { code, metaKey } = event
+
+        const acion = {
+            ArrowLeft: this.previousTab,
+            ArrowRight: this.nextTab,
+            Home: this.firstTab,
+            End: this.endTab,
+        }[code]
+
+        const isMacHomeKey = metaKey && code === 'ArrowLeft'
+        if (isMacHomeKey) {
+            this.firstTab()
+            return
+        }
+
+        const isMacEndKey = metaKey && code === 'ArrowRight'
+        if (isMacHomeKey) {
+            this.lastTab()
+            return
+        }
+
+        acion?.()
     }
 
     bindEvents() {
         this.buttonElements.forEach((buttonElement, index) => {
             buttonElement.addEventListener('click', () => this.onButtonClick(index));
         });
+        this.rootElement.addEventListener('keydown', this.onKeyDown)
     }
 };
 

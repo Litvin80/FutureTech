@@ -38,7 +38,8 @@ class Select {
 
         this.state = {
             ...this.initialState,
-            currentOptionIndex: this.originalControlElement.
+            currentOptionIndex: this.originalControlElement.selectedIndex,
+            selectedOptionElement: this.optionElements[this.originalControlElement.selectedIndex]
         }
     }
 }

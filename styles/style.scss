@@ -34,7 +34,13 @@
 @use 'blocks/blog-details';
 @use 'blocks/table-of-contents';
 @use 'blocks/podcasts';
-@use 'blocks/_bottom-resources';
-@use 'blocks/_resources-card';
-@use 'blocks/_contacts';
-@use 'blocks/_item-contacts';
+@use 'blocks/bottom-resources';
+@use 'blocks/resources-card';
+@use 'blocks/contacts';
+@use 'blocks/item-contacts';
+@use 'blocks/contacts-card';
+@use 'blocks/field';
+@use 'blocks/accordion';
+@use 'blocks/feedback-form';
+@use 'blocks/checkbox';
+@use 'blocks/select';

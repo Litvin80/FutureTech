@@ -18,29 +18,55 @@
     @include adaptiveValuePX('padding-block', 18, 14, $containerWidth, 1440);
     @include adaptiveTextPX(18, 14, $containerWidth, 1440);
     transition: all 0.3s ease 0s;
+
     &-small {
         padding: rem(10) rem(16);
     }
+
     &--dark-grey {
         background-color: var(--color-dark-10);
     }
+
+    &--accent {
+        background-color: var(--color-accent);
+        color: var(--color-dark);
+
+        @media (any-hover: hover) {
+            &:hover {
+                color: var(--color-accent);
+                background-color: var(--color-dark-15);
+            }
+        }
+        
+        @media (any-hover: none) {
+            &:active {
+                color: var(--color-accent);
+                background-color: var(--color-dark-15);
+            }
+        }
+    }
+
     @media (any-hover: hover) {
         &:hover {
             background-color: var(--color-dark-10);
             border: rem(1) solid var(--color-accent);
+
             span {
                 color: var(--color-accent);
             }
+
             .icon--yellow-arrow {
                 &::after {
                     background-position: center;
                 }
             }
+
             .icon--yellow-eye {
                 &::after {
                     transform: scale(1.1);
                 }
             }
+
             .icon--gray-arrow-down {
                 &::after {
                     transform: scale(1.1);
@@ -49,20 +75,24 @@
             }
         }
     }
+
     @media (any-hover: none) {
         &:active {
             background-color: var(--color-dark-10);
             border: rem(1) solid var(--color-accent);
+
             .icon--yellow-arrow {
                 &::after {
                     background-position: center;
                 }
             }
+
             .icon--yellow-eye {
                 &::after {
                     transform: scale(1.1);
                 }
             }
+
             .icon--gray-arrow-down {
                 &::after {
                     transform: scale(1.1);

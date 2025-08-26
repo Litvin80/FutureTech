@@ -4,6 +4,7 @@
 
 .contacts {
     &__header {
+        border-bottom: rem(1) solid var(--color-dark-15);
     }
 
     &__container {
@@ -11,7 +12,6 @@
 
     &__list {
         display: grid;
-        border-bottom: rem(1) solid var(--color-dark-15);
 
         @media (min-width: $laptop) {
             margin: 0 rem(-50);

@@ -1,0 +1,110 @@
+@use '../helpers/functions' as *;
+@use '../helpers/globals' as *;
+@use '../helpers/mixin' as *;
+
+.accordion {
+    &-group {
+        display: flex;
+        flex-direction: column;
+        row-gap: rem(28);
+
+        @media (max-width: $mobile) {
+            row-gap: rem(20);
+        }
+    }
+
+    &__details {
+        &[open] {
+            .accordion__title {
+                &::after,
+                &::before {
+                    transform: translate(0, -50%);
+                    background: var(--color-light);
+                }
+            }
+
+            & + .accordion__content {
+                grid-template-rows: 1fr;                
+            }
+        }
+    }
+
+    &__title {
+        position: relative;
+        padding-right: rem(50);
+
+        &::after,
+        &::before {
+            position: absolute;
+            content: '';
+            top: 50%;
+            right: 0;
+            width: rem(16);
+            height: rem(2);
+            transform: translate(0, -50%);
+            background: var(--color-accent);
+            transition: transform 0.3s;
+        }
+
+        &::after {
+            transform: translate(0, -50%) rotate(90deg);
+        }
+    
+        span {
+            font-size: rem(18);
+            font-weight: 500;
+            color: var(--color-light);
+            transition: color 0.3s;
+        }
+
+        @media (any-hover: hover) {
+            &:hover {
+                span {
+                    color: var(--color-accent);
+                }
+            }
+        }
+        
+        @media (any-hover: none) {
+            &:active {
+                color: var(--color-accent);
+            }
+        }
+
+        @media (max-width: $mobile) {
+            span {
+                font-size: rem(16);
+                line-height: auto;
+            }
+        }
+    }
+
+    &__content {
+        display: grid;
+        grid-template-rows: 0fr;
+        transition: grid-template-rows 0.3s;
+
+        &-inner {
+            overflow: hidden;
+        }
+    }
+
+    &__body {
+        border-top: rem(1) solid var(--color-dark-15);
+        @include adaptiveValuePX('margin-top', 24, 16, $containerWidth, 767.98);
+        @include adaptiveValuePX('padding-top', 24, 16, $containerWidth, 767.98);
+
+        p {
+            font-size: rem(16);
+            line-height: 1.5;
+        }
+    }
+
+    &__summary {
+        list-style: none;
+
+        &::-webkit-details-marker {
+            display: none;
+        }
+    }
+}

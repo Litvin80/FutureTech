@@ -1,0 +1,27 @@
+@use '../helpers/functions' as *;
+@use '../helpers/globals' as *;
+@use '../helpers/mixin' as *;
+
+.contacts-card {
+    &__title {
+        font-size: rem(44);
+        color: var(--color-light);
+        line-height: 1.3;
+        font-weight: 500;
+        font-family: "Kumbh Sans", sans-serif;
+
+        &-small {
+            font-size: rem(28);
+            font-family: "Kumbh Sans", sans-serif;
+            line-height: 1.5;
+            font-weight: 600;
+            color: var(--color-light);
+        }
+    }
+
+    &__button {
+        @media (min-width: $mobileSmall) {
+            align-self: start;
+        }
+    }
+}

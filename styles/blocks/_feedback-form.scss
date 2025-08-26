@@ -1,0 +1,57 @@
+@use '../helpers/functions' as *;
+@use '../helpers/globals' as *;
+@use '../helpers/mixin' as *;
+
+.feedback-form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    
+    @media (min-width: $laptop) {
+        row-gap: rem(50);
+    }
+
+    @media (max-width: $laptop) and (min-width: $mobileSmall) {
+        row-gap: rem(30);
+    }
+
+    @media (min-width: $tablet) {
+        column-gap: rem(50);
+    }
+
+    @media (max-width: $tablet) and (min-width: $mobile) {
+        column-gap: rem(30);
+    }
+
+    @media (max-width: $mobile) {
+        column-gap: rem(20);
+        padding-inline: rem(20);
+    }
+
+    @media (max-width: $mobileSmall) {
+        grid-template-columns: auto;
+        padding-inline: 0;
+        row-gap: rem(20);
+    }
+
+    &__cell {
+        &--wide {
+            @media (min-width: $mobileSmall) {
+                grid-column: span 2;
+            }
+        }
+    }
+
+    &__actions {
+        display: flex;
+
+        @media (min-width: $mobileSmall) {
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        @media (max-width: $mobileSmall) {
+            row-gap: rem(20);
+            flex-direction: column;
+        }
+    }
+}

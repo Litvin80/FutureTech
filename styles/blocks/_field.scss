@@ -1,0 +1,97 @@
+@use '../helpers/functions' as *;
+@use '../helpers/globals' as *;
+@use '../helpers/mixin' as *;
+
+.field {
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width: $laptop) {
+        row-gap: rem(16);
+    }
+
+    @media (max-width: $laptop) {
+        row-gap: rem(12);
+    }
+
+    &__label {
+        font-weight: 500;
+        line-height: 1.5;
+        color: var(--color-light);
+
+        @media (min-width: $laptop) {
+            font-size: rem(18);
+        }
+
+        @media (max-width: $laptop) {
+            font-size: rem(16);
+        }
+    }
+
+    &__body {
+        display: flex;
+
+        @media (min-width: $laptop) {
+            column-gap: rem(16);
+        }
+
+        @media (max-width: $laptop) {
+            column-gap: rem(12);
+        }
+    }
+
+    &__control {
+        width: 100%;
+        background-color: var(--color-dark-10);
+        border-radius: rem(8);
+        border: rem(1) solid var(--color-dark-15);
+        color: var(--color-light);
+        transition: border 0.3s;
+
+        &::placeholder {
+            color: var(--color-dark-40);
+        }
+        
+        &:focus {
+            border: rem(1) solid var(--color-accent);
+        }
+
+        @media (any-hover: hover) {
+            &:hover {
+                border: rem(1) solid var(--color-accent);
+            }
+        }
+        
+        @media (any-hover: none) {
+            &:active {
+                border: rem(1) solid var(--color-accent);
+            }
+        }
+
+        @media (min-width: $laptop) {
+            font-size: rem(18);
+            padding: rem(20);
+        }
+
+        @media (max-width: $laptop) {
+            font-size: rem(14);
+            padding: rem(16);
+        }
+    }
+
+    &__textarea {
+        resize: vertical;
+
+        @media (min-width: $mobile) {
+            min-height: rem(163);
+        }
+
+        @media (max-width: $mobile) {
+            min-height: rem(127);
+        }
+    }
+
+    &__required-star {
+        color: rgb(255, 115, 0);
+    }
+}

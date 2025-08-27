@@ -16,7 +16,7 @@ class BaseComponent {
                 target[prop] = newValue
 
                 if (newValue !== oldValue) {
-                    this.UpdateIU()
+                    this.updateUI()
                 }
 
                 return true
@@ -24,7 +24,7 @@ class BaseComponent {
         })
     }
 
-    UpdateIU() {
+    updateUI() {
         throw new Error("The 'updateUI' method must be implemented.")
     }
 }

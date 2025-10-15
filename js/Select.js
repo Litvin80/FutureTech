@@ -77,7 +77,6 @@ class Select extends BaseComponent {
 class SelectCollection {
     constructor() {
         this.init()
-        console.log('ddsdsd')
     }
 
     init() {

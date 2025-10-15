@@ -15,3 +15,5 @@ new InputMaskCollection()
 new SelectCollection()
 
 defineScrollBarWidthCSSVar()
+
+AOS.init();

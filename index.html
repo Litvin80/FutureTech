@@ -4,8 +4,10 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <script src="https://unpkg.com/aos@next/dist/aos.js" defer></script>
         <script type="module" src="./js/main.js" defer></script>
         <link rel="stylesheet" href="./styles/style.css">
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
         <title>Future Tech</title>
     </head>
     <body>
@@ -74,7 +76,7 @@
                 <section class="hero" aria-labelledby="hero-title">
                         <div class="hero__body">
                             <div class="hero__container">
-                                <div class="hero__intro hero-intro">
+                                <div class="hero__intro hero-intro" data-aos="fade-down">
                                     <div class="hero-intro__body">
                                         <h3 class="hero-intro__subtitle">Your Journey to Tomorrow Begins Here</h3>
                                         <h1 class="hero-intro__title" id="hero-title">Explore the Frontiers of Artificial Intelligence</h1>
@@ -102,7 +104,7 @@
                                     </div>
                                 </div>
                                 <div class="hero__explore-resources explore-resources">
-                                    <div class="explore-resources__body">
+                                    <div class="explore-resources__body" data-aos="fade-down">
                                         <div class="explore-resources__team team">
                                             <img
                                             class="team__person"  
@@ -147,7 +149,7 @@
                         <div class="hero__advantages hero-advantages">
                             <div class="hero-advantages__container">
                                 <ul class="hero-advantages__list">
-                                    <li class="hero-advantages__item">
+                                    <li class="hero-advantages__item" data-aos="fade-right">
                                         <div class="hero-advantages__card">
                                             <img 
                                             class="hero-advantages__image"
@@ -164,7 +166,7 @@
                                             </p>
                                         </div>
                                     </li>
-                                    <li class="hero-advantages__item">
+                                    <li class="hero-advantages__item" data-aos="fade-right" data-aos-delay="50">
                                         <div class="hero-advantages__card">
                                             <img 
                                             class="hero-advantages__image"
@@ -181,7 +183,7 @@
                                             </p>
                                         </div>
                                     </li>
-                                    <li class="hero-advantages__item">
+                                    <li class="hero-advantages__item" data-aos="fade-right" data-aos-delay="100">
                                         <div class="hero-advantages__card">
                                             <img 
                                             class="hero-advantages__image"
@@ -205,7 +207,7 @@
                 <section class="features" aria-labelledby="features-title">
                     <header class="section__header header-section">
                         <div class="header-section__container">
-                            <div class="header-section__info">
+                            <div class="header-section__info" data-aos="fade-up">
                                 <h4 class="header-section__subtitle">Unlock the Power of</h4>
                                 <h2 class="header-section__title" id="features-title">FutureTech Features</h2>
                             </div>
@@ -216,7 +218,7 @@
                             <li class="features__card card">
                                 <div class="features__container card__wrapper">
                                     <div class="card__preview">
-                                        <div class="card__main">
+                                        <div class="card__main" data-aos="fade-left">
                                             <img
                                                 class="card__icon"
                                                 src="/images/features/1.svg"
@@ -233,7 +235,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="card__body card__body--2-cols">
+                                    <div class="card__body card__body--2-cols" data-aos="zoom-in">
                                         <div class="card__item card-item tile">
                                             <h4 class="card-item__title">Quantity</h4>
                                             <p class="card-item__description">
@@ -264,7 +266,7 @@
                             <li class="features__card card">
                                 <div class="features__container card__wrapper">
                                     <div class="card__preview">
-                                        <div class="card__main">
+                                        <div class="card__main" data-aos="fade-left">
                                             <img
                                                 class="card__icon"
                                                 src="/images/features/2.svg"
@@ -281,7 +283,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="card__body card__body--2-cols">
+                                    <div class="card__body card__body--2-cols" data-aos="zoom-in">
                                         <div class="card__item card-item tile">
                                             <h4 class="card-item__title">Depth</h4>
                                             <p class="card-item__description">
@@ -315,7 +317,7 @@
                 <section class="blog" aria-labelledby="blog-title">
                     <header class="section__header header-section">
                         <div class="header-section__container">
-                            <div class="header-section__info">
+                            <div class="header-section__info" data-aos="fade-up">
                                 <h4 class="header-section__subtitle">A Knowledge Treasure Trove</h4>
                                 <h2 class="header-section__title" id="blog-title">
                                     Explore FutureTech's In-Depth Blog Posts
@@ -420,7 +422,7 @@
                                 data-js-tabs-content
                                 >
                                     <ul class="tabs__list">
-                                        <li class="tabs__card tabs-card">
+                                        <li class="tabs__card tabs-card" data-aos="fade-down">
                                             <article class="tabs__container tabs-card__wrapper">
                                                 <div class="tabs-card__author author-card">
                                                     <img 
@@ -499,7 +501,7 @@
                                                 </a>
                                             </article>
                                         </li>
-                                        <li class="tabs__card tabs-card">
+                                        <li class="tabs__card tabs-card" data-aos="fade-down">
                                             <article class="tabs__container tabs-card__wrapper">
                                                 <div class="tabs-card__author author-card">
                                                     <img 
@@ -578,7 +580,7 @@
                                                 </a>
                                             </article>
                                         </li>
-                                        <li class="tabs__card tabs-card">
+                                        <li class="tabs__card tabs-card" data-aos="fade-down">
                                             <article class="tabs__container tabs-card__wrapper">
                                                 <div class="tabs-card__author author-card">
                                                     <img 
@@ -667,7 +669,7 @@
                                 data-js-tabs-content
                                 >
                                     <ul class="tabs__list">
-                                        <li class="tabs__card tabs-card">
+                                        <li class="tabs__card tabs-card" data-aos="fade-down">
                                             <article class="tabs__container tabs-card__wrapper">
                                                 <div class="tabs-card__author author-card">
                                                     <img 
@@ -756,7 +758,7 @@
                                 data-js-tabs-content
                                 >
                                     <ul class="tabs__list">
-                                        <li class="tabs__card tabs-card">
+                                        <li class="tabs__card tabs-card" data-aos="fade-down">
                                             <article class="tabs__container tabs-card__wrapper">
                                                 <div class="tabs-card__author author-card">
                                                     <img 
@@ -845,7 +847,7 @@
                                 data-js-tabs-content
                                 >
                                     <ul class="tabs__list">
-                                        <li class="tabs__card tabs-card">
+                                        <li class="tabs__card tabs-card" data-aos="fade-down">
                                             <article class="tabs__container tabs-card__wrapper">
                                                 <div class="tabs-card__author author-card">
                                                     <img 
@@ -954,7 +956,7 @@
                 <section class="resources" aria-activedescendant="resources-title">
                     <header class="section__header header-section">
                         <div class="header-section__container">
-                            <div class="header-section__info">
+                            <div class="header-section__info" data-aos="fade-up">
                                 <h4 class="header-section__subtitle">Your Gateway to In-Depth Information</h4>
                                 <h2 class="header-section__title" id="resources-title">
                                     Unlock Valuable Knowledge with FutureTech's Resources
@@ -970,7 +972,7 @@
                             <li class="resources__card card">
                                 <div class="resources__container card__wrapper">
                                     <div class="card__preview">
-                                        <div class="card__main">
+                                        <div class="card__main" data-aos="fade-right">
                                             <img
                                                 class="card__icon"
                                                 src="/images/resources/2.svg"
@@ -1024,7 +1026,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="card__body card__body--2-cols-alt">
+                                    <div class="card__body card__body--2-cols-alt" data-aos="zoom-in">
                                         <div class="card-item">
                                             <h3 class="card-item__title">
                                                 Topics Coverage
@@ -1072,7 +1074,7 @@
                             <li class="resources__card card">
                                 <div class="resources__container card__wrapper">
                                     <div class="card__preview">
-                                        <div class="card__main">
+                                        <div class="card__main" data-aos="fade-right">
                                             <img
                                                 class="card__icon"
                                                 src="/images/resources/1.svg"
@@ -1126,7 +1128,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="card__body card__body--2-cols-alt">
+                                    <div class="card__body card__body--2-cols-alt" data-aos="zoom-in">
                                         <div class="card-item">
                                             <h3 class="card-item__title">
                                                 Variety of Topics
@@ -1176,7 +1178,7 @@
                 <section class="reviews" aria-activedescendant="reviews-title">
                     <header class="section__header header-section">
                         <div class="header-section__container">
-                            <div class="header-section__info">
+                            <div class="header-section__info" data-aos="fade-up">
                                 <h4 class="header-section__subtitle">What Our Readers Say</h4>
                                 <h2 class="header-section__title" id="reviews-title">
                                     Real Words from Real Readers
@@ -1190,7 +1192,7 @@
                     <div class="reviews__body">
                         <div class="reviews__container">
                             <ul class="reviews__list">
-                                <li class="reviews__card card-reviews">
+                                <li class="reviews__card card-reviews" data-aos="fade-up">
                                     <div class="card-reviews__item">
                                         <div class="card-reviews__author reviews-author">
                                             <img 
@@ -1222,7 +1224,7 @@
                                         </div>
                                     </div>
                                 </li>
-                                <li class="reviews__card card-reviews">
+                                <li class="reviews__card card-reviews" data-aos="fade-up" data-aos-delay="50">
                                     <div class="card-reviews__item">
                                         <div class="card-reviews__author reviews-author">
                                             <img 
@@ -1254,7 +1256,7 @@
                                         </div>
                                     </div>
                                 </li>
-                                <li class="reviews__card card-reviews">
+                                <li class="reviews__card card-reviews" data-aos="fade-up" data-aos-delay="100">
                                     <div class="card-reviews__item">
                                         <div class="card-reviews__author reviews-author">
                                             <img 
@@ -1286,7 +1288,7 @@
                                         </div>
                                     </div>
                                 </li>
-                                <li class="reviews__card card-reviews">
+                                <li class="reviews__card card-reviews" data-aos="fade-up" data-aos-delay="150">
                                     <div class="card-reviews__item">
                                         <div class="card-reviews__author reviews-author">
                                             <img 
@@ -1318,7 +1320,7 @@
                                         </div>
                                     </div>
                                 </li>
-                                <li class="reviews__card card-reviews">
+                                <li class="reviews__card card-reviews" data-aos="fade-up" data-aos-delay="200">
                                     <div class="card-reviews__item">
                                         <div class="card-reviews__author reviews-author">
                                             <img 
@@ -1350,7 +1352,7 @@
                                         </div>
                                     </div>
                                 </li>
-                                <li class="reviews__card card-reviews">
+                                <li class="reviews__card card-reviews" data-aos="fade-up" data-aos-delay="250">
                                     <div class="card-reviews__item">
                                         <div class="card-reviews__author reviews-author">
                                             <img 
@@ -1389,15 +1391,15 @@
                 <section class="about" aria-activedescendant="about-title">
                     <header class="section__header header-section">
                         <div class="header-section__container">
-                            <div class="header-section__icon">
+                            <div class="header-section__icon" data-aos="fade-right">
                                 <img 
-                                  src="images/about/logo-icon.svg" 
-                                  alt=""
-                                  loading="lazy" width="150" height="150"
+                                    src="images/about/logo-icon.svg" 
+                                    alt=""
+                                    loading="lazy" width="150" height="150"
                                 />
                             </div>
-                            <h4 class="header-section__subtitle">Learn, Connect, and Innovate</h4>
-                            <div class="header-section__info">
+                            <h4 class="header-section__subtitle" data-aos="fade-right">Learn, Connect, and Innovate</h4>
+                            <div class="header-section__info" data-aos="fade-left">
                                 <h2 class="header-section__title" id="about-title">
                                     Be Part of the Future Tech Revolution
                                 </h2>
@@ -1412,7 +1414,7 @@
                         <div class="abour__container">
                             <ul class="about__list">
                                 <li class="about__item">
-                                    <a href="#" class="about__card tile">
+                                    <a href="#" class="about__card tile" data-aos="fade-up">
                                         <h4 class="about__title">Resource Access</h4>
                                         <div class="about__description">
                                             <p>Visitors can access a wide range of resources, including ebooks, whitepapers, reports.</p>
@@ -1420,7 +1422,7 @@
                                     </a>
                                 </li>
                                 <li class="about__item">
-                                    <a href="#" class="about__card tile">
+                                    <a href="#" class="about__card tile" data-aos="fade-up" data-aos-delay="50">
                                         <h4 class="about__title">Community Forum</h4>
                                         <div class="about__description">
                                             <p>Join our active community forum to discuss industry trends and collaborate with peers.</p>
@@ -1428,7 +1430,7 @@
                                     </a>
                                 </li>
                                 <li class="about__item">
-                                    <a href="#" class="about__card tile">
+                                    <a href="#" class="about__card tile" data-aos="fade-up" data-aos-delay="100">
                                         <h4 class="about__title">Tech Events</h4>
                                         <div class="about__description">
                                             <p>Stay updated on upcoming tech events, webinars and conferences to enhance your knowledge.</p>

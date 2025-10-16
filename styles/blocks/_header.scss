@@ -179,6 +179,7 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
+    width: 100%;
 
     @include adaptiveValuePX('padding-block', 14, 10, $containerWidth, 1440);
     @include adaptiveValuePX('padding-inline', 20, 14, $containerWidth, 1440);

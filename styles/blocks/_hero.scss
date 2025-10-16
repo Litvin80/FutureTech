@@ -204,7 +204,7 @@
         top: 0;
         left: 0;
         opacity: 0.8;
-        background: url(../../images/hero/explore-resources/bg.png) 0 0/cover no-repeat;
+        background: url(../../images/hero/explore-resources/bg.webp) 0 0/cover no-repeat;
     }
     @media (max-width: $laptop) {
         padding-left: rem(50);
@@ -214,7 +214,7 @@
             opacity: 0.6;
         }
         &::before {
-            background: url(../../images/hero/explore-resources/bg-laptop.png) 0 0/cover no-repeat;
+            background: url(../../images/hero/explore-resources/bg-laptop.webp) 0 0/cover no-repeat;
         }
     }
     @media (min-width: $tablet) {
@@ -232,7 +232,7 @@
             opacity: 0.6;
         }
         &::before {
-            background: url(../../images/hero/explore-resources/bg-laptop.png) 0 0 no-repeat;
+            background: url(../../images/hero/explore-resources/bg-laptop.webp) 0 0 no-repeat;
         }
     }
     @media (max-width: $mobile) {
@@ -240,7 +240,7 @@
     }
     @media (max-width: $mobileSmall) {
         &::before {
-            background: url(../../images/hero/explore-resources/bg-mobile.png) 0 0 no-repeat;
+            background: url(../../images/hero/explore-resources/bg-mobile.webp) 0 0 no-repeat;
         }
     }
     &__body {

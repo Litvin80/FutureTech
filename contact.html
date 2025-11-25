@@ -5,7 +5,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/imask/7.6.1/imask.min.js" defer></script>
+        <script src="/vendor/aos/aos.js" defer></script>
         <script type="module" src="./js/main.js" defer></script>
+        <link rel="stylesheet" href="./vendor/aos/aos.css">
         <link rel="stylesheet" href="./styles/style.css">
         <title>Future Tech</title>
     </head>
@@ -80,7 +82,7 @@
                             </h1>
                             <ul class="contacts__list">
                                 <li class="contacts__column">
-                                    <div class="contacts__item item-contacts">
+                                    <div class="contacts__item item-contacts" data-aos="fade-up">
                                         <h2 class="item-contacts__title">
                                             General Inquiries
                                         </h2>
@@ -95,7 +97,7 @@
                                     </div>
                                 </li>
                                 <li class="contacts__column">
-                                    <div class="contacts__item item-contacts">
+                                    <div class="contacts__item item-contacts" data-aos="fade-up" data-aos-delay="50">
                                         <h2 class="item-contacts__title">
                                             Technical Support
                                         </h2>
@@ -110,7 +112,7 @@
                                     </div>
                                 </li>
                                 <li class="contacts__column">
-                                    <div class="contacts__item item-contacts">
+                                    <div class="contacts__item item-contacts" data-aos="fade-up" data-aos-delay="100">
                                         <h2 class="item-contacts__title">
                                             Our Office
                                         </h2>
@@ -125,7 +127,7 @@
                                     </div>
                                 </li>
                                 <li class="contacts__column">
-                                    <div class="contacts__item item-contacts">
+                                    <div class="contacts__item item-contacts" data-aos="fade-up" data-aos-delay="150">
                                         <h2 class="item-contacts__title">
                                             Connect with Us
                                         </h2>
@@ -162,7 +164,7 @@
                             <li class="contacts-main__item contacts-card card">
                                 <div class="contacts-card__container card__wrapper">
                                     <div class="card__preview">
-                                        <div class="card__main">
+                                        <div class="card__main" data-aos="fade-right">
                                             <img
                                                 class="card__icon"
                                                 src="/images/contacts/icon-1.svg"
@@ -177,7 +179,7 @@
                                         </div>
                                     </div>
                                     <div class="card__body">
-                                        <form action="/" class="feedback-form">
+                                        <form action="/" class="feedback-form" data-aos="fade-left">
                                             <div class="feedback-form__cell field">
                                                 <label
                                                     for="firstName" 
@@ -268,7 +270,7 @@
                             <li class="contacts-main__item contacts-card card">
                                 <div class="contacts-card__container card__wrapper">
                                     <div class="card__preview">
-                                        <div class="card__main">
+                                        <div class="card__main" data-aos="fade-right">
                                             <img
                                                 class="card__icon"
                                                 src="/images/contacts/icon-1.svg"
@@ -289,7 +291,7 @@
                                         </div>
                                     </div>
                                     <div class="card__body">
-                                        <div class="accordion-group">
+                                        <div class="accordion-group" data-aos="fade-left">
                                             <div class="accordion tile">
                                                 <details class="accordion__details" name="faq" open>
                                                     <summary class="accordion__summary">
@@ -397,18 +399,18 @@
                         </ul>
                     </div>
                 </section>
-                <section class="resources-hero-about about" aria-activedescendant="about-title">
+                <section class="about" aria-activedescendant="about-title">
                     <header class="section__header header-section">
                         <div class="header-section__container">
-                            <div class="header-section__icon">
+                            <div class="header-section__icon" data-aos="fade-right">
                                 <img 
                                     src="images/about/logo-icon.svg" 
                                     alt=""
                                     loading="lazy" width="150" height="150"
                                 />
                             </div>
-                            <h4 class="header-section__subtitle">Learn, Connect, and Innovate</h4>
-                            <div class="header-section__info">
+                            <h4 class="header-section__subtitle" data-aos="fade-right">Learn, Connect, and Innovate</h4>
+                            <div class="header-section__info" data-aos="fade-left">
                                 <h2 class="header-section__title" id="about-title">
                                     Be Part of the Future Tech Revolution
                                 </h2>
@@ -423,7 +425,7 @@
                         <div class="abour__container">
                             <ul class="about__list">
                                 <li class="about__item">
-                                    <a href="#" class="about__card tile">
+                                    <a href="#" class="about__card tile" data-aos="fade-up">
                                         <h4 class="about__title">Resource Access</h4>
                                         <div class="about__description">
                                             <p>Visitors can access a wide range of resources, including ebooks, whitepapers, reports.</p>
@@ -431,7 +433,7 @@
                                     </a>
                                 </li>
                                 <li class="about__item">
-                                    <a href="#" class="about__card tile">
+                                    <a href="#" class="about__card tile" data-aos="fade-up" data-aos-delay="50">
                                         <h4 class="about__title">Community Forum</h4>
                                         <div class="about__description">
                                             <p>Join our active community forum to discuss industry trends and collaborate with peers.</p>
@@ -439,7 +441,7 @@
                                     </a>
                                 </li>
                                 <li class="about__item">
-                                    <a href="#" class="about__card tile">
+                                    <a href="#" class="about__card tile" data-aos="fade-up" data-aos-delay="100">
                                         <h4 class="about__title">Tech Events</h4>
                                         <div class="about__description">
                                             <p>Stay updated on upcoming tech events, webinars and conferences to enhance your knowledge.</p>

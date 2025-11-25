@@ -4,7 +4,9 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <script src="/vendor/aos/aos.js" defer></script>
         <script type="module" src="./js/main.js" defer></script>
+        <link rel="stylesheet" href="./vendor/aos/aos.css">
         <link rel="stylesheet" href="./styles/style.css">
         <title>Future Tech</title>
     </head>
@@ -74,13 +76,13 @@
                 <section class="podcasts" aria-labelledby="podcasts-title">
                     <header class="section__header header-section-alt">
                         <div class="header-section-alt__container">
-                            <h1 class="header-section-alt__title" id="podcasts-title">
+                            <h1 class="header-section-alt__title" id="podcasts-title" data-aos="fade-right">
                                 Unlock the World of Artificial Intelligence <span class="header-section-alt__title-hidden-part">through Podcasts</span>
                             </h1>
-                            <h2 class="header-section-alt__title">
+                            <h2 class="header-section-alt__title" data-aos="fade-right">
                                 through Podcasts
                             </h2>
-                            <div class="header-section-alt__description">
+                            <div class="header-section-alt__description" data-aos="fade-left">
                                 Dive deep into the AI universe with our collection of insightful podcasts. Explore the latest trends, breakthroughs, and discussions on artificial intelligence. Whether you're an enthusiast or a professional, our AI podcasts offer a gateway to knowledge and innovation.
                             </div>
                         </div>
@@ -89,7 +91,7 @@
                         <ul class="podcasts__list">
                             <li class="podcasts__card card">
                                 <div class="podcasts__container card__wrapper">
-                                    <div class="card__preview">
+                                    <div class="card__preview" data-aos="zoom-in">
                                         <div class="card__main">
                                             <img
                                                 class="card__icon"
@@ -124,7 +126,7 @@
                                             </a>
                                         </div>
                                     </div>
-                                    <div class="card__body card__body--3-cols">
+                                    <div class="card__body card__body--3-cols" data-aos="zoom-in">
                                         <div class="card__item card-item card-item--wide">
                                             <div class="podcasts__video-player video-player" data-js-video-player>
                                             <video
@@ -173,7 +175,7 @@
                             </li>
                             <li class="podcasts__card card">
                                 <div class="podcasts__container card__wrapper">
-                                    <div class="card__preview">
+                                    <div class="card__preview" data-aos="zoom-in">
                                         <div class="card__main">
                                             <img
                                                 class="card__icon"
@@ -208,7 +210,7 @@
                                             </a>
                                         </div>
                                     </div>
-                                    <div class="card__body card__body--3-cols">
+                                    <div class="card__body card__body--3-cols" data-aos="zoom-in">
                                         <div class="card__item card-item card-item--wide">
                                             <div class="podcasts__video-player video-player" data-js-video-player>
                                             <video
@@ -263,7 +265,7 @@
                 <section class="podcasts-videos" aria-labelledby="podcasts-videos-title">
                     <header class="section__header header-section">
                         <div class="header-section__container">
-                            <div class="header-section__info">
+                            <div class="header-section__info" data-aos="fade-right">
                                 <h4 class="header-section__subtitle">Stay Informed with Fresh Content</h4>
                                 <h2 class="header-section__title" id="podcasts-videos-title">Latest Podcast Episodes</h2>
                             </div>
@@ -272,7 +274,7 @@
                     <div class="podcasts-videos__body">
                         <div class="podcasts-videos__container">
                             <ul class="podcasts-videos__list">
-                                <li class="podcasts-videos__card video-card">
+                                <li class="podcasts-videos__card video-card" data-aos="fade-up">
                                     <div class="video-card__wrapper">
                                         <div class="video-card__video-player video-player" data-js-video-player>
                                             <video
@@ -311,7 +313,7 @@
                                         </div>
                                     </div>
                                 </li>
-                                <li class="podcasts-videos__card video-card">
+                                <li class="podcasts-videos__card video-card" data-aos="fade-up" data-aos-delay="50">
                                     <div class="video-card__wrapper">
                                         <div class="video-card__video-player video-player" data-js-video-player>
                                             <video
@@ -350,7 +352,7 @@
                                         </div>
                                     </div>
                                 </li>
-                                <li class="podcasts-videos__card video-card">
+                                <li class="podcasts-videos__card video-card" data-aos="fade-up" data-aos-delay="100">
                                     <div class="video-card__wrapper">
                                         <div class="video-card__video-player video-player" data-js-video-player>
                                             <video
@@ -389,7 +391,7 @@
                                         </div>
                                     </div>
                                 </li>
-                                <li class="podcasts-videos__card video-card">
+                                <li class="podcasts-videos__card video-card" data-aos="fade-up" data-aos-delay="150">
                                     <div class="video-card__wrapper">
                                         <div class="video-card__video-player video-player" data-js-video-player>
                                             <video
@@ -428,7 +430,7 @@
                                         </div>
                                     </div>
                                 </li>
-                                <li class="podcasts-videos__card video-card">
+                                <li class="podcasts-videos__card video-card" data-aos="fade-up" data-aos-delay="200">
                                     <div class="video-card__wrapper">
                                         <div class="video-card__video-player video-player" data-js-video-player>
                                             <video
@@ -467,7 +469,7 @@
                                         </div>
                                     </div>
                                 </li>
-                                <li class="podcasts-videos__card video-card">
+                                <li class="podcasts-videos__card video-card" data-aos="fade-up" data-aos-delay="250">
                                     <div class="video-card__wrapper">
                                         <div class="video-card__video-player video-player" data-js-video-player>
                                             <video
@@ -510,18 +512,18 @@
                         </div>
                     </div>
                 </section>
-                <section class="podcasts-about about" aria-activedescendant="about-title">
+                <section class="about" aria-activedescendant="about-title">
                     <header class="section__header header-section">
                         <div class="header-section__container">
-                            <div class="header-section__icon">
+                            <div class="header-section__icon" data-aos="fade-right">
                                 <img 
-                                  src="images/about/logo-icon.svg" 
-                                  alt=""
-                                  loading="lazy" width="150" height="150"
+                                    src="images/about/logo-icon.svg" 
+                                    alt=""
+                                    loading="lazy" width="150" height="150"
                                 />
                             </div>
-                            <h4 class="header-section__subtitle">Learn, Connect, and Innovate</h4>
-                            <div class="header-section__info">
+                            <h4 class="header-section__subtitle" data-aos="fade-right">Learn, Connect, and Innovate</h4>
+                            <div class="header-section__info" data-aos="fade-left">
                                 <h2 class="header-section__title" id="about-title">
                                     Be Part of the Future Tech Revolution
                                 </h2>
@@ -536,7 +538,7 @@
                         <div class="abour__container">
                             <ul class="about__list">
                                 <li class="about__item">
-                                    <a href="#" class="about__card tile">
+                                    <a href="#" class="about__card tile" data-aos="fade-up">
                                         <h4 class="about__title">Resource Access</h4>
                                         <div class="about__description">
                                             <p>Visitors can access a wide range of resources, including ebooks, whitepapers, reports.</p>
@@ -544,7 +546,7 @@
                                     </a>
                                 </li>
                                 <li class="about__item">
-                                    <a href="#" class="about__card tile">
+                                    <a href="#" class="about__card tile" data-aos="fade-up" data-aos-delay="50">
                                         <h4 class="about__title">Community Forum</h4>
                                         <div class="about__description">
                                             <p>Join our active community forum to discuss industry trends and collaborate with peers.</p>
@@ -552,7 +554,7 @@
                                     </a>
                                 </li>
                                 <li class="about__item">
-                                    <a href="#" class="about__card tile">
+                                    <a href="#" class="about__card tile" data-aos="fade-up" data-aos-delay="100">
                                         <h4 class="about__title">Tech Events</h4>
                                         <div class="about__description">
                                             <p>Stay updated on upcoming tech events, webinars and conferences to enhance your knowledge.</p>

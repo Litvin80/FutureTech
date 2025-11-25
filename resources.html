@@ -4,8 +4,10 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <script src="/vendor/aos/aos.js" defer></script>
         <script type="module" src="./js/main.js" defer></script>
-        <link rel="stylesheet" href="./styles/style.css">
+        <link rel="stylesheet" href="./vendor/aos/aos.css">
+        <link rel="stylesheet" href="./styles/style.css"> 
         <title>Future Tech</title>
     </head>
     <body>
@@ -74,20 +76,20 @@
                 <section class="resources-hero" aria-labelledby="resources-hero-title">
                     <header class="section__header header-section-alt">
                         <div class="header-section-alt__container">
-                            <h1 class="header-section-alt__title" id="resources-hero-title">
+                            <h1 class="header-section-alt__title" id="resources-hero-title" data-aos="fade-right">
                                 Unlock a World of <span class="header-section-alt__title-hidden-part">Knowledge</span>
                             </h1>
-                            <h2 class="header-section-alt__title">
+                            <h2 class="header-section-alt__title" data-aos="fade-right">
                                 Knowledge
                             </h2>
-                            <div class="header-section-alt__description">
+                            <div class="header-section-alt__description" data-aos="fade-left">
                                 Dive deep into the AI universe with our collection of insightful podcasts. Explore the latest trends, breakthroughs, and discussions on artificial intelligence. Whether you're an enthusiast or a professional, our AI podcasts offer a gateway to knowledge and innovation.
                             </div>
                         </div>
                     </header>
                     <div class="resources-hero__container">
                         <div class="resources-hero__metrics intro-metrics full-vw-line full-vw-line--top full-vw-line--left">
-                            <dl class="intro-metrics__list">
+                            <dl class="intro-metrics__list" data-aos="fade-up">
                                 <div class="intro-metrics__item">
                                     <dt class="intro-metrics__key">Resources available</dt>
                                     <dd class="intro-metrics__value">300<span>+</span></dd>
@@ -111,7 +113,7 @@
                 <section class="resources-section tabs" aria-activedescendant="resources-section-title" data-js-tabs>
                     <header class="resources-section__header header-section">
                         <div class="header-section__container">
-                            <div class="header-section__info">
+                            <div class="header-section__info" data-aos="fade-right">
                                 <h4 class="header-section__subtitle">Dive into the Details</h4>
                                 <h2 class="header-section__title" id="resources-section-title">In-Depth Reports and Analysis</h2>
                             </div>
@@ -174,7 +176,7 @@
                                 <ul class="tabs__list">
                                     <li class="tabs__item resources-section__card card">
                                         <div class="resources-section__container card__wrapper">
-                                            <div class="card__preview">
+                                            <div class="card__preview" data-aos="fade-right">
                                                 <div class="card__main">
                                                     <img
                                                         class="card__icon"
@@ -192,7 +194,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="card__body card__body--3-cols">
+                                            <div class="card__body card__body--3-cols" data-aos="zoom-in">
                                                 <div class="card__item card-item card-item--wide">
                                                     <div class="card-item__image">
                                                         <img 
@@ -233,7 +235,7 @@
                                     </li>
                                     <li class="tabs__item resources-section__card card">
                                         <div class="resources-section__container card__wrapper">
-                                            <div class="card__preview">
+                                            <div class="card__preview" data-aos="fade-right">
                                                 <div class="card__main">
                                                     <img
                                                         class="card__icon"
@@ -251,7 +253,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="card__body card__body--3-cols">
+                                            <div class="card__body card__body--3-cols" data-aos="zoom-in">
                                                 <div class="card__item card-item card-item--wide">
                                                     <div class="card-item__image">
                                                         <img 
@@ -293,7 +295,413 @@
                                 </ul>
                                 <div class="resources-section__bottom bottom-resources">
                                     <div class="bottom-resources__container">
-                                        <ul class="bottom-resources__list">
+                                        <ul class="bottom-resources__list" data-aos="fade-up">
+                                            <li class="bottom-resources__card resources-card">
+                                                <div class="resources-card__wrapper">
+                                                    <div class="resources-card__image">
+                                                        <img src="images/resources-page/card/2.jpg" alt="" width="470" height="290" loading="lazy">
+                                                    </div>
+                                                    <div class="resources-card__body">
+                                                        <a href="#" class="resources-card__title">
+                                                            FutureTech Trends 2024
+                                                        </a>
+                                                        <p class="resources-card__description">
+                                                            An ebook that predicts upcoming technology trends for the next year, including AI developments
+                                                        </p>
+                                                    </div>
+                                                    <div class="resources-card__links">
+                                                        <a href="#" class="resources-card__link button">
+                                                            <span>View Details</span>
+                                                        </a>
+                                                        <a href="#" class="resources-card__link-download button" download>
+                                                            <span>Download PDF Now</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="bottom-resources__card resources-card">
+                                                <div class="resources-card__wrapper">
+                                                    <a href="#" class="resources-card__image">
+                                                        <img src="images/resources-page/card/1.jpg" alt="" width="470" height="290" loading="lazy">
+                                                    </a>
+                                                    <div class="resources-card__body">
+                                                        <a href="#" class="resources-card__title">
+                                                            Space Exploration Ebook
+                                                        </a>
+                                                        <p class="resources-card__description">
+                                                            An ebook that predicts upcoming technology trends for the next year, including AI developments
+                                                        </p>
+                                                    </div>
+                                                    <div class="resources-card__links">
+                                                        <a href="#" class="resources-card__link button">
+                                                            <span>View Details</span>
+                                                        </a>
+                                                        <a href="#" class="resources-card__link-download button" download>
+                                                            <span>Download PDF Now</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="bottom-resources__card resources-card">
+                                                <div class="resources-card__wrapper">
+                                                    <a href="#" class="resources-card__image">
+                                                        <img src="images/resources-page/card/3.jpg" alt="" width="470" height="290" loading="lazy">
+                                                    </a>
+                                                    <div class="resources-card__body">
+                                                        <a href="#" class="resources-card__title">
+                                                            Quantum Computing Whitepaper
+                                                        </a>
+                                                        <p class="resources-card__description">
+                                                            An ebook that predicts upcoming technology trends for the next year, including AI developments
+                                                        </p>
+                                                    </div>
+                                                    <div class="resources-card__links">
+                                                        <a href="#" class="resources-card__link button">
+                                                            <span>View Details</span>
+                                                        </a>
+                                                        <a href="#" class="resources-card__link-download button" download>
+                                                            <span>Download PDF Now</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="tabs__content"
+                                id="tabpanel-2"
+                                aria-labelledby="tab-2"
+                                tabindex="0"
+                                data-js-tabs-content
+                            >
+                                <ul class="tabs__list">
+                                    <li class="tabs__item resources-section__card card">
+                                        <div class="resources-section__container card__wrapper">
+                                            <div class="card__preview" data-aos="fade-right">
+                                                <div class="card__main">
+                                                    <img
+                                                        class="card__icon"
+                                                        src="/images/resources-page/1.svg"
+                                                        alt=""
+                                                        width="80" height="80" loading="lazy"
+                                                    >
+                                                    <div class="card__info">
+                                                        <h3 class="card__title">
+                                                            Quantum Computing Whitepaper
+                                                        </h3>
+                                                        <p class="card__description">
+                                                            Provides technical specifications and requirements for implementing quantum computing systems.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="card__body card__body--3-cols" data-aos="zoom-in">
+                                                <div class="card__item card-item card-item--wide">
+                                                    <div class="card-item__image">
+                                                        <img 
+                                                        src="images/resources-page/1.jpg" 
+                                                        alt=""
+                                                        width="917"
+                                                        height="332"
+                                                        />
+                                                    </div>
+                                                </div>
+                                                <div class="card__item card-item card-item--wide">
+                                                    <div class="card-item__body">
+                                                        <h4 class="card-item__title card-item__title-big">
+                                                            Quantum Computing Whitepaper
+                                                        </h4>
+                                                        <p class="card-item__description">
+                                                            An in-depth whitepaper exploring the principles, applications, and potential impact of quantum computing.
+                                                        </p>
+                                                    </div>
+                                                    <a href="#" class="card-item__link button">
+                                                        <span class="icon icon--yellow-arrow">Download PDF Now</span>
+                                                    </a>
+                                                </div>
+                                                <div class="card__item card-item tile">
+                                                    <p class="card-item__description">Publication Date</p>
+                                                    <h4 class="card-item__title card-item__title-small">July 2023</h4>
+                                                </div>
+                                                <div class="card__item card-item tile">
+                                                    <p class="card-item__description">Category</p>
+                                                    <h4 class="card-item__title card-item__title-small">Quantum Computing</h4>
+                                                </div>
+                                                <div class="card__item card-item tile">
+                                                    <p class="card-item__description">Author</p>
+                                                    <h4 class="card-item__title card-item__title-small">Dr. Quantum</h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="tabs__item resources-section__card card">
+                                        <div class="resources-section__container card__wrapper">
+                                            <div class="card__preview" data-aos="fade-right">
+                                                <div class="card__main">
+                                                    <img
+                                                        class="card__icon"
+                                                        src="/images/resources-page/2.svg"
+                                                        alt=""
+                                                        width="80" height="80" loading="lazy"
+                                                    >
+                                                    <div class="card__info">
+                                                        <h3 class="card__title">
+                                                            Space Exploration Whitepaper
+                                                        </h3>
+                                                        <p class="card__description">
+                                                            Explores Mars colonization, asteroid resource potential, and space tourism.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="card__body card__body--3-cols" data-aos="zoom-in">
+                                                <div class="card__item card-item card-item--wide">
+                                                    <div class="card-item__image">
+                                                        <img 
+                                                        src="images/resources-page/2.jpg" 
+                                                        alt=""
+                                                        width="917"
+                                                        height="332"
+                                                        />
+                                                    </div>
+                                                </div>
+                                                <div class="card__item card-item card-item--wide">
+                                                    <div class="card-item__body">
+                                                        <h4 class="card-item__title card-item__title-big">
+                                                            Space Exploration Whitepaper
+                                                        </h4>
+                                                        <p class="card-item__description">
+                                                            An in-depth whitepaper covering the latest advancements in space exploration, including Mars missions and asteroid mining.
+                                                        </p>
+                                                    </div>
+                                                    <a href="#" class="card-item__link button">
+                                                        <span class="icon icon--yellow-arrow">Download PDF Now</span>
+                                                    </a>
+                                                </div>
+                                                <div class="card__item card-item tile">
+                                                    <p class="card-item__description">Publication Date</p>
+                                                    <h4 class="card-item__title card-item__title-small">September 2023</h4>
+                                                </div>
+                                                <div class="card__item card-item tile">
+                                                    <p class="card-item__description">Category</p>
+                                                    <h4 class="card-item__title card-item__title-small">Space Exploration</h4>
+                                                </div>
+                                                <div class="card__item card-item tile">
+                                                    <p class="card-item__description">Author</p>
+                                                    <h4 class="card-item__title card-item__title-small">FutureTech Space Division</h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="resources-section__bottom bottom-resources">
+                                    <div class="bottom-resources__container">
+                                        <ul class="bottom-resources__list" data-aos="fade-up">
+                                            <li class="bottom-resources__card resources-card">
+                                                <div class="resources-card__wrapper">
+                                                    <div class="resources-card__image">
+                                                        <img src="images/resources-page/card/2.jpg" alt="" width="470" height="290" loading="lazy">
+                                                    </div>
+                                                    <div class="resources-card__body">
+                                                        <a href="#" class="resources-card__title">
+                                                            FutureTech Trends 2024
+                                                        </a>
+                                                        <p class="resources-card__description">
+                                                            An ebook that predicts upcoming technology trends for the next year, including AI developments
+                                                        </p>
+                                                    </div>
+                                                    <div class="resources-card__links">
+                                                        <a href="#" class="resources-card__link button">
+                                                            <span>View Details</span>
+                                                        </a>
+                                                        <a href="#" class="resources-card__link-download button" download>
+                                                            <span>Download PDF Now</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="bottom-resources__card resources-card">
+                                                <div class="resources-card__wrapper">
+                                                    <a href="#" class="resources-card__image">
+                                                        <img src="images/resources-page/card/1.jpg" alt="" width="470" height="290" loading="lazy">
+                                                    </a>
+                                                    <div class="resources-card__body">
+                                                        <a href="#" class="resources-card__title">
+                                                            Space Exploration Ebook
+                                                        </a>
+                                                        <p class="resources-card__description">
+                                                            An ebook that predicts upcoming technology trends for the next year, including AI developments
+                                                        </p>
+                                                    </div>
+                                                    <div class="resources-card__links">
+                                                        <a href="#" class="resources-card__link button">
+                                                            <span>View Details</span>
+                                                        </a>
+                                                        <a href="#" class="resources-card__link-download button" download>
+                                                            <span>Download PDF Now</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="bottom-resources__card resources-card">
+                                                <div class="resources-card__wrapper">
+                                                    <a href="#" class="resources-card__image">
+                                                        <img src="images/resources-page/card/3.jpg" alt="" width="470" height="290" loading="lazy">
+                                                    </a>
+                                                    <div class="resources-card__body">
+                                                        <a href="#" class="resources-card__title">
+                                                            Quantum Computing Whitepaper
+                                                        </a>
+                                                        <p class="resources-card__description">
+                                                            An ebook that predicts upcoming technology trends for the next year, including AI developments
+                                                        </p>
+                                                    </div>
+                                                    <div class="resources-card__links">
+                                                        <a href="#" class="resources-card__link button">
+                                                            <span>View Details</span>
+                                                        </a>
+                                                        <a href="#" class="resources-card__link-download button" download>
+                                                            <span>Download PDF Now</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="tabs__content"
+                                id="tabpanel-3"
+                                aria-labelledby="tab-3"
+                                tabindex="0"
+                                data-js-tabs-content
+                            >
+                                <ul class="tabs__list">
+                                    <li class="tabs__item resources-section__card card">
+                                        <div class="resources-section__container card__wrapper">
+                                            <div class="card__preview" data-aos="fade-right">
+                                                <div class="card__main">
+                                                    <img
+                                                        class="card__icon"
+                                                        src="/images/resources-page/2.svg"
+                                                        alt=""
+                                                        width="80" height="80" loading="lazy"
+                                                    >
+                                                    <div class="card__info">
+                                                        <h3 class="card__title">
+                                                            Space Exploration Whitepaper
+                                                        </h3>
+                                                        <p class="card__description">
+                                                            Explores Mars colonization, asteroid resource potential, and space tourism.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="card__body card__body--3-cols" data-aos="zoom-in">
+                                                <div class="card__item card-item card-item--wide">
+                                                    <div class="card-item__image">
+                                                        <img 
+                                                        src="images/resources-page/2.jpg" 
+                                                        alt=""
+                                                        width="917"
+                                                        height="332"
+                                                        />
+                                                    </div>
+                                                </div>
+                                                <div class="card__item card-item card-item--wide">
+                                                    <div class="card-item__body">
+                                                        <h4 class="card-item__title card-item__title-big">
+                                                            Space Exploration Whitepaper
+                                                        </h4>
+                                                        <p class="card-item__description">
+                                                            An in-depth whitepaper covering the latest advancements in space exploration, including Mars missions and asteroid mining.
+                                                        </p>
+                                                    </div>
+                                                    <a href="#" class="card-item__link button">
+                                                        <span class="icon icon--yellow-arrow">Download PDF Now</span>
+                                                    </a>
+                                                </div>
+                                                <div class="card__item card-item tile">
+                                                    <p class="card-item__description">Publication Date</p>
+                                                    <h4 class="card-item__title card-item__title-small">September 2023</h4>
+                                                </div>
+                                                <div class="card__item card-item tile">
+                                                    <p class="card-item__description">Category</p>
+                                                    <h4 class="card-item__title card-item__title-small">Space Exploration</h4>
+                                                </div>
+                                                <div class="card__item card-item tile">
+                                                    <p class="card-item__description">Author</p>
+                                                    <h4 class="card-item__title card-item__title-small">FutureTech Space Division</h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="tabs__item resources-section__card card">
+                                        <div class="resources-section__container card__wrapper">
+                                            <div class="card__preview" data-aos="fade-right">
+                                                <div class="card__main">
+                                                    <img
+                                                        class="card__icon"
+                                                        src="/images/resources-page/1.svg"
+                                                        alt=""
+                                                        width="80" height="80" loading="lazy"
+                                                    >
+                                                    <div class="card__info">
+                                                        <h3 class="card__title">
+                                                            Quantum Computing Whitepaper
+                                                        </h3>
+                                                        <p class="card__description">
+                                                            Provides technical specifications and requirements for implementing quantum computing systems.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="card__body card__body--3-cols" data-aos="zoom-in">
+                                                <div class="card__item card-item card-item--wide">
+                                                    <div class="card-item__image">
+                                                        <img 
+                                                        src="images/resources-page/1.jpg" 
+                                                        alt=""
+                                                        width="917"
+                                                        height="332"
+                                                        />
+                                                    </div>
+                                                </div>
+                                                <div class="card__item card-item card-item--wide">
+                                                    <div class="card-item__body">
+                                                        <h4 class="card-item__title card-item__title-big">
+                                                            Quantum Computing Whitepaper
+                                                        </h4>
+                                                        <p class="card-item__description">
+                                                            An in-depth whitepaper exploring the principles, applications, and potential impact of quantum computing.
+                                                        </p>
+                                                    </div>
+                                                    <a href="#" class="card-item__link button">
+                                                        <span class="icon icon--yellow-arrow">Download PDF Now</span>
+                                                    </a>
+                                                </div>
+                                                <div class="card__item card-item tile">
+                                                    <p class="card-item__description">Publication Date</p>
+                                                    <h4 class="card-item__title card-item__title-small">July 2023</h4>
+                                                </div>
+                                                <div class="card__item card-item tile">
+                                                    <p class="card-item__description">Category</p>
+                                                    <h4 class="card-item__title card-item__title-small">Quantum Computing</h4>
+                                                </div>
+                                                <div class="card__item card-item tile">
+                                                    <p class="card-item__description">Author</p>
+                                                    <h4 class="card-item__title card-item__title-small">Dr. Quantum</h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="resources-section__bottom bottom-resources">
+                                    <div class="bottom-resources__container">
+                                        <ul class="bottom-resources__list" data-aos="fade-up">
                                             <li class="bottom-resources__card resources-card">
                                                 <div class="resources-card__wrapper">
                                                     <div class="resources-card__image">
@@ -368,21 +776,20 @@
                                 </div>
                             </div>
                         </div>
-                        
                     </div>
                 </section>
-                <section class="resources-hero-about about" aria-activedescendant="about-title">
+                <section class="about" aria-activedescendant="about-title">
                     <header class="section__header header-section">
                         <div class="header-section__container">
-                            <div class="header-section__icon">
+                            <div class="header-section__icon" data-aos="fade-right">
                                 <img 
-                                  src="images/about/logo-icon.svg" 
-                                  alt=""
-                                  loading="lazy" width="150" height="150"
+                                    src="images/about/logo-icon.svg" 
+                                    alt=""
+                                    loading="lazy" width="150" height="150"
                                 />
                             </div>
-                            <h4 class="header-section__subtitle">Learn, Connect, and Innovate</h4>
-                            <div class="header-section__info">
+                            <h4 class="header-section__subtitle" data-aos="fade-right">Learn, Connect, and Innovate</h4>
+                            <div class="header-section__info" data-aos="fade-left">
                                 <h2 class="header-section__title" id="about-title">
                                     Be Part of the Future Tech Revolution
                                 </h2>
@@ -397,7 +804,7 @@
                         <div class="abour__container">
                             <ul class="about__list">
                                 <li class="about__item">
-                                    <a href="#" class="about__card tile">
+                                    <a href="#" class="about__card tile" data-aos="fade-up">
                                         <h4 class="about__title">Resource Access</h4>
                                         <div class="about__description">
                                             <p>Visitors can access a wide range of resources, including ebooks, whitepapers, reports.</p>
@@ -405,7 +812,7 @@
                                     </a>
                                 </li>
                                 <li class="about__item">
-                                    <a href="#" class="about__card tile">
+                                    <a href="#" class="about__card tile" data-aos="fade-up" data-aos-delay="50">
                                         <h4 class="about__title">Community Forum</h4>
                                         <div class="about__description">
                                             <p>Join our active community forum to discuss industry trends and collaborate with peers.</p>
@@ -413,7 +820,7 @@
                                     </a>
                                 </li>
                                 <li class="about__item">
-                                    <a href="#" class="about__card tile">
+                                    <a href="#" class="about__card tile" data-aos="fade-up" data-aos-delay="100">
                                         <h4 class="about__title">Tech Events</h4>
                                         <div class="about__description">
                                             <p>Stay updated on upcoming tech events, webinars and conferences to enhance your knowledge.</p>

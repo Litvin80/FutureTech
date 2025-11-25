@@ -16,4 +16,6 @@ new SelectCollection()
 
 defineScrollBarWidthCSSVar()
 
-AOS.init();
+AOS.init({
+    once: true
+});
